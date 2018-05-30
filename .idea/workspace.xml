@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/application/views/frontend/layouts/chatbox.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +16,15 @@
       <file leaf-file-name="tgs.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+            <state relative-caret-position="452">
+              <caret line="945" column="19" lean-forward="true" selection-start-line="945" selection-start-column="19" selection-end-line="945" selection-end-column="19" />
+              <folding>
+                <element signature="e#4409#11300#0#HTML" />
+                <element signature="e#13073#13122#0#HTML" expanded="true" />
+                <element signature="e#14508#14557#0#HTML" expanded="true" />
+                <element signature="e#16009#16058#0#HTML" expanded="true" />
+                <element signature="e#25975#802192#0#HTML" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,12 +153,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527654485284</updated>
-      <workItem from="1527654488162" duration="335000" />
+      <workItem from="1527654488162" duration="1877000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="335000" />
+    <option name="totallyTimeSpent" value="1877000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -199,8 +204,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+        <state relative-caret-position="452">
+          <caret line="945" column="19" lean-forward="true" selection-start-line="945" selection-start-column="19" selection-end-line="945" selection-end-column="19" />
+          <folding>
+            <element signature="e#4409#11300#0#HTML" />
+            <element signature="e#13073#13122#0#HTML" expanded="true" />
+            <element signature="e#14508#14557#0#HTML" expanded="true" />
+            <element signature="e#16009#16058#0#HTML" expanded="true" />
+            <element signature="e#25975#802192#0#HTML" />
+          </folding>
         </state>
       </provider>
     </entry>
