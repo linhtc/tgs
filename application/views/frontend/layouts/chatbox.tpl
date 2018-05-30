@@ -1,6 +1,14 @@
 {literal}
     <script type="text/javascript">
-        function showHidechatbox(){var t=document.getElementById("chatbox"),o=t.offsetWidth;t.opened?movechatbox(0,19-o):movechatbox(19-o,0),t.opened=!t.opened; t.opened?$('#coccoc-alo-phoneIcon').hide():($('#coccoc-alo-phoneIcon').show());}function movechatbox(t,o){var a=document.getElementById("chatbox"),e=Math.abs(t-o)>10?5:1,n=o>t?1:-1,i=t+e*n;a.style.right=i.toString()+"0px",t!=o&&setTimeout("movechatbox("+i+", "+o+")",1)}
+        function showHidechatbox(){
+            var t=document.getElementById("chatbox"),o=t.offsetWidth;
+            t.opened?movechatbox(0,19-o):movechatbox(19-o,0),t.opened=!t.opened;
+            t.opened?$('#coccoc-alo-phoneIcon').hide():($('#coccoc-alo-phoneIcon').show());
+        }
+        function movechatbox(t,o){
+            var a=document.getElementById("chatbox"),e=Math.abs(t-o)>10?5:1,n=o>t?1:-1,i=t+e*n;
+            a.style.right=i.toString()+"0px",t!=o&&setTimeout("movechatbox("+i+", "+o+")",1)
+        }
     </script>
 {/literal}
 
