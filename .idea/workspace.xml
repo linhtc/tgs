@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="" />
+    <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/font/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/font/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/font/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/frontend/font/fontawesome-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/frontend/home/view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/home/view.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/breadcrumb.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/breadcrumb.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/chatbox.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/chatbox.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/extra.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/extra.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/footer.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/footer.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/head.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/head.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/snp.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/snp.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,59 +44,58 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="tgs.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="426" column="38" selection-start-line="426" selection-start-column="38" selection-end-line="426" selection-end-column="38" />
+            <state relative-caret-position="256">
+              <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/frontend/home/view.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
               <folding>
-                <element signature="e#4409#11300#0#HTML" />
-                <element signature="e#13073#13122#0#HTML" expanded="true" />
-                <element signature="e#14508#14557#0#HTML" expanded="true" />
-                <element signature="e#16009#16058#0#HTML" expanded="true" />
-                <element signature="e#25975#802192#0#HTML" />
-                <element signature="e#804536#808369#0#HTML" />
-                <element signature="e#808369#809071#0#HTML" />
-                <element signature="e#809071#818888#0#HTML" />
-                <element signature="e#823329#823551#0#HTML" />
+                <element signature="e#6218#15794#0#HTML" />
+                <element signature="e#7143#8139#0#HTML" />
+                <element signature="e#8055#18229#0#HTML" />
+                <element signature="e#15796#20858#0#HTML" />
+                <element signature="e#18242#24303#0#HTML" />
+                <element signature="e#20860#23064#0#HTML" />
+                <element signature="e#24316#26823#0#HTML" />
+                <element signature="e#23066#26963#0#HTML" />
+                <element signature="e#26836#31444#0#HTML" />
+                <element signature="e#26965#39475#0#HTML" />
+                <element signature="e#31457#32566#0#HTML" />
+                <element signature="e#32579#46267#0#HTML" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mobi.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/mobi.tpl">
+      <file leaf-file-name="tgs.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/config/tgs.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+            <state relative-caret-position="160">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extra.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/extra.tpl">
+      <file leaf-file-name="sidebar.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/footer.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1760">
-              <caret line="120" column="8" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default2.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/default2.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="45" column="2" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="46" />
+            <state relative-caret-position="406">
+              <caret line="96" column="67" selection-start-line="96" selection-start-column="43" selection-end-line="96" selection-end-column="67" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#span#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,26 +103,81 @@
       <file leaf-file-name="snp.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/snp.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="29" column="51" lean-forward="true" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+            <state relative-caret-position="224">
+              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chatbox.tpl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chatbox.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/chatbox.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="304">
+              <caret line="19" column="63" lean-forward="true" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mobi.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/mobi.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="extra.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/extra.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>animate</find>
+      <find>animate.css</find>
+      <find>animate.min</find>
+      <find>animate.</find>
+      <find>fon</find>
+      <find>js_com</find>
+      <find>font-Arimo-css</find>
+      <find>../fonts/</find>
+      <find>/ping</find>
+      <find>ping?</find>
+      <find>ajaxurl</find>
+      <find>https://trumgiasi.com/wp-admin/admin-ajax.php</find>
+      <find>admin-ajax</find>
+      <find>ninjapopups.min.js</find>
+      <find>opups</find>
+      <find>ping</find>
+      <find>facebook</find>
+      <find>cff</find>
+      <find>cff-s</find>
+      <find>Quang Trung P10</find>
+      <find>zalo</find>
+      <find>faceb</find>
+      <find>wp-content/uploads/2017/02/zaloicon.jpg</find>
+      <find>/wp-content/uploads/2017/02/</find>
+      <find>https://trumgiasi.com/static/frontend/images/</find>
+      <find>js_composer_front.min.js</find>
+      <find>cart_content</find>
+      <find>cart_content&quot;</find>
+      <find>class=&quot;cart_content&quot;</find>
+      <find>laborator</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>font/</replace>
+      <replace>/static/frontend/images/</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -97,12 +185,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/static/frontend/css/tgs.style.css" />
+        <option value="$PROJECT_DIR$/static/frontend/css/composer.font-awesome.min.css" />
+        <option value="$PROJECT_DIR$/static/frontend/js/oxygen-custom.js" />
         <option value="$PROJECT_DIR$/application/views/frontend/layouts/snp.tpl" />
+        <option value="$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl" />
         <option value="$PROJECT_DIR$/application/views/frontend/layouts/footer.tpl" />
-        <option value="$PROJECT_DIR$/application/views/frontend/layouts/extra.tpl" />
+        <option value="$PROJECT_DIR$/application/views/frontend/layouts/chatbox.tpl" />
         <option value="$PROJECT_DIR$/application/views/frontend/layouts/mobi.tpl" />
         <option value="$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl" />
-        <option value="$PROJECT_DIR$/application/views/frontend/layouts/chatbox.tpl" />
+        <option value="$PROJECT_DIR$/application/views/frontend/layouts/extra.tpl" />
+        <option value="$PROJECT_DIR$/application/views/frontend/layouts/breadcrumb.tpl" />
+        <option value="$PROJECT_DIR$/application/views/frontend/layouts/head.tpl" />
+        <option value="$PROJECT_DIR$/application/config/tgs.txt" />
+        <option value="$PROJECT_DIR$/application/views/frontend/home/view.tpl" />
       </list>
     </option>
   </component>
@@ -163,7 +259,33 @@
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -173,13 +295,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../precision" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/options.json" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/frontend/css/font" />
+      <recent name="$PROJECT_DIR$/static/frontend" />
       <recent name="$PROJECT_DIR$/application/views/frontend/layouts" />
     </key>
   </component>
@@ -206,32 +330,33 @@
       <option name="presentableId" value="Default" />
       <updated>1527654485284</updated>
       <workItem from="1527654488162" duration="9091000" />
+      <workItem from="1527730471016" duration="15263000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9091000" />
+    <option name="totallyTimeSpent" value="24354000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24958494" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1925844" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
@@ -244,16 +369,30 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/snp.tpl">
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="29" column="51" lean-forward="true" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+        <state relative-caret-position="19184">
+          <caret line="426" column="38" selection-start-line="426" selection-start-column="38" selection-end-line="426" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/mobi.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/extra.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/footer.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1760">
+        <state relative-caret-position="1920">
           <caret line="120" column="8" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="8" />
         </state>
       </provider>
@@ -265,35 +404,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl">
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/snp.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="426" column="38" selection-start-line="426" selection-start-column="38" selection-end-line="426" selection-end-column="38" />
-          <folding>
-            <element signature="e#4409#11300#0#HTML" />
-            <element signature="e#13073#13122#0#HTML" expanded="true" />
-            <element signature="e#14508#14557#0#HTML" expanded="true" />
-            <element signature="e#16009#16058#0#HTML" expanded="true" />
-            <element signature="e#25975#802192#0#HTML" />
-            <element signature="e#804536#808369#0#HTML" />
-            <element signature="e#808369#809071#0#HTML" />
-            <element signature="e#809071#818888#0#HTML" />
-            <element signature="e#823329#823551#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/extra.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/mobi.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+        <state relative-caret-position="464">
+          <caret line="29" column="51" lean-forward="true" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -301,9 +415,236 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/cache/smarty/compiled/1b22f12a80212abed2be33cc716e45307fc0b950_0.file.head.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="104" column="30" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/frontend/css/reset.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/frontend/css/up-fontawesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-880">
+          <caret line="2" column="118" selection-start-line="2" selection-start-column="99" selection-end-line="2" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/frontend/css/fontello.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/frontend/css/coccoc_alo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/frontend/css/support.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/frontend/css/tgs.style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/frontend/css/js_composer.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1008" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/frontend/css/vc_lte_ie9.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="86" selection-start-column="86" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/frontend/css/vc-ie8.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/frontend/css/composer.font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="3" column="2158" selection-start-line="3" selection-start-column="2158" selection-end-line="3" selection-end-column="2158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/frontend/js/oxygen-custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="821" column="10" selection-start-line="821" selection-start-column="8" selection-end-line="825" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/frontend/js/ninjapopups.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/cache/smarty/compiled/462eb2a78509187863247876bd4120bd33a9ae4f_0.file.extra.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/frontend/js/cff-scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/cache/smarty/compiled/01b2e281508faa66231ff08053530be5db7b9bf5_0.file.sidebar.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="35" column="66" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
+          <folding>
+            <element signature="e#1084#1165#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/default2.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/options.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/frontend/js/awesome-gallery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-654792">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="96" column="67" selection-start-line="96" selection-start-column="43" selection-end-line="96" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#span#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/footer.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/extra.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/mobi.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/chatbox.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="63" lean-forward="true" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/snp.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/breadcrumb.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/head.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="86" column="92" selection-start-line="86" selection-start-column="92" selection-end-line="86" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/tgs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/home/view.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+          <folding>
+            <element signature="e#6218#15794#0#HTML" />
+            <element signature="e#7143#8139#0#HTML" />
+            <element signature="e#8055#18229#0#HTML" />
+            <element signature="e#15796#20858#0#HTML" />
+            <element signature="e#18242#24303#0#HTML" />
+            <element signature="e#20860#23064#0#HTML" />
+            <element signature="e#24316#26823#0#HTML" />
+            <element signature="e#23066#26963#0#HTML" />
+            <element signature="e#26836#31444#0#HTML" />
+            <element signature="e#26965#39475#0#HTML" />
+            <element signature="e#31457#32566#0#HTML" />
+            <element signature="e#32579#46267#0#HTML" />
           </folding>
         </state>
       </provider>

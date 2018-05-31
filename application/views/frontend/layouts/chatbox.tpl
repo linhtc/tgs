@@ -32,27 +32,27 @@
             <h4 style="padding-left: 60px;">Hỗ trợ & Tư vấn</h4>
             <!-- /ZALO -->
             <div class='support-online'>
-                <div class='support-img'><img src="/wp-content/uploads/2017/02/zaloicon.jpg" alt="Zalo Trùm Giá Sỉ" height="30" width="30"></div>
+                <div class='support-img'><img src="/static/frontend/images/zaloicon.jpg" alt="Zalo Trùm Giá Sỉ" height="30" width="30"></div>
                 <div class='support-phone'><a href="tel://0974330551">0932.642.505</a></div>
             </div>
             <div class='support-online'>
-                <div class='support-img'><img src="/wp-content/uploads/2017/02/zaloicon.jpg" alt="Zalo Trùm Giá Sỉ" height="30" width="30"></div>
+                <div class='support-img'><img src="/static/frontend/images/zaloicon.jpg" alt="Zalo Trùm Giá Sỉ" height="30" width="30"></div>
                 <div class='support-phone'><a href="tel://0994493123">0979.493.123</a></div>
             </div>
             <div class='support-online'>
-                <div class='support-img'><img src="/wp-content/uploads/2017/02/zaloicon.jpg" alt="Zalo Trùm Giá Sỉ" height="30" width="30"></div>
+                <div class='support-img'><img src="/static/frontend/images/zaloicon.jpg" alt="Zalo Trùm Giá Sỉ" height="30" width="30"></div>
                 <div class='support-phone'><a href="tel://0919705086">0919.7050.86</a></div>
             </div>
             <div class='support-online'>
-                <div class='support-img'><img src="https://trumgiasi.com/wp-content/uploads/2017/02/fbicon.jpg" alt="Facebook Trùm Giá Sỉ" height="30" width="30"></div>
+                <div class='support-img'><img src="/static/frontend/images/fbicon.jpg" alt="Facebook Trùm Giá Sỉ" height="30" width="30"></div>
                 <div class='support-phone'><a href="https://www.facebook.com/trumgiasi.san/" target="_blank">FB Chủ Shop</a></div>
             </div>
             <div class='support-online'>
-                <div class='support-img'><img src="https://trumgiasi.com/wp-content/uploads/2017/02/fbicon.jpg" alt="Facebook Trùm Giá Sỉ" height="30" width="30"></div>
+                <div class='support-img'><img src="/static/frontend/images/fbicon.jpg" alt="Facebook Trùm Giá Sỉ" height="30" width="30"></div>
                 <div class='support-phone'><a href="https://www.facebook.com/trumgiasishop/" target="_blank">Fanpage Shop</a></div>
             </div>
             <div class='support-online'>
-                <div class='support-img'><img src="/wp-content/uploads/2017/02/phone-icon.jpg" alt="SĐT Trùm Giá Sỉ" height="30" width="30"></div>
+                <div class='support-img'><img src="/static/frontend/images/phone-icon.jpg" alt="SĐT Trùm Giá Sỉ" height="30" width="30"></div>
                 <div class='support-phone'><a href="tel://0919705086">0919.7050.86</a></div>
             </div>
             <!-- /ZALO -->

@@ -27,13 +27,13 @@
                             <br/>
                             <!-- /ZALO -->
                             <div class='support-onlines'>
-                                <div class='support-imgs'><a href="tel://0932642505"><img src="/wp-content/uploads/2017/02/zaloicon.jpg" alt="Zalo Trùm Giá Sỉ" height="42" width="42"></a></div>
+                                <div class='support-imgs'><a href="tel://0932642505"><img src="/static/frontend/images/zaloicon.jpg" alt="Zalo Trùm Giá Sỉ" height="42" width="42"></a></div>
                             </div>
                             <div class='support-onlines'>
-                                <div class='support-imgs'><a href="tel://0919705086"><img src="/wp-content/uploads/2017/02/phone-icon.jpg" alt="SĐT Trùm Giá Sỉ" height="42" width="42"></a></div>
+                                <div class='support-imgs'><a href="tel://0919705086"><img src="/static/frontend/images/phone-icon.jpg" alt="SĐT Trùm Giá Sỉ" height="42" width="42"></a></div>
                             </div>
                             <div class='support-onlines'>
-                                <div class='support-imgs'><a href="https://www.facebook.com/trumgiasishop/" target="_blank"><img src="https://trumgiasi.com/wp-content/uploads/2017/02/fbicon.jpg" alt="Facebook Trùm Giá Sỉ" height="42" width="42"></a></div>
+                                <div class='support-imgs'><a href="https://www.facebook.com/trumgiasishop/" target="_blank"><img src="/static/frontend/images/fbicon.jpg" alt="Facebook Trùm Giá Sỉ" height="42" width="42"></a></div>
                             </div>
                             {literal}
                                 <style>

@@ -4,7 +4,6 @@
     var snp_http = new RegExp("^(http|https)://", "i");
     var snp_cookie_prefix = '';
     var snp_separate_cookies = false;
-    var snp_ajax_url = 'https://trumgiasi.com/wp-admin/admin-ajax.php';
     var snp_ajax_nonce = '80f9fa65d1';
     var snp_ajax_ping_time = 1000;
     var snp_ignore_cookies = false;

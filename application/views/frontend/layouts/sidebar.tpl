@@ -3,11 +3,10 @@
 
     <div class="sidebar-inner">
 
-        <div class="top-mobilee" style="
-    background: #000;
-    color: #fff;
-    padding: 10px 10px 1px 10px;
-"><p><i class="fa fa-map-marker" aria-hidden="true"></i>   445/12 Quang Trung P10 Gò Vấp - HCM</p>
+        <div class="top-mobilee" style="background:#000;color:#fff;padding:10px 10px 1px 10px;">
+            <p>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>   445/12 Quang Trung P10 Gò Vấp - HCM
+            </p>
             <p><i class="fa fa-compass" aria-hidden="true"></i> <span>Tìm đường đến shop: <a href="https://goo.gl/p7BAS6">XEM BẢN ĐỒ</a></p></div>
         <!-- logo -->
         <div class="logo logo-image">
@@ -95,19 +94,19 @@
     </div>
     <!-- /ZALO -->
     <div class='support-online'>
-        <div class='support-img'><img src="/wp-content/uploads/2017/02/zaloicon.jpg" alt="Zalo Trùm Giá Sỉ" height="30" width="30"></div>
+        <div class='support-img'><img src="/static/frontend/images/zaloicon.jpg" alt="Zalo Trùm Giá Sỉ" height="30" width="30"></div>
         <div class='support-phone'><a href="tel://0932642505">0932.642.505</a></div>
     </div>
     <div class='support-online'>
-        <div class='support-img'><img src="/wp-content/uploads/2017/02/zaloicon.jpg" alt="Zalo Trùm Giá Sỉ" height="30" width="30"></div>
+        <div class='support-img'><img src="/static/frontend/images/zaloicon.jpg" alt="Zalo Trùm Giá Sỉ" height="30" width="30"></div>
         <div class='support-phone'><a href="tel://0979493123">0979.493.123</a></div>
     </div>
     <div class='support-online'>
-        <div class='support-img'><img src="/wp-content/uploads/2017/02/phone-icon.jpg" alt="SĐT Trùm Giá Sỉ" height="30" width="30"></div>
+        <div class='support-img'><img src="/static/frontend/images/phone-icon.jpg" alt="SĐT Trùm Giá Sỉ" height="30" width="30"></div>
         <div class='support-phone'><a href="tel://0919705086">0919.7050.86</a></div>
     </div>
     <div class='support-online'>
-        <div class='support-img'><img src="https://trumgiasi.com/wp-content/uploads/2017/02/fbicon.jpg" alt="Facebook Trùm Giá Sỉ" height="30" width="30"></div>
+        <div class='support-img'><img src="/static/frontend/images/fbicon.jpg" alt="Facebook Trùm Giá Sỉ" height="30" width="30"></div>
         <div class='support-phone'><a href="https://www.facebook.com/trumgiasishop/" target="_blank">FACEBOOK</a></div>
     </div>
     {literal}
