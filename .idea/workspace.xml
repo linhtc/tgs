@@ -2,39 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/css/font/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/font/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/font/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/font/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/font/fontawesome-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/tgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/tgs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/frontend/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/frontend/Home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/frontend/home/view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/home/view.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/breadcrumb.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/breadcrumb.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/chatbox.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/chatbox.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/extra.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/extra.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/footer.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/footer.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/head.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/head.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/snp.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/snp.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,17 +24,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/frontend/Home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="view.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/frontend/home/view.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+            <state relative-caret-position="2648">
+              <caret line="245" column="49" lean-forward="true" selection-start-line="245" selection-start-column="49" selection-end-line="245" selection-end-column="49" />
               <folding>
-                <element signature="e#6218#15794#0#HTML" />
-                <element signature="e#7143#8139#0#HTML" />
-                <element signature="e#8055#18229#0#HTML" />
-                <element signature="e#15796#20858#0#HTML" />
-                <element signature="e#18242#24303#0#HTML" />
+                <element signature="e#122#4604#0#Smarty" />
+                <element signature="e#5924#5971#0#Smarty" />
+                <element signature="e#7314#7363#0#HTML" expanded="true" />
                 <element signature="e#20860#23064#0#HTML" />
                 <element signature="e#24316#26823#0#HTML" />
                 <element signature="e#23066#26963#0#HTML" />
@@ -80,8 +57,8 @@
       <file leaf-file-name="tgs.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/tgs.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="48">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -198,6 +175,7 @@
         <option value="$PROJECT_DIR$/application/views/frontend/layouts/breadcrumb.tpl" />
         <option value="$PROJECT_DIR$/application/views/frontend/layouts/head.tpl" />
         <option value="$PROJECT_DIR$/application/config/tgs.txt" />
+        <option value="$PROJECT_DIR$/application/controllers/frontend/Home.php" />
         <option value="$PROJECT_DIR$/application/views/frontend/home/view.tpl" />
       </list>
     </option>
@@ -239,6 +217,19 @@
               <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
               <item name="tgs" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
@@ -295,7 +286,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/options.json" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../portal" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
@@ -330,12 +321,12 @@
       <option name="presentableId" value="Default" />
       <updated>1527654485284</updated>
       <workItem from="1527654488162" duration="9091000" />
-      <workItem from="1527730471016" duration="15263000" />
+      <workItem from="1527730471016" duration="22784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24354000" />
+    <option name="totallyTimeSpent" value="31875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -572,13 +563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/extra.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -621,23 +605,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/fuma.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="69" column="57" lean-forward="true" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/tgs.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="48">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/frontend/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/frontend/home/view.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+        <state relative-caret-position="2648">
+          <caret line="245" column="49" lean-forward="true" selection-start-line="245" selection-start-column="49" selection-end-line="245" selection-end-column="49" />
           <folding>
-            <element signature="e#6218#15794#0#HTML" />
-            <element signature="e#7143#8139#0#HTML" />
-            <element signature="e#8055#18229#0#HTML" />
-            <element signature="e#15796#20858#0#HTML" />
-            <element signature="e#18242#24303#0#HTML" />
+            <element signature="e#122#4604#0#Smarty" />
+            <element signature="e#5924#5971#0#Smarty" />
+            <element signature="e#7314#7363#0#HTML" expanded="true" />
             <element signature="e#20860#23064#0#HTML" />
             <element signature="e#24316#26823#0#HTML" />
             <element signature="e#23066#26963#0#HTML" />

@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.22, for Linux (x86_64)
 --
--- Host: localhost    Database: mectronic
+-- Host: localhost    Database: tgs
 -- ------------------------------------------------------
 -- Server version	5.7.22-0ubuntu0.17.10.1
 
@@ -282,6 +282,39 @@ INSERT INTO `sys_messages` VALUES (1,'2018-04-24 00:24:03','2018-04-24 00:24:03'
 UNLOCK TABLES;
 
 --
+-- Table structure for table `sys_metadata`
+--
+
+DROP TABLE IF EXISTS `sys_metadata`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sys_metadata` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  `ip4` varchar(255) DEFAULT NULL,
+  `section` varchar(255) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `des` varchar(255) DEFAULT NULL,
+  `detail` text,
+  `photo` varchar(255) DEFAULT NULL,
+  `sort` int(11) DEFAULT '1',
+  `deleted` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_metadata`
+--
+
+LOCK TABLES `sys_metadata` WRITE;
+/*!40000 ALTER TABLE `sys_metadata` DISABLE KEYS */;
+INSERT INTO `sys_metadata` VALUES (1,NULL,NULL,NULL,'1','Chính Sách Mua Sỉ','Tìm hiểu cách thức mua sỉ nhỏ - sỉ order - ôm lô quần áo','https://trumgiasi.com/huong-dan-mua-hang/','https://trumgiasi.com/wp-content/uploads/2017/10/bo-si-quan-ao-cao-cap-1000x300.jpg',1,0),(2,NULL,NULL,NULL,'1','Chuyên sỉ váy đầm - quần áo','Cam kết quá rẻ hơn thị trường 15-45k','https://trumgiasi.com/noi-bo-si-vay-dam-thiet-ke-quang-chau-tai-tphcm/','https://trumgiasi.com/wp-content/uploads/2017/02/bo-si-vam-dam-quang-chau-hcm.png',2,0),(3,NULL,NULL,NULL,'1',NULL,NULL,NULL,'https://trumgiasi.com/wp-content/uploads/2017/10/bo-si-quan-ao-quang-chau-1000x300.jpg',3,0),(4,NULL,NULL,NULL,'1',NULL,NULL,NULL,'https://trumgiasi.com/wp-content/uploads/2017/10/bo-si-quan-ao-1000x300.jpg',4,0),(5,NULL,NULL,NULL,'1',NULL,NULL,NULL,'https://trumgiasi.com/wp-content/uploads/2018/03/bo-si-vay-dam-quang-chau-1000x300.jpg',5,0),(6,NULL,NULL,NULL,'1',NULL,NULL,NULL,'https://trumgiasi.com/wp-content/uploads/2017/10/dat-hang-quan-ao-quang-chau-1000x300.jpg',6,0),(7,NULL,NULL,NULL,'1',NULL,NULL,NULL,'https://trumgiasi.com/wp-content/uploads/2017/10/nguon-hang-quang-chau-1000x300.jpg',7,0),(8,NULL,NULL,NULL,'1',NULL,NULL,NULL,'https://trumgiasi.com/wp-content/uploads/2017/10/quan-ao-quang-chau-1000x300.jpg',8,0),(9,NULL,NULL,NULL,'2','VÁY ĐẦM QUẢNG CHÂU',NULL,'/shop/vay-dam-quang-chau','https://trumgiasi.com/wp-content/uploads/2016/08/vay-dam-quang-chau-400x280.png',1,0),(10,NULL,NULL,NULL,'2','VÁY ĐẦM THIẾT KẾ',NULL,'/shop/vay-dam-thiet-ke/','https://trumgiasi.com/wp-content/uploads/2016/08/vay-dam-thiet-ke-400x280.png',2,0),(11,NULL,NULL,NULL,'2','ÔM LÔ HÀNG QUẢNG CHÂU',NULL,'/om-lo-hang-quang-chau-nguon-hang-quang-chau-gia-re/','https://trumgiasi.com/wp-content/uploads/2016/08/om-lo-hang-quang-chau-400x280.png',3,0),(12,NULL,NULL,NULL,'2','BỎ SỈ QUẦN ÁO QUẢNG CHÂU - VÁY ĐẦM THIẾT KẾ',NULL,'/bo-si-quan-ao-quang-chau-vay-dam-thiet-ke/','https://trumgiasi.com/wp-content/uploads/2014/05/bo-si-quan-ao-cao-cap-hcm-400x280.png',4,0);
+/*!40000 ALTER TABLE `sys_metadata` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `sys_metalogs`
 --
 
@@ -340,6 +373,39 @@ LOCK TABLES `sys_modules` WRITE;
 /*!40000 ALTER TABLE `sys_modules` DISABLE KEYS */;
 INSERT INTO `sys_modules` VALUES (23,NULL,'admins','{\"view\":\"Xem\"}',1,NULL,NULL,NULL,NULL,NULL),(25,NULL,'blacklist','{\"export\":\"Export\",\"add\":\"Thêm\",\"execute\":\"Thực hiện\",\"view\":\"Xem\",\"delete\":\"Xóa\"}',1,NULL,NULL,NULL,NULL,NULL),(37,NULL,'brands','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(19,NULL,'campaigns','{\"export\":\"Export\",\"import\":\"Import\",\"edit\":\"Sửa\",\"add\":\"Thêm\",\"execute\":\"Thực hiện\",\"view\":\"Xem\",\"delete\":\"Xóa\"}',1,NULL,NULL,NULL,NULL,NULL),(21,NULL,'campaign_distributors','{\"export\":\"Export\",\"import\":\"Import\",\"edit\":\"Sửa\",\"add\":\"Thêm\",\"execute\":\"Thực hiện\",\"view\":\"Xem\",\"delete\":\"Xóa\"}',1,NULL,NULL,NULL,NULL,NULL),(15,NULL,'campaign_gifts','{\"export\":\"Export\",\"import\":\"Import\",\"edit\":\"Sửa\",\"add\":\"Thêm\",\"execute\":\"Thực hiện\",\"view\":\"Xem\",\"delete\":\"Xóa\"}',1,NULL,NULL,NULL,NULL,NULL),(39,NULL,'comparisons','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(30,NULL,'complaints','{\"export\":\"Export\",\"import\":\"Import\",\"edit\":\"Sửa\",\"add\":\"Thêm\",\"execute\":\"Thực hiện\",\"view\":\"Xem\",\"delete\":\"Xóa\"}',1,NULL,NULL,NULL,NULL,NULL),(27,NULL,'configurations','{\"edit\":\"Sửa\",\"add\":\"Thêm\",\"execute\":\"Thực hiện\",\"view\":\"Xem\",\"delete\":\"Xóa\"}',0,NULL,NULL,NULL,NULL,NULL),(29,NULL,'dashboard','{\"export\":\"Export\",\"execute\":\"Thực hiện\",\"view\":\"Xem\"}',1,NULL,NULL,NULL,NULL,NULL),(36,NULL,'devices','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(20,NULL,'distributors','{\"export\":\"Export\",\"import\":\"Import\",\"edit\":\"Sửa\",\"add\":\"Thêm\",\"execute\":\"Thực hiện\",\"view\":\"Xem\",\"delete\":\"Xóa\"}',1,NULL,NULL,NULL,NULL,NULL),(31,NULL,'exchanges','{\"SoldDetail\":\"Bán chi tiết\",\"SoldPerDay\":\"Bán theo ngày\",\"ProfitPerDay\":\"LN theo ngày\",\"YieldPerDate\":\"TK theo ngày\",\"YieldPerModel\":\"TK theo SP\",\"view\":\"Xem\",\"YieldPerDay\":\"ĐK theo ngày\"}',1,NULL,NULL,NULL,NULL,NULL),(13,NULL,'gift_cards','{\"export\":\"Export\",\"view\":\"Xem\"}',1,NULL,NULL,NULL,NULL,NULL),(14,NULL,'gift_vouchers','{\"export\":\"Export\",\"import\":\"Import\",\"view\":\"Xem\"}',1,NULL,NULL,NULL,NULL,NULL),(8,NULL,'groups','{\"edit\":\"Sửa\",\"add\":\"Thêm\",\"execute\":\"Thực hiện\",\"view\":\"Xem\",\"delete\":\"Xóa\"}',0,NULL,NULL,NULL,NULL,NULL),(42,NULL,'languages','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',0,NULL,NULL,NULL,NULL,NULL),(59,NULL,'manage-career','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',0,NULL,NULL,NULL,NULL,NULL),(46,NULL,'manage-class','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(54,NULL,'manage-contact','{\"edit\":\"Sửa\",\"view\":\"Xem\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(47,NULL,'manage-document','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(55,NULL,'manage-fee','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(52,NULL,'manage-home','{\"edit\":\"Sửa\",\"view\":\"Xem\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(53,NULL,'manage-introduction','{\"edit\":\"Sửa\",\"view\":\"Xem\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(60,NULL,'manage-list','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',0,NULL,NULL,NULL,NULL,NULL),(56,NULL,'manage-min-fee','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(48,NULL,'manage-new-class','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(57,NULL,'manage-news','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(61,NULL,'manage-photo','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',0,NULL,NULL,NULL,NULL,NULL),(58,NULL,'manage-recruit','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(49,NULL,'manage-student-regis','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(50,NULL,'manage-subject','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(51,NULL,'manage-teacher-regis','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(7,NULL,'menus','{\"execute\":\"Thực hiện\",\"view\":\"Xem\"}',0,NULL,NULL,NULL,NULL,NULL),(34,NULL,'models','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\",\"rating\":\"Chấm điểm\"}',1,NULL,NULL,NULL,NULL,NULL),(26,NULL,'modem_phones','{\"export\":\"Export\",\"import\":\"Import\",\"edit\":\"Sửa\",\"add\":\"Thêm\",\"execute\":\"Thực hiện\",\"view\":\"Xem\",\"delete\":\"Xóa\"}',1,NULL,NULL,NULL,NULL,NULL),(6,NULL,'modules','{\"edit\":\"Sửa\",\"add\":\"Thêm\",\"view\":\"Xem\",\"delete\":\"Xóa\"}',0,NULL,NULL,NULL,NULL,NULL),(5,NULL,'permissions','{\"edit\":\"Sửa\",\"add\":\"Thêm\",\"view\":\"Xem\",\"delete\":\"Xóa\"}',0,NULL,NULL,NULL,NULL,NULL),(41,NULL,'points','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(12,NULL,'precepts','{\"export\":\"Export\",\"import\":\"Import\",\"edit\":\"Sửa\",\"add\":\"Thêm\",\"execute\":\"Thực hiện\",\"view\":\"Xem\",\"delete\":\"Xóa\"}',1,NULL,NULL,NULL,NULL,NULL),(33,NULL,'profiles','{\"edit\":\"Sửa\",\"add\":\"Thêm\",\"execute\":\"Thực hiện\",\"view\":\"Xem\",\"delete\":\"Xóa\"}',0,NULL,NULL,NULL,NULL,NULL),(35,NULL,'promotionsctrl','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(40,NULL,'segments','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(44,NULL,'skus','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\",\"rating\":\"Chấm điểm\"}',1,NULL,NULL,NULL,NULL,NULL),(45,NULL,'skus-comparisons','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(11,NULL,'social_users','{\"export\":\"Export\",\"import\":\"Import\",\"edit\":\"Sửa\",\"add\":\"Thêm\",\"execute\":\"Thực hiện\",\"view\":\"Xem\",\"delete\":\"Xóa\"}',1,NULL,NULL,NULL,NULL,NULL),(38,NULL,'specs','{\"add\":\"Thêm\",\"edit\":\"Sửa\",\"delete\":\"Xóa\",\"view\":\"Xem\",\"import\":\"Import\",\"export\":\"Export\",\"execute\":\"Thực hiện\"}',1,NULL,NULL,NULL,NULL,NULL),(4,NULL,'users','{\"edit\":\"Sửa\",\"add\":\"Thêm\",\"execute\":\"Thực hiện\",\"view\":\"Xem\",\"delete\":\"Xóa\"}',0,NULL,NULL,NULL,NULL,NULL),(16,NULL,'users_winner','{\"export\":\"Export\",\"import\":\"Import\",\"edit\":\"Sửa\",\"add\":\"Thêm\",\"execute\":\"Thực hiện\",\"view\":\"Xem\",\"delete\":\"Xóa\"}',1,NULL,NULL,NULL,NULL,NULL),(22,NULL,'user_coupons','{\"view\":\"Xem\"}',1,NULL,NULL,NULL,NULL,NULL),(1,NULL,'versions','{\"export\":\"Export\",\"import\":\"Import\"}',1,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `sys_modules` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sys_pages`
+--
+
+DROP TABLE IF EXISTS `sys_pages`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sys_pages` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  `ip4` varchar(255) DEFAULT NULL,
+  `page` varchar(255) DEFAULT NULL,
+  `kind` varchar(255) DEFAULT NULL,
+  `section` varchar(255) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `des` varchar(255) DEFAULT NULL,
+  `sort` int(11) DEFAULT '1',
+  `deleted` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_pages`
+--
+
+LOCK TABLES `sys_pages` WRITE;
+/*!40000 ALTER TABLE `sys_pages` DISABLE KEYS */;
+INSERT INTO `sys_pages` VALUES (1,NULL,NULL,NULL,'home','slide','1',NULL,NULL,1,0),(2,NULL,NULL,NULL,'home','option','2','CỬA HÀNG','CÁC KÊNH HÀNG KINH DOANH BỎ ÍT VỐN, LỢI NHUẬN CAO',2,0),(3,NULL,NULL,NULL,'home','photo','3','HÀNG MỚI VỀ','TỔNG HỢP HÀNG CÓ SẴN TẠI TRÙM GIÁ SỈ NGUỒN HÀNG QUẢNG CHÂU',3,0);
+/*!40000 ALTER TABLE `sys_pages` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -518,7 +584,7 @@ INSERT INTO `system_logs` VALUES (2183,'2017-03-08 15:50:31','2017-03-08 15:50:3
 UNLOCK TABLES;
 
 --
--- Dumping routines for database 'mectronic'
+-- Dumping routines for database 'tgs'
 --
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -530,4 +596,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-30 11:22:24
+-- Dump completed on 2018-05-31 17:32:01
