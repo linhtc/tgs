@@ -1,7 +1,7 @@
 {if !empty($pages)}
     {foreach from=$pages key=i item=page}
         <section id="section-{$page->section}">
-            {if $page->title neq '' and $page->kind neq 'photo'}
+            {if $page->title neq '' and $page->kind neq 'photo' and $page->kind neq 'list_2'}
                 <div class="vc_row row">
                     <div class="wpb_column vc_column_container vc_col-sm-12">
                         <div class="vc_column-inner vc_custom_1489660256079">
@@ -339,7 +339,7 @@
                                                 <div class="button_middle">
                                                     <div class="button_inner">
                                                         <div class="banner-content">
-                                                            <strong><h1>{$item->title}</h1><p></p></strong>
+                                                            <h1><strong>{$item->title}</strong></h1>
                                                             <span>{$item->des}</span>
                                                         </div>
                                                         <div class="banner-call-button">
@@ -417,6 +417,45 @@
                                 </div>
                             </div>
                         {/foreach}
+                    </div>
+                {/if}
+            {/if}
+            {if $page->kind eq 'list_2'}
+                {if !empty($metadata[$page->section])}
+                    <div class="vc_row row">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_shadow vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine one-line-border vc_separator-has-text">
+                                        <span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span>
+                                        <h4>
+                                            {$page->title}
+                                            <span>{$page->des}</span>
+                                        </h4>
+                                        <span class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
+                                    </div>
+                                    <div class="wpb_text_column wpb_content_element  vc_custom_1509912445903">
+                                        <div class="wpb_wrapper">
+                                            <div style="font-family: Arial, Verdana, Helvetica, sans-serif; line-height: 20.7999992370605px;">
+                                                <div style="line-height: 20.7999992370605px;">
+                                                    <div style="padding: 10px; text-align: justify; border: 6px dotted #ee7d15; border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; border-radius: 4px; outline: 0px; vertical-align: baseline; line-height: 21px; font-family: Tahoma, Geneva, sans-serif; background-repeat: no-repeat;">
+                                                        {foreach from=$metadata[$page->section] key=index item=item}
+                                                            <p style="color: #000000; font-family: Arial; font-size: 15px; line-height: 20.7999992370605px;">
+                                                                <span style="font-size: 18px; font-family: arial, helvetica, sans-serif;"><img class=" lazyloaded" style="line-height: 18px; margin: 0px; padding: 0px; max-width: 100%; border: 0px; outline: 0px; vertical-align: baseline; width: 60px; height: 20px; background: transparent;" src="/static/frontend/images/mui-ten.gif" alt="" data-lazy-src="/static/frontend/images/mui-ten.gif" data-pagespeed-url-hash="1743886238">
+                                                                    {$item->title}
+                                                                </span>
+                                                            </p>
+                                                        {/foreach}
+                                                    </div>
+                                                </div>
+                                                <div style="margin: 0px auto; padding: 0px; color: #444444; font-family: Arial, Verdana, Helvetica, sans-serif; line-height: 26px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vc_empty_space" style="height: 50px"><span class="vc_empty_space_inner"></span></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 {/if}
             {/if}

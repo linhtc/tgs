@@ -19,7 +19,7 @@
     min-width:225px
 }
 .chatboxtab{
-    background:url(/files/assets/cross_42928_640.png) no-repeat;
+    /*background:url(/files/assets/cross_42928_640.png) no-repeat;*/
     cursor:pointer;
     float:left;
     height:25px;
