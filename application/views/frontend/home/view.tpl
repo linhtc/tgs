@@ -194,13 +194,87 @@
                                             }
                                         </style>
                                         <div class="asg-wrapper" id="asg-wrapper-{$page->kind}-{$page->section}"></div>
-                                            <script>
-                                                let id = 'asg-wrapper-{$page->kind}-{$page->section}';
-                                                let el = document.getElementById(id);
-                                                {literal}
-                                                let options = {"id":"6327","scriptUrl":"\/static\/frontend\/js\/awesome-gallery.js","gallerySlug":"6327-hang-co-san","rand":1,"layout":{"mode":"usual","width":240,"height":260,"gap":5,"border":0,"allowHanging":false},"image":{"blur":"off","bw":"off"},"caption":{"mode":"on-hover","color":"#FFFFFF","color2":"#FFFFFF","background_color":"#000","opacity":"0.8","effect":"fade","align":"center","position":"bottom","font1":{"family":"","style":"","size":"14"},"font2":{"family":"","style":"","size":"14"}},"overlay":{"mode":"on-hover","color":"#000","opacity":"0.3","effect":"fade","image":""},"filters":{"enabled":"","align":"center","sort":"1","style":"tabs","all":"All","color":"#FFFFFF","background_color":"#222222","accent_color":"#FFFFFF","accent_background_color":"#444444","border_radius":"0","list":[],"active":"_"},"loadMore":{"style":"load-more","page_size":"48","loading_text":"Loading...","load_more_text":"XEM TH\u00caM","all_images_loaded":"All images loaded","width":"full","color":"#FFFFFF","color_loaded":"#CCCCCC","background_color":"#000","background_color_loaded":"#888888","shadow_width":"3","shadow_color":"#EEE","shadow_color_loaded":"#BBBBBB","border_radius":"0","vertical_padding":"12","horizontal_padding":"30"},"images":[{"url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/s720x720\/32835906_1767097116666414_729999974800031744_o.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=be2c19b6a7834cdeffcf54974bb3f221&oe=5BBC5CAB","thumbnail_url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/s720x720\/32835906_1767097116666414_729999974800031744_o.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=be2c19b6a7834cdeffcf54974bb3f221&oe=5BBC5CAB","width":538,"height":720,"caption_1":"\ud83c\udd98 SET \u00c1O THUN TR\u1eaeNG CH\u00c2N V\u00c1Y BI N\u00c2U\n\ud83c\udf52 S\u1ec9:150K\n\ud83c\udf52 S\u1ec9 5 c\u00e1i: 145K(C\u00f9ng m\u00e0u, c\u00f9ng m\u1eabu)\n\u2764 Ch\u1ea5t li\u1ec7u. THUN, VOAN\n\u260e\ufe0f S\u0110T: 0919.7050.86\n\u260e\ufe0fS\u0110T : 0931318445\n\u260e\ufe0fS\u0110T : 0979493123\n\ud83d\udcea \u0110C: 445\/12 Quang Trung P10 G\u00f2 V\u1ea5p","caption_2":null,"tags":[],"link_url":null,"slug":"1767097103333082","meta":null,"lightbox_url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/s720x720\/32835906_1767097116666414_729999974800031744_o.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=be2c19b6a7834cdeffcf54974bb3f221&oe=5BBC5CAB","lightbox_caption_1":"\ud83c\udd98 SET \u00c1O THUN TR\u1eaeNG CH\u00c2N V\u00c1Y BI N\u00c2U\n\ud83c\udf52 S\u1ec9:150K\n\ud83c\udf52 S\u1ec9 5 c\u00e1i: 145K(C\u00f9ng m\u00e0u, c\u00f9ng m\u1eabu)\n\u2764 Ch\u1ea5t li\u1ec7u. THUN, VOAN\n\u260e\ufe0f S\u0110T: 0919.7050.86\n\u260e\ufe0fS\u0110T : 0931318445\n\u260e\ufe0fS\u0110T : 0979493123\n\ud83d\udcea \u0110C: 445\/12 Quang Trung P10 G\u00f2 V\u1ea5p","lightbox_caption_2":null,"link_attr":[],"options":null,"attachment_id":null},{"url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/s720x720\/32933234_1767096586666467_5618590072468144128_o.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=701c310333d635eaebb6643ead4fe9c4&oe=5BBE4322","thumbnail_url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/s720x720\/32933234_1767096586666467_5618590072468144128_o.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=701c310333d635eaebb6643ead4fe9c4&oe=5BBE4322","width":539,"height":720,"caption_1":"\ud83c\udd98 SET \u00c1O 2 D\u00c2Y CROPTOP CH\u00c2N V\u00c1Y N\u00daT\n\ud83c\udf52 S\u1ec9:150K\n\ud83c\udf52 S\u1ec9 5 c\u00e1i: 145K(C\u00f9ng m\u00e0u, c\u00f9ng m\u1eabu)\n\u2764 Ch\u1ea5t li\u1ec7u. C\u00c1T GI\u1ea4Y\n\u260e\ufe0f S\u0110T: 0919.7050.86\n\u260e\ufe0fS\u0110T : 0931318445\n\u260e\ufe0fS\u0110T : 0979493123\n\ud83d\udcea \u0110C: 445\/12 Quang Trung P10 G\u00f2 V\u1ea5p","caption_2":null,"tags":[],"link_url":null,"slug":"1767096583333134","meta":null,"lightbox_url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/s720x720\/32933234_1767096586666467_5618590072468144128_o.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=701c310333d635eaebb6643ead4fe9c4&oe=5BBE4322","lightbox_caption_1":"\ud83c\udd98 SET \u00c1O 2 D\u00c2Y CROPTOP CH\u00c2N V\u00c1Y N\u00daT\n\ud83c\udf52 S\u1ec9:150K\n\ud83c\udf52 S\u1ec9 5 c\u00e1i: 145K(C\u00f9ng m\u00e0u, c\u00f9ng m\u1eabu)\n\u2764 Ch\u1ea5t li\u1ec7u. C\u00c1T GI\u1ea4Y\n\u260e\ufe0f S\u0110T: 0919.7050.86\n\u260e\ufe0fS\u0110T : 0931318445\n\u260e\ufe0fS\u0110T : 0979493123\n\ud83d\udcea \u0110C: 445\/12 Quang Trung P10 G\u00f2 V\u1ea5p","lightbox_caption_2":null,"link_attr":[],"options":null,"attachment_id":null},{"url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/s720x720\/32739775_1767096719999787_5631831117339295744_n.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=d41cb3263572716ba5c92e8a75fddefc&oe=5B80D431","thumbnail_url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/s720x720\/32739775_1767096719999787_5631831117339295744_n.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=d41cb3263572716ba5c92e8a75fddefc&oe=5B80D431","width":576,"height":720,"caption_1":"\ud83c\udd98 \u0110\u1ea6M BI B\u00c8O \u0110EN\n\ud83c\udf52 S\u1ec9:160K\n\ud83c\udf52 S\u1ec9 5 c\u00e1i: 155K(C\u00f9ng m\u00e0u, c\u00f9ng m\u1eabu)\n\u2764 Ch\u1ea5t li\u1ec7u. VOAN\n\u260e\ufe0f S\u0110T: 0919.7050.86\n\u260e\ufe0fS\u0110T : 0931318445\n\u260e\ufe0fS\u0110T : 0979493123\n\ud83d\udcea \u0110C: 445\/12 Quang Trung P10 G\u00f2 V\u1ea5p","caption_2":null,"tags":[],"link_url":null,"slug":"1767096706666455","meta":null,"lightbox_url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/s720x720\/32739775_1767096719999787_5631831117339295744_n.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=d41cb3263572716ba5c92e8a75fddefc&oe=5B80D431","lightbox_caption_1":"\ud83c\udd98 \u0110\u1ea6M BI B\u00c8O \u0110EN\n\ud83c\udf52 S\u1ec9:160K\n\ud83c\udf52 S\u1ec9 5 c\u00e1i: 155K(C\u00f9ng m\u00e0u, c\u00f9ng m\u1eabu)\n\u2764 Ch\u1ea5t li\u1ec7u. VOAN\n\u260e\ufe0f S\u0110T: 0919.7050.86\n\u260e\ufe0fS\u0110T : 0931318445\n\u260e\ufe0fS\u0110T : 0979493123\n\ud83d\udcea \u0110C: 445\/12 Quang Trung P10 G\u00f2 V\u1ea5p","lightbox_caption_2":null,"link_attr":[],"options":null,"attachment_id":null},{"url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/s720x720\/32852396_1767098679999591_7124831594187063296_o.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=93f130761479ef207992aa43447b0831&oe=5BC1A282","thumbnail_url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/s720x720\/32852396_1767098679999591_7124831594187063296_o.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=93f130761479ef207992aa43447b0831&oe=5BC1A282","width":570,"height":720,"caption_1":"\ud83c\udd98 SET \u00c1O THUN V\u00c0NG CH\u00c2N V\u00c1Y JEAN \n\ud83c\udf52 S\u1ec9:145K\n\ud83c\udf52 S\u1ec9 5 c\u00e1i: 140K(C\u00f9ng m\u00e0u, c\u00f9ng m\u1eabu)\n\u2764 Ch\u1ea5t li\u1ec7u. THUN, JEAN\n\u260e\ufe0f S\u0110T: 0919.7050.86\n\u260e\ufe0fS\u0110T : 0931318445\n\u260e\ufe0fS\u0110T : 0979493123\n\ud83d\udcea \u0110C: 445\/12 Quang Trung P10 G\u00f2 V\u1ea5p","caption_2":null,"tags":[],"link_url":null,"slug":"1767098669999592","meta":null,"lightbox_url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/s720x720\/32852396_1767098679999591_7124831594187063296_o.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=93f130761479ef207992aa43447b0831&oe=5BC1A282","lightbox_caption_1":"\ud83c\udd98 SET \u00c1O THUN V\u00c0NG CH\u00c2N V\u00c1Y JEAN \n\ud83c\udf52 S\u1ec9:145K\n\ud83c\udf52 S\u1ec9 5 c\u00e1i: 140K(C\u00f9ng m\u00e0u, c\u00f9ng m\u1eabu)\n\u2764 Ch\u1ea5t li\u1ec7u. THUN, JEAN\n\u260e\ufe0f S\u0110T: 0919.7050.86\n\u260e\ufe0fS\u0110T : 0931318445\n\u260e\ufe0fS\u0110T : 0979493123\n\ud83d\udcea \u0110C: 445\/12 Quang Trung P10 G\u00f2 V\u1ea5p","lightbox_caption_2":null,"link_attr":[],"options":null,"attachment_id":null},{"url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/s720x720\/32805049_1767096549999804_485762338775891968_n.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=8022d045754b0e50d8f2e870bcd39fe5&oe=5B8E9EBB","thumbnail_url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/s720x720\/32805049_1767096549999804_485762338775891968_n.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=8022d045754b0e50d8f2e870bcd39fe5&oe=5B8E9EBB","width":540,"height":720,"caption_1":"\ud83c\udd98 SET \u00c1O 2 D\u00c2Y CROPTOP CH\u00c2N V\u00c1Y N\u00daT\n\ud83c\udf52 S\u1ec9:150K\n\ud83c\udf52 S\u1ec9 5 c\u00e1i: 145K(C\u00f9ng m\u00e0u, c\u00f9ng m\u1eabu)\n\u2764 Ch\u1ea5t li\u1ec7u. C\u00c1T GI\u1ea4Y\n\u260e\ufe0f S\u0110T: 0919.7050.86\n\u260e\ufe0fS\u0110T : 0931318445\n\u260e\ufe0fS\u0110T : 0979493123\n\ud83d\udcea \u0110C: 445\/12 Quang Trung P10 G\u00f2 V\u1ea5p","caption_2":null,"tags":[],"link_url":null,"slug":"1767096543333138","meta":null,"lightbox_url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/s720x720\/32805049_1767096549999804_485762338775891968_n.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=8022d045754b0e50d8f2e870bcd39fe5&oe=5B8E9EBB","lightbox_caption_1":"\ud83c\udd98 SET \u00c1O 2 D\u00c2Y CROPTOP CH\u00c2N V\u00c1Y N\u00daT\n\ud83c\udf52 S\u1ec9:150K\n\ud83c\udf52 S\u1ec9 5 c\u00e1i: 145K(C\u00f9ng m\u00e0u, c\u00f9ng m\u1eabu)\n\u2764 Ch\u1ea5t li\u1ec7u. C\u00c1T GI\u1ea4Y\n\u260e\ufe0f S\u0110T: 0919.7050.86\n\u260e\ufe0fS\u0110T : 0931318445\n\u260e\ufe0fS\u0110T : 0979493123\n\ud83d\udcea \u0110C: 445\/12 Quang Trung P10 G\u00f2 V\u1ea5p","lightbox_caption_2":null,"link_attr":[],"options":null,"attachment_id":null},{"url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/s720x720\/32831366_1767096536666472_2206853225745743872_n.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=4b5355685f06486e76c4f50497c3ff7e&oe=5B7C769B","thumbnail_url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/s720x720\/32831366_1767096536666472_2206853225745743872_n.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=4b5355685f06486e76c4f50497c3ff7e&oe=5B7C769B","width":576,"height":720,"caption_1":"\ud83c\udd98 \u0110\u1ea6M BI B\u00c8O \u0110EN\n\ud83c\udf52 S\u1ec9:160K\n\ud83c\udf52 S\u1ec9 5 c\u00e1i: 155K(C\u00f9ng m\u00e0u, c\u00f9ng m\u1eabu)\n\u2764 Ch\u1ea5t li\u1ec7u. VOAN\n\u260e\ufe0f S\u0110T: 0919.7050.86\n\u260e\ufe0fS\u0110T : 0931318445\n\u260e\ufe0fS\u0110T : 0979493123\n\ud83d\udcea \u0110C: 445\/12 Quang Trung P10 G\u00f2 V\u1ea5p","caption_2":null,"tags":[],"link_url":null,"slug":"1767096529999806","meta":null,"lightbox_url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/s720x720\/32831366_1767096536666472_2206853225745743872_n.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=4b5355685f06486e76c4f50497c3ff7e&oe=5B7C769B","lightbox_caption_1":"\ud83c\udd98 \u0110\u1ea6M BI B\u00c8O \u0110EN\n\ud83c\udf52 S\u1ec9:160K\n\ud83c\udf52 S\u1ec9 5 c\u00e1i: 155K(C\u00f9ng m\u00e0u, c\u00f9ng m\u1eabu)\n\u2764 Ch\u1ea5t li\u1ec7u. VOAN\n\u260e\ufe0f S\u0110T: 0919.7050.86\n\u260e\ufe0fS\u0110T : 0931318445\n\u260e\ufe0fS\u0110T : 0979493123\n\ud83d\udcea \u0110C: 445\/12 Quang Trung P10 G\u00f2 V\u1ea5p","lightbox_caption_2":null,"link_attr":[],"options":null,"attachment_id":null},{"url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/p720x720\/32845207_1767097233333069_435125417385394176_n.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=9c558c7da1065728cf3c622f12d4590d&oe=5BBF3DE7","thumbnail_url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/p720x720\/32845207_1767097233333069_435125417385394176_n.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=9c558c7da1065728cf3c622f12d4590d&oe=5BBF3DE7","width":720,"height":720,"caption_1":"\ud83c\udd98 JUM S\u1eccC TR\u1eaeNG \u0110EN D\u00c0I\n\ud83c\udf52 S\u1ec9:145K\n\ud83c\udf52 S\u1ec9 5 c\u00e1i: 140K(C\u00f9ng m\u00e0u, c\u00f9ng m\u1eabu)\n\u2764 Ch\u1ea5t li\u1ec7u. VOAN\n\u260e\ufe0f S\u0110T: 0919.7050.86\n\u260e\ufe0fS\u0110T : 0931318445\n\u260e\ufe0fS\u0110T : 0979493123\n\ud83d\udcea \u0110C: 445\/12 Quang Trung P10 G\u00f2 V\u1ea5p","caption_2":null,"tags":[],"link_url":null,"slug":"1767097223333070","meta":null,"lightbox_url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/p720x720\/32845207_1767097233333069_435125417385394176_n.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=9c558c7da1065728cf3c622f12d4590d&oe=5BBF3DE7","lightbox_caption_1":"\ud83c\udd98 JUM S\u1eccC TR\u1eaeNG \u0110EN D\u00c0I\n\ud83c\udf52 S\u1ec9:145K\n\ud83c\udf52 S\u1ec9 5 c\u00e1i: 140K(C\u00f9ng m\u00e0u, c\u00f9ng m\u1eabu)\n\u2764 Ch\u1ea5t li\u1ec7u. VOAN\n\u260e\ufe0f S\u0110T: 0919.7050.86\n\u260e\ufe0fS\u0110T : 0931318445\n\u260e\ufe0fS\u0110T : 0979493123\n\ud83d\udcea \u0110C: 445\/12 Quang Trung P10 G\u00f2 V\u1ea5p","lightbox_caption_2":null,"link_attr":[],"options":null,"attachment_id":null},{"url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/q82\/s720x720\/32977854_1767097579999701_7343258830404321280_o.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=99cf12fe5b1b43ffb58ff307ae059539&oe=5BBD4294","thumbnail_url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/q82\/s720x720\/32977854_1767097579999701_7343258830404321280_o.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=99cf12fe5b1b43ffb58ff307ae059539&oe=5BBD4294","width":540,"height":720,"caption_1":"\ud83c\udd98 SET TK QU\u00c2N \u00c1O THUN QU\u1ea6N \u0110\u00d9I\n\ud83c\udf52 S\u1ec9:125K\n\ud83c\udf52 S\u1ec9 5 c\u00e1i: 120K(C\u00f9ng m\u00e0u, c\u00f9ng m\u1eabu)\n\u2764 Ch\u1ea5t li\u1ec7u. THUN\n\u260e\ufe0f S\u0110T: 0919.7050.86\n\u260e\ufe0fS\u0110T : 0931318445\n\u260e\ufe0fS\u0110T : 0979493123\n\ud83d\udcea \u0110C: 445\/12 Quang Trung P10 G\u00f2 V\u1ea5p","caption_2":null,"tags":[],"link_url":null,"slug":"1767097573333035","meta":null,"lightbox_url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/q82\/s720x720\/32977854_1767097579999701_7343258830404321280_o.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=99cf12fe5b1b43ffb58ff307ae059539&oe=5BBD4294","lightbox_caption_1":"\ud83c\udd98 SET TK QU\u00c2N \u00c1O THUN QU\u1ea6N \u0110\u00d9I\n\ud83c\udf52 S\u1ec9:125K\n\ud83c\udf52 S\u1ec9 5 c\u00e1i: 120K(C\u00f9ng m\u00e0u, c\u00f9ng m\u1eabu)\n\u2764 Ch\u1ea5t li\u1ec7u. THUN\n\u260e\ufe0f S\u0110T: 0919.7050.86\n\u260e\ufe0fS\u0110T : 0931318445\n\u260e\ufe0fS\u0110T : 0979493123\n\ud83d\udcea \u0110C: 445\/12 Quang Trung P10 G\u00f2 V\u1ea5p","lightbox_caption_2":null,"link_attr":[],"options":null,"attachment_id":null},{"url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/p720x720\/32881003_1767096769999782_8829049873933271040_n.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=ece3ca1b9891417821acfced0c61f941&oe=5BC00693","thumbnail_url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/p720x720\/32881003_1767096769999782_8829049873933271040_n.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=ece3ca1b9891417821acfced0c61f941&oe=5BC00693","width":720,"height":720,"caption_1":"\ud83c\udd98 \u0110\u1ea6M B\u00c8O V\u00c0NG\n\ud83c\udf52 S\u1ec9:150K\n\ud83c\udf52 S\u1ec9 5 c\u00e1i: 145K(C\u00f9ng m\u00e0u, c\u00f9ng m\u1eabu)\n\u2764 Ch\u1ea5t li\u1ec7u. VOAN\n\u260e\ufe0f S\u0110T: 0919.7050.86\n\u260e\ufe0fS\u0110T : 0931318445\n\u260e\ufe0fS\u0110T : 0979493123\n\ud83d\udcea \u0110C: 445\/12 Quang Trung P10 G\u00f2 V\u1ea5p","caption_2":null,"tags":[],"link_url":null,"slug":"1767096763333116","meta":null,"lightbox_url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-9\/p720x720\/32881003_1767096769999782_8829049873933271040_n.jpg?_nc_cat=0&_nc_ad=z-m&_nc_cid=0&oh=ece3ca1b9891417821acfced0c61f941&oe=5BC00693","lightbox_caption_1":"\ud83c\udd98 \u0110\u1ea6M B\u00c8O V\u00c0NG\n\ud83c\udf52 S\u1ec9:150K\n\ud83c\udf52 S\u1ec9 5 c\u00e1i: 145K(C\u00f9ng m\u00e0u, c\u00f9ng m\u1eabu)\n\u2764 Ch\u1ea5t li\u1ec7u. VOAN\n\u260e\ufe0f S\u0110T: 0919.7050.86\n\u260e\ufe0fS\u0110T : 0931318445\n\u260e\ufe0fS\u0110T : 0979493123\n\ud83d\udcea \u0110C: 445\/12 Quang Trung P10 G\u00f2 V\u1ea5p","lightbox_caption_2":null,"link_attr":[],"options":null,"attachment_id":null}]}
-                                            ;
-                                            {/literal}
+                                        <script>
+                                            let id = 'asg-wrapper-{$page->kind}-{$page->section}';
+                                            let el = document.getElementById(id);
+                                            let options = {
+                                                "id": "{$page->kind}-{$page->section}",
+                                                "scriptUrl": "/static/frontend/js/awesome-gallery.js",
+                                                "gallerySlug": "{$page->kind}-hang-co-san",
+                                                "rand": 1,
+                                                "layout": {
+                                                    "mode": "usual",
+                                                    "width": 240,
+                                                    "height": 260,
+                                                    "gap": 5,
+                                                    "border": 0,
+                                                    "allowHanging": false
+                                                },
+                                                "image": {
+                                                    "blur": "off",
+                                                    "bw": "off"
+                                                },
+                                                "caption": {
+                                                    "mode": "on-hover",
+                                                    "color": "#FFFFFF",
+                                                    "color2": "#FFFFFF",
+                                                    "background_color": "#000",
+                                                    "opacity": "0.8",
+                                                    "effect": "fade",
+                                                    "align": "center",
+                                                    "position": "bottom",
+                                                    "font1": {
+                                                        "family": "",
+                                                        "style": "",
+                                                        "size": "14"
+                                                    },
+                                                    "font2": {
+                                                        "family": "",
+                                                        "style": "",
+                                                        "size": "14"
+                                                    }
+                                                },
+                                                "overlay": {
+                                                    "mode": "on-hover",
+                                                    "color": "#000",
+                                                    "opacity": "0.3",
+                                                    "effect": "fade",
+                                                    "image": ""
+                                                },
+                                                "filters": {
+                                                    "enabled": "",
+                                                    "align": "center",
+                                                    "sort": "1",
+                                                    "style": "tabs",
+                                                    "all": "All",
+                                                    "color": "#FFFFFF",
+                                                    "background_color": "#222222",
+                                                    "accent_color": "#FFFFFF",
+                                                    "accent_background_color": "#444444",
+                                                    "border_radius": "0",
+                                                    "list": [],
+                                                    "active": "_"
+                                                },
+                                                "loadMore": {
+                                                    "style": "load-more",
+                                                    "page_size": "48",
+                                                    "loading_text": "Loading...",
+                                                    "load_more_text": "XEM THÊM",
+                                                    "all_images_loaded": "All images loaded",
+                                                    "width": "full",
+                                                    "color": "#FFFFFF",
+                                                    "color_loaded": "#CCCCCC",
+                                                    "background_color": "#000",
+                                                    "background_color_loaded": "#888888",
+                                                    "shadow_width": "3",
+                                                    "shadow_color": "#EEE",
+                                                    "shadow_color_loaded": "#BBBBBB",
+                                                    "border_radius": "0",
+                                                    "vertical_padding": "12",
+                                                    "horizontal_padding": "30"
+                                                },
+                                                "images": {if !empty($metadata[$page->section])} {$metadata[$page->section]} {else} [] {/if}
+                                            };
                                             function isVisible() {
                                                 return el.offsetWidth !== 0 || el.offsetHeight !== 0;
                                             }
@@ -253,316 +327,102 @@
                     </div>
                 </div>
             {/if}
+            {if $page->kind eq 'article'}
+                {if !empty($metadata[$page->section])}
+                    {foreach from=$metadata[$page->section] key=index item=item}
+                        <div class="vc_row row">
+                            <div class="wpb_column vc_column_container vc_col-sm-12">
+                                <div class="vc_column-inner ">
+                                    <div class="wpb_wrapper">
+                                        <div class="lab_wpb_banner wpb_content_element banner  banner-white text-button-center">
+                                            <div class="button_outer">
+                                                <div class="button_middle">
+                                                    <div class="button_inner">
+                                                        <div class="banner-content">
+                                                            <strong><h1>{$item->title}</h1><p></p></strong>
+                                                            <span>{$item->des}</span>
+                                                        </div>
+                                                        <div class="banner-call-button">
+                                                            <a href="{$item->detail}" class="btn" target="">
+                                                                XEM THÊM!
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {/foreach}
+                {/if}
+            {/if}
+            {if $page->kind eq 'contact'}
+                {if !empty($metadata[$page->section])}
+                    <div class="vc_row row vc_custom_1521533964140 vc_row-has-fill vc_row-o-content-middle vc_row-flex">
+                        {foreach from=$metadata[$page->section] key=index item=item}
+                            <div class="wpb_column vc_column_container vc_col-sm-4">
+                                <div class="vc_column-inner ">
+                                    <div class="wpb_wrapper">
+                                        <div class="wpb_single_image wpb_content_element vc_align_left">
+                                            <figure class="wpb_wrapper vc_figure">
+                                                <a href="{$item->detail}" title="{$item->title}" target="_blank" class="vc_single_image-wrapper vc_box_border_grey">
+                                                    <img width="463" height="158" src="{$item->photo}" class="vc_single_image-img attachment-full" alt="{$item->title}" />
+                                                </a>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {/foreach}
+                    </div>
+                {/if}
+            {/if}
+            {if $page->kind eq 'list_1'}
+                {if !empty($metadata[$page->section])}
+                    <div class="vc_row row vc_custom_1487213667707 vc_row-has-fill vc_row-o-content-middle vc_row-flex">
+                        {foreach from=$metadata[$page->section] key=index item=item}
+                            <div class="wpb_column vc_column_container vc_col-sm-6">
+                                <div class="vc_column-inner ">
+                                    <div class="wpb_wrapper">
+                                        <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                            <div class="wpb_column vc_column_container vc_col-sm-3">
+                                                <div class="vc_column-inner ">
+                                                    <div class="wpb_wrapper">
+                                                        <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                            <figure class="wpb_wrapper vc_figure">
+                                                                <div class="vc_single_image-wrapper vc_box_border_grey">
+                                                                    <img width="128" height="128" src="{$item->photo}" alt="{$item->title}" />
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_column vc_column_container vc_col-sm-9">
+                                                <div class="vc_column-inner ">
+                                                    <div class="wpb_wrapper">
+                                                        <div class="wpb_text_column wpb_content_element ">
+                                                            <div class="wpb_wrapper">
+                                                                <p><strong>{$item->title}</strong></p>
+                                                                <p>{$item->des}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {/foreach}
+                    </div>
+                {/if}
+            {/if}
         </section>
     {/foreach}
 {/if}
-
-<section>
-<div class="vc_row row">
-    <div class="wpb_column vc_column_container vc_col-sm-12">
-        <div class="vc_column-inner ">
-            <div class="wpb_wrapper">
-                <div class="lab_wpb_banner wpb_content_element banner  banner-white text-button-center">
-                    <div class="button_outer">
-                        <div class="button_middle">
-                            <div class="button_inner">
-                                <div class="banner-content">
-                                    <strong>
-                                        <h1>NHỮNG LÝ DO ĐỂ TRUMGIASI.COM LÀ NƠI BỎ SỈ NGUỒN HÀNG QUẢNG CHÂU CHẤT LƯỢNG NHẤT CHO BẠN</h1>
-                                        <p>
-                                    </strong>
-
-                                    <span>Hiểu được những khó khăn mà bạn gặp phải khi tìm nhà cung cấp nguồn hàng quảng châu, bỏ sỉ quần áo nữ chất lượng cho cửa hàng của mình, chúng tôi đã phát triển Trùm Giá Sỉ thành một nơi chuyên bỏ sỉ váy đầm thiết kế, váy đầm giá sỉ tphcm rẻ nhất, chất lượng hàng đầu. Đáp ứng được tất cả các nhu cầu của bạn cũng như khách hàng của bạn. Mọi vấn đề xoay quanh nguồn hàng đã được chúng tôi nghiên cứu kỹ lưỡng, tối ưu cho chi phí vận hành để mang lại một nơi cung cấp váy đầm giá sỉ, đầm thiết kế chất lượng - với giá cả cực kì cạnh tranh. Chúng tôi nhắm tới mục tiêu trở thành nơi bỏ sỉ hàng Quảng Châu tốt nhất, uy tín nhất và luôn sát cánh với bạn trên mọi thăng trầm! Dưới đây là những lý do quan trọng nhất để chúng tôi có thể giúp bạn sở hữu hệ thống cửa hàng thời trang tuyệt vời!!
-                                                </span>
-                                </div>
-                                <div class="banner-call-button">
-                                    <a href="https://trumgiasi.com/noi-bo-si-vay-dam-thiet-ke-quang-chau-tai-tphcm/" class="btn" target="">
-                                        XEM THÊM!
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-
-<section>
-<div class="vc_row row vc_custom_1521533964140 vc_row-has-fill vc_row-o-content-middle vc_row-flex">
-    <div class="wpb_column vc_column_container vc_col-sm-4">
-        <div class="vc_column-inner ">
-            <div class="wpb_wrapper">
-                <div class="wpb_single_image wpb_content_element vc_align_left">
-                    <figure class="wpb_wrapper vc_figure">
-                        <a href="tel://0919705086" target="_blank" class="vc_single_image-wrapper   vc_box_border_grey">
-                            <img width="463" height="158" src="https://trumgiasi.com/wp-content/uploads/2014/05/lienhe-5.png" class="vc_single_image-img attachment-full" alt="" />
-                        </a>
-                    </figure>
-                </div>
-                <div class="wpb_single_image wpb_content_element vc_align_left">
-                    <figure class="wpb_wrapper vc_figure">
-                        <a href="https://zalo.me/0979493123" target="_blank" class="vc_single_image-wrapper   vc_box_border_grey">
-                            <img width="463" height="150" src="https://trumgiasi.com/wp-content/uploads/2014/05/lienhe-1.png" class="vc_single_image-img attachment-full" alt="" />
-                        </a>
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="wpb_column vc_column_container vc_col-sm-4">
-        <div class="vc_column-inner ">
-            <div class="wpb_wrapper">
-                <div class="wpb_single_image wpb_content_element vc_align_left">
-                    <figure class="wpb_wrapper vc_figure">
-                        <a href="https://www.facebook.com/trumgiasi.san" target="_blank" class="vc_single_image-wrapper   vc_box_border_grey">
-                            <img width="463" height="147" src="https://trumgiasi.com/wp-content/uploads/2014/05/lienhe-6.png" class="vc_single_image-img attachment-full" alt="" />
-                        </a>
-                    </figure>
-                </div>
-                <div class="wpb_single_image wpb_content_element vc_align_left">
-                    <figure class="wpb_wrapper vc_figure">
-                        <a href="https://zalo.me/0932642505" target="_blank" class="vc_single_image-wrapper   vc_box_border_grey">
-                            <img width="463" height="152" src="https://trumgiasi.com/wp-content/uploads/2014/05/lienhe-3.png" class="vc_single_image-img attachment-full" alt="" />
-                        </a>
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="wpb_column vc_column_container vc_col-sm-4">
-        <div class="vc_column-inner ">
-            <div class="wpb_wrapper">
-                <div class="wpb_single_image wpb_content_element vc_align_left">
-                    <figure class="wpb_wrapper vc_figure">
-                        <a href="https://www.facebook.com/trumgiasi.trang" target="_blank" class="vc_single_image-wrapper   vc_box_border_grey">
-                            <img width="463" height="148" src="https://trumgiasi.com/wp-content/uploads/2014/05/lienhe-4.png" class="vc_single_image-img attachment-full" alt="" />
-                        </a>
-                    </figure>
-                </div>
-                <div class="wpb_single_image wpb_content_element vc_align_left">
-                    <figure class="wpb_wrapper vc_figure">
-                        <a href="tel://0979493123" target="_blank" class="vc_single_image-wrapper   vc_box_border_grey">
-                            <img class="vc_single_image-img " src="https://trumgiasi.com/wp-content/uploads/2014/05/lienhe-2.png" width="463" height="151" alt="lienhe- (2)" title="lienhe- (2)" />
-                        </a>
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-
-<section>
-<div class="vc_row row">
-    <div class="wpb_column vc_column_container vc_col-sm-12">
-        <div class="vc_column-inner vc_custom_1489660256079">
-            <div class="wpb_wrapper">
-                <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_shadow vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine one-line-border vc_separator-has-text">
-                    <span class="vc_sep_holder vc_sep_holder_l">
-                        <span  class="vc_sep_line"></span>
-                    </span>
-                    <h4>
-                        LÝ DO CHỌN TRÙM GIÁ SỈ
-                        <span>6 LÝ DO CHỌN TRÙM GIÁ SỈ LÀM NƠI BỎ SỈ CHO SHOP THỜI TRANG CỦA BẠN</span>
-                    </h4>
-                    <span class="vc_sep_holder vc_sep_holder_r">
-                        <span  class="vc_sep_line"></span>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="vc_row row vc_custom_1487213667707 vc_row-has-fill vc_row-o-content-middle vc_row-flex">
-    <div class="wpb_column vc_column_container vc_col-sm-6">
-        <div class="vc_column-inner ">
-            <div class="wpb_wrapper">
-                <div class="vc_row wpb_row vc_inner vc_row-fluid">
-                    <div class="wpb_column vc_column_container vc_col-sm-3">
-                        <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                                <div class="wpb_single_image wpb_content_element vc_align_center">
-                                    <figure class="wpb_wrapper vc_figure">
-                                        <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                            <img width="128" height="128" src="https://trumgiasi.com/wp-content/uploads/2014/05/gia-tot.png" class="vc_single_image-img attachment-thumbnail" alt="Giá tốt nhất tphcm" />
-                                        </div>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wpb_column vc_column_container vc_col-sm-9">
-                        <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                                <div class="wpb_text_column wpb_content_element ">
-                                    <div class="wpb_wrapper">
-                                        <p><strong>GIÁ SỈ RẺ NHẤT HCM</strong></p>
-                                        <p>
-                                            TGS cam kết giá sỉ tận gốc &#8211; Váy đầm thiết kế và nguồn hàng quảng châu tại trumgiasi.com được nhập trực tiếp từ xưởng sản xuất nên giá lấy buôn thấp nhất
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="vc_row wpb_row vc_inner vc_row-fluid">
-                    <div class="wpb_column vc_column_container vc_col-sm-3">
-                        <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                                <div class="wpb_single_image wpb_content_element vc_align_center">
-                                    <figure class="wpb_wrapper vc_figure">
-                                        <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                            <img width="128" height="128" src="https://trumgiasi.com/wp-content/uploads/2014/05/1487234103_heart.png" class="vc_single_image-img attachment-thumbnail" alt="Mẫu mã đa dạng, chất vải đẹp" /></div>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wpb_column vc_column_container vc_col-sm-9">
-                        <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                                <div class="wpb_text_column wpb_content_element ">
-                                    <div class="wpb_wrapper">
-                                        <p><strong>ĐẸP TỪNG ĐƯỜNG KIM, MŨI CHỈ</strong></p>
-                                        <p>
-                                            Chỉ bán hàng chất vải đẹp, đã chính tay chủ shop kiểm duyệt và lựa chọn mẫu. Ra mẫu liên tục hàng ngày đáp ứng xu hướng thị trường.
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="vc_row wpb_row vc_inner vc_row-fluid">
-                    <div class="wpb_column vc_column_container vc_col-sm-3">
-                        <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                                <div class="wpb_single_image wpb_content_element vc_align_center">
-                                    <figure class="wpb_wrapper vc_figure">
-                                        <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                            <img width="128" height="128" src="https://trumgiasi.com/wp-content/uploads/2014/05/ship-hang.png" class="vc_single_image-img attachment-thumbnail" alt="Giao hàng nhanh - hỗ trợ COD" />
-                                        </div>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wpb_column vc_column_container vc_col-sm-9">
-                        <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                                <div class="wpb_text_column wpb_content_element ">
-                                    <div class="wpb_wrapper">
-                                        <p><strong>SHIP TOÀN QUỐC &#8211; HỖ TRỢ COD</strong></p>
-                                        <p>TGS chấp nhận ship hàng COD toàn TPHCM &#8211; Ship hàng nhanh chóng đến mọi tỉnh thành trên cả nước.
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="wpb_column vc_column_container vc_col-sm-6">
-        <div class="vc_column-inner ">
-            <div class="wpb_wrapper">
-                <div class="vc_row wpb_row vc_inner vc_row-fluid">
-                    <div class="wpb_column vc_column_container vc_col-sm-3">
-                        <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                                <div class="wpb_single_image wpb_content_element vc_align_center">
-                                    <figure class="wpb_wrapper vc_figure">
-                                        <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                            <img width="128" height="128" src="https://trumgiasi.com/wp-content/uploads/2014/05/hang-nhu-hinh100.png" class="vc_single_image-img attachment-thumbnail" alt="Hàng như hình 100%" />
-                                        </div>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wpb_column vc_column_container vc_col-sm-9">
-                        <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                                <div class="wpb_text_column wpb_content_element ">
-                                    <div class="wpb_wrapper">
-                                        <p><strong>HÀNG GIỐNG HÌNH 100%</strong></p>
-                                        <p>Các mẫu đầm váy đa số do TGS tự chụp. Hàng đẹp giống hình 100% &#8211; Cam kết trả gấp đôi nếu gặp hàng không giống hình, hàng k chất lượng.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="vc_row wpb_row vc_inner vc_row-fluid">
-                    <div class="wpb_column vc_column_container vc_col-sm-3">
-                        <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                                <div class="wpb_single_image wpb_content_element vc_align_center">
-                                    <figure class="wpb_wrapper vc_figure">
-                                        <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                            <img width="128" height="128" src="https://trumgiasi.com/wp-content/uploads/2014/05/ho-tro-truc-tuyen.png" class="vc_single_image-img attachment-thumbnail" alt="Hỗ trợ - tư vấn 24/7" />
-                                        </div>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wpb_column vc_column_container vc_col-sm-9">
-                        <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                                <div class="wpb_text_column wpb_content_element ">
-                                    <div class="wpb_wrapper">
-                                        <p><strong>DỊCH VỤ CHĂM SÓC K.H TỐT NHẤT</strong></p>
-                                        <p>TGS luon mong muốn được hỗ trợ &#8211; tư vấn khách hàng nhiệt tình nhất có thể &#8211; Chia sẻ kinh nghiệm bán buôn, xu thế thời trang giúp K.H kinh doanh tốt hơn.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="vc_row wpb_row vc_inner vc_row-fluid">
-                    <div class="wpb_column vc_column_container vc_col-sm-3">
-                        <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                                <div class="wpb_single_image wpb_content_element vc_align_center">
-                                    <figure class="wpb_wrapper vc_figure">
-                                        <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                            <img width="128" height="128" src="https://trumgiasi.com/wp-content/uploads/2014/05/1487234176_dollar-exchange.png" class="vc_single_image-img attachment-thumbnail" alt="Đổi trả hàng linh hoạt" />
-                                        </div>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wpb_column vc_column_container vc_col-sm-9">
-                        <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                                <div class="wpb_text_column wpb_content_element ">
-                                    <div class="wpb_wrapper">
-                                        <p><strong>ĐỔI HÀNG LINH HOẠT</strong></p>
-                                        <p>
-                                            TGS chấp nhận đổi hàng cùng loại trong vòng 10 ngày miễn phí. Cam kết đổi hàng lỗi miễn phí 100%
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
 
 <!-- Facebook Comments Plugin for WordPress: http://peadig.com/wordpress-plugins/facebook-comments/ -->
 <!--

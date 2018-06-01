@@ -66,7 +66,32 @@ class Home extends MY_Controller {
                     ->get()
                     ->result()
                 ;
-                $metadata[$page->section] = $section;
+                if($page->kind !== 'photo'){
+                    $metadata[$page->section] = $section;
+                } else{
+                    $images = array();
+                    foreach($section as $idx=>$item){
+                        $image = new stdClass();
+                        $image->url = $item->photo;
+                        $image->thumbnail_url = $item->photo;
+                        $image->width = 538;
+                        $image->height = 720;
+                        $image->caption_1 = $item->des;
+                        $image->caption_2 = null;
+                        $image->tags = new stdClass();
+                        $image->link_url = null;
+                        $image->slug = $page->section.$idx;
+                        $image->meta = null;
+                        $image->lightbox_url = $item->photo;
+                        $image->lightbox_caption_1 = $item->des;
+                        $image->lightbox_caption_2 = null;
+                        $image->link_attr = new stdClass();
+                        $image->options = null;
+                        $image->attachment_id = null;
+                        array_push($images, $image);
+                    }
+                    $metadata[$page->section] = json_encode($images/*, JSON_UNESCAPED_UNICODE*/);
+                }
             }
         }
 

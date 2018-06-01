@@ -5,6 +5,6 @@
 		+ photo   -> cac hinh anh hang moi nhat
 		+ product -> liet ke san pham kem gia ban
 		+ article -> dang bai viet, co kem link
-		+ hotline -> sdt, fb, zalo lien he
+		+ contact -> sdt, fb, zalo lien he
 		+ list_1  -> liet ke tinh nang dang image + text
 		+ list_2  -> liet ke tinh nang dang theo muc luc
