@@ -12,7 +12,7 @@
         <div class="logo logo-image">
 
             <p>
-                <a href="https://trumgiasi.com">
+                <a href="{base_url()}">
                     <img src="https://trumgiasi.com/wp-content/uploads/2016/11/trumgiasi-logo-2.png" alt="Trùm Giá Sỉ - Nguồn Hàng Tin Cậy" />
                 </a>
             </p>
@@ -43,50 +43,150 @@
         <!-- mobile menu -->
         <div class="mobile-menu hidden">
 
-            <a href="https://trumgiasi.com/gio-hang/" class="cart-items">
+            <a href="/gio-hang/" class="cart-items">
                 <i class="_mi _before dashicons dashicons-cart" aria-hidden="true"></i>
                 <span>0</span>
                 GIỎ  HÀNG		</a>
             <ul id="menu-trum-gia-si-menu-1" class="nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1868"><a href="/shop/"><i class="fa fa-shopping-bag"></i>CỬA HÀNG</a>
                     <ul  class="sub-menu">
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1775"><a href="/shop/vay-dam-quang-chau"><i class="fa fa-map-marker" aria-hidden="true"></i><h2 class="h2menu">VÁY ĐẦM QUẢNG CHÂU</h2></a></li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1777"><a href="/shop/vay-dam-thiet-ke"><i class="fa fa-map-marker" aria-hidden="true"></i><h2 class="h2menu">VÁY ĐẦM THIẾT KẾ</h2></a></li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1778"><a href="https://trumgiasi.com/bo-si-quan-ao-quang-chau-vay-dam-thiet-ke/"><i class="fa fa-map-marker" aria-hidden="true"></i><h2 class="h2menu">BỎ SỈ QUẦN ÁO</h2></a></li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776"><a href="https://trumgiasi.com/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re/"><i class="fa fa-map-marker" aria-hidden="true"></i><h2 class="h2menu">ÔM LÔ QUẦN ÁO</h2></a></li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8273"><a href="https://trumgiasi.com/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re/"><i class="fa fa-map-marker" aria-hidden="true"></i><h2 class="h2menu">HÀNG SALE &#8211; HÀNG XÔN</h2></a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1775">
+                            <a href="/shop/vay-dam-quang-chau">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <h2 class="h2menu">VÁY ĐẦM QUẢNG CHÂU</h2>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1777">
+                            <a href="/shop/vay-dam-thiet-ke">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <h2 class="h2menu">VÁY ĐẦM THIẾT KẾ</h2>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1778">
+                            <a href="/bo-si-quan-ao-quang-chau-vay-dam-thiet-ke">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <h2 class="h2menu">BỎ SỈ QUẦN ÁO</h2>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
+                            <a href="/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <h2 class="h2menu">ÔM LÔ QUẦN ÁO</h2>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8273">
+                            <a href="/hang-sale-hang-xon-gia-re">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <h2 class="h2menu">HÀNG SALE &#8211; HÀNG XÔN</h2>
+                            </a>
+                        </li>
                     </ul>
                 </li>
-                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8350"><a href="https://goo.gl/GjqCCf"><i class="fa fa-video-camera"></i>VIDEO LIVESTREAM</a></li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2517"><a href="https://trumgiasi.com/huong-dan-mua-hang/"><i class="fa fa-arrow-circle-right"></i>CÁCH MUA HÀNG</a></li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2710"><a href="https://trumgiasi.com/tai-khoan/"><i class="fa fa-registered"></i>ĐĂNG NHẬP / ĐĂNG KÝ</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8350">
+                    <a href="https://goo.gl/GjqCCf">
+                        <i class="fa fa-video-camera"></i>
+                        VIDEO LIVESTREAM
+                    </a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2517">
+                    <a href="/huong-dan-mua-hang">
+                        <i class="fa fa-arrow-circle-right"></i>
+                        CÁCH MUA HÀNG
+                    </a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2710">
+                    <a href="#">
+                        <i class="fa fa-registered"></i>
+                        ĐĂNG NHẬP / ĐĂNG KÝ
+                    </a>
+                </li>
             </ul>
-
-
-
             <div class="top-menu-mobile">
-                <ul id="menu-top-links-1" class="sec-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8235"><a href="https://trumgiasi.com/kinh-nghiem-ban-hang/">KINH NGHIỆM</a></li>
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5443"><a href="https://trumgiasi.com/bo-si-quan-ao-quang-chau-vay-dam-thiet-ke/">BỎ SỈ</a></li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5543"><a href="https://trumgiasi.com/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re/">ÔM LÔ</a></li>
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5444"><a href="https://trumgiasi.com/tuyen-cong-tac-vien-ban-hang-online/">TUYỂN CTV</a></li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2709"><a href="https://trumgiasi.com/tai-khoan/">ĐĂNG NHẬP</a></li>
-                </ul>		</div>
+                <ul id="menu-top-links-1" class="sec-nav-menu">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8235">
+                        <a href="/kinh-nghiem-ban-hang">
+                            KINH NGHIỆM
+                        </a>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5443">
+                        <a href="/bo-si-quan-ao-quang-chau-vay-dam-thiet-ke">
+                            BỎ SỈ
+                        </a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5543">
+                        <a href="om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
+                            ÔM LÔ
+                        </a>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5444">
+                        <a href="/tuyen-cong-tac-vien-ban-hang-online">
+                            TUYỂN CTV
+                        </a>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2709">
+                        <a href="#">
+                            ĐĂNG NHẬP
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <!-- / mobile menu -->
 
         <div class="sidebar-menu">
             <ul id="menu-trum-gia-si-menu-2" class="nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1868"><a href="/shop/"><i class="fa fa-shopping-bag"></i>CỬA HÀNG</a>
                     <ul  class="sub-menu">
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1775"><a href="/shop/vay-dam-quang-chau"><i class="fa fa-map-marker" aria-hidden="true"></i><h2 class="h2menu">VÁY ĐẦM QUẢNG CHÂU</h2></a></li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1777"><a href="/shop/vay-dam-thiet-ke"><i class="fa fa-map-marker" aria-hidden="true"></i><h2 class="h2menu">VÁY ĐẦM THIẾT KẾ</h2></a></li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1778"><a href="https://trumgiasi.com/bo-si-quan-ao-quang-chau-vay-dam-thiet-ke/"><i class="fa fa-map-marker" aria-hidden="true"></i><h2 class="h2menu">BỎ SỈ QUẦN ÁO</h2></a></li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776"><a href="https://trumgiasi.com/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re/"><i class="fa fa-map-marker" aria-hidden="true"></i><h2 class="h2menu">ÔM LÔ QUẦN ÁO</h2></a></li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8273"><a href="https://trumgiasi.com/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re/"><i class="fa fa-map-marker" aria-hidden="true"></i><h2 class="h2menu">HÀNG SALE &#8211; HÀNG XÔN</h2></a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1775">
+                            <a href="/shop/vay-dam-quang-chau">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <h2 class="h2menu">VÁY ĐẦM QUẢNG CHÂU</h2>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1777">
+                            <a href="/shop/vay-dam-thiet-ke">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <h2 class="h2menu">VÁY ĐẦM THIẾT KẾ</h2>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1778">
+                            <a href="/bo-si-quan-ao-quang-chau-vay-dam-thiet-ke">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <h2 class="h2menu">BỎ SỈ QUẦN ÁO</h2>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
+                            <a href="/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <h2 class="h2menu">ÔM LÔ QUẦN ÁO</h2>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8273">
+                            <a href="/hang-sale-hang-xon-gia-re">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <h2 class="h2menu">HÀNG SALE &#8211; HÀNG XÔN</h2>
+                            </a>
+                        </li>
                     </ul>
                 </li>
-                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8350"><a href="https://goo.gl/GjqCCf"><i class="fa fa-video-camera"></i>VIDEO LIVESTREAM</a></li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2517"><a href="https://trumgiasi.com/huong-dan-mua-hang/"><i class="fa fa-arrow-circle-right"></i>CÁCH MUA HÀNG</a></li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2710"><a href="https://trumgiasi.com/tai-khoan/"><i class="fa fa-registered"></i>ĐĂNG NHẬP / ĐĂNG KÝ</a></li>
-            </ul>				</div>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8350">
+                    <a href="https://goo.gl/GjqCCf">
+                        <i class="fa fa-video-camera"></i>
+                        VIDEO LIVESTREAM
+                    </a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2517">
+                    <a href="/huong-dan-mua-hang">
+                        <i class="fa fa-arrow-circle-right"></i>
+                        CÁCH MUA HÀNG
+                    </a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2710">
+                    <a href="#">
+                        <i class="fa fa-registered"></i>
+                        ĐĂNG NHẬP / ĐĂNG KÝ
+                    </a>
+                </li>
+            </ul>
+        </div>
 
         <!-- /sidebar-inner -->
 

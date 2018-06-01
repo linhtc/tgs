@@ -92,16 +92,17 @@ $config['url_suffix'] = '';
   | than english.
   |
  */
-$config['language'] = 'vietnamese';
+//$config['language'] = 'vietnamese';
+//$config['language'] = 'en';
 
 /* default language abbreviation */
-$config['language_abbr'] = "vi";
+//$config['language_abbr'] = "vi";
 
 /* set available language abbreviations */
-$config['lang_uri_abbr'] = array("en" => "english", "vi" => "vietnamese", "jp" => "japanese", "cn" => "chinese");
+//$config['lang_uri_abbr'] = array("en" => "english", "vi" => "vietnamese", "jp" => "japanese", "cn" => "chinese");
 
 /* hide the language segment (use cookie) */
-$config['lang_ignore'] = false;
+//$config['lang_ignore'] = false;
 
 /*
   |--------------------------------------------------------------------------

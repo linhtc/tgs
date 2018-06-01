@@ -10,7 +10,7 @@
     <div class="main">
         {include file='frontend/layouts/breadcrumb.tpl'}
         {include file='frontend/layouts/chatbox.tpl'}
-        <div class="page-container">
+        <div class="{if $style->style eq 'shop'}laborator-woocommerce shop{else}page-container{/if}">
             {$content}
         </div>
     </div>

@@ -3,7 +3,14 @@
     <div class="row">
         <div class="col-lg-5">
             <div class="left-widget">
-                <div class="breadcrumbs"><a href="{base_url()}">Trang Chủ</a></div>
+                <div class="breadcrumbs">
+                    {if $style->title neq ''}
+                        <span><a href="{base_url()}">TRANG CHỦ</a></span>
+                        <span>{$style->title}</span>
+                    {else}
+                        <a href="{base_url()}">Trang chủ</a>
+                    {/if}
+                </div>
             </div>
         </div>
         <div class="col-lg-7">

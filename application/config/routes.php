@@ -58,34 +58,15 @@ $route['translate_uri_dashes'] = FALSE;
 
 // frontend
 $route['home'] = 'frontend/home/view';
-$route['contact'] = 'frontend/home/contact';
+//$route['/(:any)/(:any)'] = "frontend/home/view/$1/$2";
+$route['shop'] = "frontend/home/shop";
+$route['shop/(:any)'] = "frontend/home/shop/$1";
+$route['shop/(:any)/(:any)'] = "frontend/home/shop/$1/$2";
 
 // backend
 $route['admin'] = 'admin/users/login';
-
 $route['admin/manage-home/(:any)'] = "admin/ManageHome/$1";
 $route['admin/manage-home/(:any)/(:any)'] = "admin/ManageHome/$1/$2";
-$route['en/admin/manage-home/(:any)'] = "admin/ManageHome/$1";
-$route['en/admin/manage-home/(:any)/(:any)'] = "admin/ManageHome/$1/$2";
-
-$route['admin/manage-list/(:any)'] = "admin/ManageList/$1";
-$route['admin/manage-list/(:any)/(:any)'] = "admin/ManageList/$1/$2";
-$route['en/admin/manage-list/(:any)'] = "admin/ManageList/$1";
-$route['en/admin/manage-list/(:any)/(:any)'] = "admin/ManageList/$1/$2";
-
-$route['admin/manage-photo/(:any)'] = "admin/ManagePhoto/$1";
-$route['admin/manage-photo/(:any)/(:any)'] = "admin/ManagePhoto/$1/$2";
-$route['en/admin/manage-photo/(:any)'] = "admin/ManagePhoto/$1";
-$route['en/admin/manage-photo/(:any)/(:any)'] = "admin/ManagePhoto/$1/$2";
-
-$route['admin/manage-career/(:any)'] = "admin/ManageCareer/$1";
-$route['admin/manage-career/(:any)/(:any)'] = "admin/ManageCareer/$1/$2";
-$route['en/admin/manage-career/(:any)'] = "admin/ManageCareer/$1";
-$route['en/admin/manage-career/(:any)/(:any)'] = "admin/ManageCareer/$1/$2";
-
-$route['admin/design-pro'] = "admin/DesignPro/index";
-$route['admin/design-pro/(:any)'] = "admin/DesignPro/$1";
-$route['admin/design-pro/(:any)/(:any)'] = "admin/DesignPro/$1/$2";
 
 // default
 $route['(\w{2})/(.*)'] = '$2';

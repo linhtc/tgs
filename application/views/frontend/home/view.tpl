@@ -1,3 +1,13 @@
+{if $style->style eq 'shop'}
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="white-block block-pad log-in">
+                <h1>{$style->title}</h1>
+            </div>
+        </div>
+    </div>
+{/if}
+
 {if !empty($pages)}
     {foreach from=$pages key=i item=page}
         <section id="section-{$page->section}">
@@ -41,11 +51,11 @@
                                                                         <div class="cycloneslider-slide cycloneslider-slide-image" >
                                                                             <img src="{$item->photo}" alt="" title="" />
                                                                             {if $item->title neq ''}
-                                                                            <div class="cycloneslider-caption">
-                                                                                <div class="cycloneslider-caption-title">{$item->title}</div>
-                                                                                <div class="cycloneslider-caption-description">{$item->des}</div>
-                                                                                <a class="cycloneslider-caption-more" href="{$item->detail}">Đọc Tiếp</a>
-                                                                            </div>
+                                                                                <div class="cycloneslider-caption">
+                                                                                    <div class="cycloneslider-caption-title">{$item->title}</div>
+                                                                                    <div class="cycloneslider-caption-description">{$item->des}</div>
+                                                                                    <a class="cycloneslider-caption-more" href="{$item->detail}">Đọc Tiếp</a>
+                                                                                </div>
                                                                             {/if}
                                                                         </div>
                                                                     {/foreach}
@@ -113,11 +123,11 @@
                                 <span class="vc_sep_holder vc_sep_holder_l">
                                     <span  class="vc_sep_line"></span>
                                 </span>
-                                <h4>
-                                    {$page->title}
-                                    <span>{$page->des}</span>
-                                </h4>
-                                <span class="vc_sep_holder vc_sep_holder_r">
+                                    <h4>
+                                        {$page->title}
+                                        <span>{$page->des}</span>
+                                    </h4>
+                                    <span class="vc_sep_holder vc_sep_holder_r">
                                     <span  class="vc_sep_line"></span>
                                 </span>
                                 </div>
@@ -342,11 +352,13 @@
                                                             <h1><strong>{$item->title}</strong></h1>
                                                             <span>{$item->des}</span>
                                                         </div>
-                                                        <div class="banner-call-button">
-                                                            <a href="{$item->detail}" class="btn" target="">
-                                                                XEM THÊM!
-                                                            </a>
-                                                        </div>
+                                                        {if $item->detail neq ''}
+                                                            <div class="banner-call-button">
+                                                                <a href="{$item->detail}" class="btn" target="">
+                                                                    XEM THÊM!
+                                                                </a>
+                                                            </div>
+                                                        {/if}
                                                     </div>
                                                 </div>
                                             </div>
@@ -455,6 +467,138 @@
                                     <div class="vc_empty_space" style="height: 50px"><span class="vc_empty_space_inner"></span></div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                {/if}
+            {/if}
+            {if $page->kind eq 'text'}
+                {if !empty($metadata[$page->section])}
+                    {foreach from=$metadata[$page->section] key=index item=item}
+                        <div class="term-description">
+                            {$item->des}
+                        </div>
+                    {/foreach}
+                {/if}
+            {/if}
+            {if $page->kind eq 'box'}
+                {if !empty($metadata[$page->section])}
+                    {foreach from=$metadata[$page->section] key=index item=item}
+                        <div class="vc_row row">
+                            <div class="wpb_column vc_column_container vc_col-sm-12">
+                                <div class="vc_column-inner ">
+                                    <div class="wpb_wrapper">
+                                        <div class="lab_wpb_banner wpb_content_element banner  banner-white">
+                                            <div class="button_outer">
+                                                <div class="button_middle">
+                                                    <div class="button_inner">
+                                                        <div class="banner-content">
+                                                            <strong>
+                                                                <p></p>
+                                                                <h2>{$item->title}</h2>
+                                                            </strong>
+                                                            <p>
+                                                                <strong></strong>
+                                                                <span>{$item->des}</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {/foreach}
+                {/if}
+            {/if}
+            {if $page->kind eq 'option_4'}
+                {if !empty($metadata[$page->section])}
+                    <div class="vc_row row">
+                        {foreach from=$metadata[$page->section] key=index item=item}
+                            <div class="wpb_column vc_column_container vc_col-sm-6">
+                                <div class="vc_column-inner ">
+                                    <div class="wpb_wrapper">
+                                        <style>
+                                            #el_152785966982702_{$index} .title,
+                                            #el_152785966982702_{$index} .line-bottom {
+                                                color: #000000;
+                                            }
+                                            #el_152785966982702_{$index} .dividerx {
+                                                border-bottom-color: #000000;
+                                            }
+                                        </style>
+                                        <div class="lab_wpb_banner_2 wpb_content_element banner-type-3" id="el_152785966982702_{$index}">
+                                            <a href="{$item->detail}" target="_self">
+                                                <img class="banner-img " src="{$item->photo}" width="400" height="280" alt="{$item->title}" title="{$item->title}">
+                                                <span class="ol" style="background-color: rgba(255,255,255,0.01);"></span>
+                                                <span class="centered">
+												<span class="title wow bounce animated" data-wow-delay="450ms" style="visibility: visible; animation-delay: 450ms; animation-name: bounce;">
+                                                    <strong>{$item->title}</strong>
+                                                </span>
+                                            </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {/foreach}
+                    </div>
+                {/if}
+            {/if}
+            {if $page->kind eq 'product'}
+                {if !empty($metadata[$page->section])}
+                    <div class="row">
+                        <div class="shop-grid">
+                            <section class="items-env">
+                                <div class="items">
+                                    <div class="clear"></div>
+                                    {foreach from=$metadata[$page->section] key=index item=item}
+                                        <div class="col-sm-3 first post-{$item->id} product type-product status-publish has-post-thumbnail instock shipping-taxable purchasable product-type-simple">
+                                            <div class="item-wrapper">
+                                                <div class="item">
+                                                    <a href="/san-pham/{friendly_url($item->title)}-{$item->id}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                    </a>
+                                                    <div class="image full-gallery">
+                                                        <a href="/san-pham/{friendly_url($item->title)}-{$item->id}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                        </a>
+                                                        <a href="/san-pham/{friendly_url($item->title)}-{$item->id}" class="thumb">
+                                                            <img width="520" height="625" src="{$item->photo}" class="attachment-shop-thumb-1 size-shop-thumb-1" alt=""> </a>
+                                                    </div>
+                                                    <div class="white-block description">
+                                                        <h4 class="title">
+                                                            <a href="/san-pham/{friendly_url($item->title)}-{$item->id}">{$item->title}</a>
+                                                        </h4>
+                                                        <span class="type">
+                                                            <a href="/shop/vay-dam-quang-chau" rel="tag">{$style->title}</a>
+                                                        </span>
+                                                        <div class="divider"></div>
+                                                        <span class="price" style="width: 100%;">GIÁ SỈ:
+                                                            <span class="woocommerce-Price-amount amount">{$item->des}&nbsp;
+                                                                <span class="woocommerce-Price-currencySymbol">₫</span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="price2" style="color: #dd1f26;font-size: 22px;"></span>
+                                                        <a class="add-to-cart-btn add-to-cart glyphicon glyphicon-shopping-cart" data-id="{$item->id}" data-toggle="tooltip" data-placement="bottom" title="" href="#" data-original-title="Thêm vào giỏ">
+                                                            <span class="glyphicon glyphicon-ok-sign"></span>
+                                                        </a>
+                                                        <div class="error-container"></div>
+                                                    </div>
+                                                    <div class="loading-disabled">
+                                                        <div class="loader">
+                                                            <strong>Thêm vào giỏ</strong>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {/foreach}
+                                    <div class="clear"></div>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 {/if}
