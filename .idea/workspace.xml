@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/frontend/home/view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/home/view.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/frontend/css/support.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/css/support.css" afterDir="false" />
-    </list>
+    <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +41,8 @@
       <file leaf-file-name="view.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/frontend/home/view.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="471" column="3" lean-forward="true" selection-start-line="471" selection-start-column="3" selection-end-line="471" selection-end-column="3" />
+            <state relative-caret-position="256">
+              <caret line="466" column="4" lean-forward="true" selection-start-line="466" selection-start-column="4" selection-end-line="466" selection-end-column="4" />
               <folding>
                 <element signature="e#122#1446#0#Smarty" />
                 <element signature="e#1459#5939#0#Smarty" />
@@ -339,12 +335,12 @@
       <updated>1527654485284</updated>
       <workItem from="1527654488162" duration="9091000" />
       <workItem from="1527730471016" duration="22784000" />
-      <workItem from="1527816274577" duration="11151000" />
+      <workItem from="1527816274577" duration="11707000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43026000" />
+    <option name="totallyTimeSpent" value="43582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -717,8 +713,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/frontend/home/view.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="471" column="3" lean-forward="true" selection-start-line="471" selection-start-column="3" selection-end-line="471" selection-end-column="3" />
+        <state relative-caret-position="256">
+          <caret line="466" column="4" lean-forward="true" selection-start-line="466" selection-start-column="4" selection-end-line="466" selection-end-column="4" />
           <folding>
             <element signature="e#122#1446#0#Smarty" />
             <element signature="e#1459#5939#0#Smarty" />
