@@ -33,7 +33,10 @@ class Home extends MY_Controller {
     /**
      * View
      */
-    public function view() {
+    public function view($s1='') {
+        if(!empty($s1)){
+//            echo $s1; exit;
+        }
         $this->layout->set_layout_dir('views/frontend/layouts/');
         $this->layout->set_layout('tgs');
 

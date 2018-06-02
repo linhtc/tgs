@@ -11,3 +11,4 @@
 		+ text     -> mo ta chi bao gom chu
 		+ box      -> mo ta chi bao gom chu co kem khung vien
 		+ option_4 -> option trinh bay 4 lua chon theo hang ngang
+        + ref      -> su dung hinh anh chuyen/ hoac khong den 1 trang

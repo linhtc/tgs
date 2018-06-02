@@ -57,11 +57,12 @@ $route['404_override'] = 'errors/show_404';
 $route['translate_uri_dashes'] = FALSE;
 
 // frontend
-$route['home'] = 'frontend/home/view';
+//$route['home'] = 'frontend/home/view';
 //$route['/(:any)/(:any)'] = "frontend/home/view/$1/$2";
 $route['shop'] = "frontend/home/shop";
 $route['shop/(:any)'] = "frontend/home/shop/$1";
 $route['shop/(:any)/(:any)'] = "frontend/home/shop/$1/$2";
+$route['(:any)'] = "frontend/home/view/$1";
 
 // backend
 $route['admin'] = 'admin/users/login';

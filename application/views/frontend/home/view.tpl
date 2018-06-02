@@ -10,7 +10,7 @@
 
 {if !empty($pages)}
     {foreach from=$pages key=i item=page}
-        <section id="section-{$page->section}">
+        <section id="section-{$page->section}" {if $style->style eq 'shop' and $i gte 2}style="background:#ffffff;padding:{if $i eq 2}40px{else}0{/if} 10px 0 10px;"{/if}>
             {if $page->title neq '' and $page->kind neq 'photo' and $page->kind neq 'list_2'}
                 <div class="vc_row row">
                     <div class="wpb_column vc_column_container vc_col-sm-12">
@@ -389,6 +389,7 @@
                             </div>
                         {/foreach}
                     </div>
+                    <div class="vc_empty_space" style="height: 50px"><span class="vc_empty_space_inner"></span></div>
                 {/if}
             {/if}
             {if $page->kind eq 'list_1'}
@@ -603,6 +604,40 @@
                                     <div class="clear"></div>
                                 </div>
                             </section>
+                        </div>
+                    </div>
+                {/if}
+            {/if}
+            {if $page->kind eq 'ref'}
+                {if !empty($metadata[$page->section])}
+                    <div class="vc_row row vc_row-has-fill">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_single_image wpb_content_element vc_align_center">
+                                    {foreach from=$metadata[$page->section] key=index item=item}
+                                        <div class="wpb_single_image wpb_content_element vc_align_center">
+                                            <figure class="wpb_wrapper vc_figure">
+                                        {if $item->detail eq ''}
+                                            <div class="vc_single_image-wrapper vc_box_border_grey">
+                                                <img src="{$item->photo}" class="vc_single_image-img attachment-full" alt="{$item->title}">
+                                            </div>
+                                        {else}
+                                            <a href="{$item->detail}" target="_blank" class="vc_single_image-wrapper vc_box_border_grey">
+                                                <img src="{$item->photo}" class="vc_single_image-img attachment-full" alt="{$item->title}">
+                                            </a>
+                                        {/if}
+                                            </figure>
+                                        </div>
+                                    {/foreach}
+                                    <!--<div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                            <div class="fb-like fb_iframe_widget" data-href="https://facebook.com/trumgiasishop/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=616754451826546&amp;container_width=1255&amp;href=https%3A%2F%2Ffacebook.com%2Ftrumgiasishop%2F&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=false&amp;show_faces=true&amp;size=small"><span style="vertical-align: bottom; width: 81px; height: 20px;"><iframe name="f1ee07536d34f38" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.3/plugins/like.php?action=like&amp;app_id=616754451826546&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FoVjM2wVZ10b.js%3Fversion%3D42%23cb%3Df2172fe409e35d4%26domain%3Dtrumgiasi.com%26origin%3Dhttps%253A%252F%252Ftrumgiasi.com%252Ff254ebf3c2c8964%26relation%3Dparent.parent&amp;container_width=1255&amp;href=https%3A%2F%2Ffacebook.com%2Ftrumgiasishop%2F&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=false&amp;show_faces=true&amp;size=small" style="border: none; visibility: visible; width: 81px; height: 20px;" class=""></iframe></span></div>
+                                            <div class="fb-share-button fb_iframe_widget" data-href="https://trumgiasi.com/shop/vay-dam-quang-chau/" data-layout="button_count" data-size="small" data-mobile-iframe="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=616754451826546&amp;container_width=1255&amp;href=https%3A%2F%2Ftrumgiasi.com%2Fshop%2Fvay-dam-quang-chau%2F&amp;layout=button_count&amp;locale=vi_VN&amp;mobile_iframe=true&amp;sdk=joey&amp;size=small"><span style="vertical-align: bottom; width: 78px; height: 20px;"><iframe name="f27151e691df1e" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:share_button Facebook Social Plugin" src="https://www.facebook.com/v2.3/plugins/share_button.php?app_id=616754451826546&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FoVjM2wVZ10b.js%3Fversion%3D42%23cb%3Df12df40d2cbbda%26domain%3Dtrumgiasi.com%26origin%3Dhttps%253A%252F%252Ftrumgiasi.com%252Ff254ebf3c2c8964%26relation%3Dparent.parent&amp;container_width=1255&amp;href=https%3A%2F%2Ftrumgiasi.com%2Fshop%2Fvay-dam-quang-chau%2F&amp;layout=button_count&amp;locale=vi_VN&amp;mobile_iframe=true&amp;sdk=joey&amp;size=small" style="border: none; visibility: visible; width: 78px; height: 20px;" class=""></iframe></span></div>
+                                        </div>
+                                    </div>-->
+                                </div>
+                            </div>
                         </div>
                     </div>
                 {/if}
