@@ -12,3 +12,5 @@
 		+ box      -> mo ta chi bao gom chu co kem khung vien
 		+ option_4 -> option trinh bay 4 lua chon theo hang ngang
         + ref      -> su dung hinh anh chuyen/ hoac khong den 1 trang
+        + list_3   -> liet ke theo dang text co cham den
+        + video    -> show iframe video youtube

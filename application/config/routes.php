@@ -62,7 +62,7 @@ $route['translate_uri_dashes'] = FALSE;
 $route['shop'] = "frontend/home/shop";
 $route['shop/(:any)'] = "frontend/home/shop/$1";
 $route['shop/(:any)/(:any)'] = "frontend/home/shop/$1/$2";
-$route['(:any)'] = "frontend/home/view/$1";
+$route['(:any)'] = "frontend/home/shop/$1";
 
 // backend
 $route['admin'] = 'admin/users/login';

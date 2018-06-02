@@ -11,7 +11,7 @@
 {if !empty($pages)}
     {foreach from=$pages key=i item=page}
         <section id="section-{$page->section}" {if $style->style eq 'shop' and $i gte 2}style="background:#ffffff;padding:{if $i eq 2}40px{else}0{/if} 10px 0 10px;"{/if}>
-            {if $page->title neq '' and $page->kind neq 'photo' and $page->kind neq 'list_2'}
+            {if $page->title neq '' and $page->kind neq 'photo' and $page->kind neq 'list_2' and $page->kind neq 'list_3'}
                 <div class="vc_row row">
                     <div class="wpb_column vc_column_container vc_col-sm-12">
                         <div class="vc_column-inner vc_custom_1489660256079">
@@ -134,58 +134,58 @@
                                 <div class="wpb_text_column wpb_content_element ">
                                     <div class="wpb_wrapper">
                                         <style type="text/css">
-                                            #awesome-gallery-{$page->kind}-{$page->section} .asg-filters div a {
+                                            .asg-filters div a {
                                                 color: #ffffff;
                                                 background-color: #222222;
                                             }
-                                            #awesome-gallery-{$page->kind}-{$page->section} .asg-filters div.active a {
+                                            .asg-filters div.active a {
                                                 color: #ffffff;
                                                 background-color: #444444;
                                             }
-                                            #awesome-gallery-{$page->kind}-{$page->section} .asg-image-overlay {
+                                            .asg-image-overlay {
                                                 background-color: #000;
                                                 background-color: rgba(0, 0, 0, 0.3);
                                                 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
                                                 filter: alpha(opacity=30);
                                             }
-                                            #awesome-gallery-{$page->kind}-{$page->section} .asg-image-caption-wrapper {
+                                            .asg-image-caption-wrapper {
                                                 text-align: center;
                                                 background-color: #000;
                                                 background-color: rgba(0, 0, 0, 0.8);
                                                 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
                                                 filter: alpha(opacity=80);
                                             }
-                                            #awesome-gallery-{$page->kind}-{$page->section} .asg-image:hover .asg-image-caption-wrapper {
+                                            .asg-image:hover .asg-image-caption-wrapper {
                                                 opacity: 1;
                                             }
-                                            #awesome-gallery-{$page->kind}-{$page->section} .asg-image-caption1,
-                                            #awesome-gallery-{$page->kind}-{$page->section} .asg-image-caption1 a{
+                                            .asg-image-caption1,
+                                            .asg-image-caption1 a{
                                                 color: #ffffff;
                                             }
-                                            #awesome-gallery-{$page->kind}-{$page->section} .asg-image-caption2,
-                                            #awesome-gallery-{$page->kind}-{$page->section} .asg-image-caption2 a{
+                                            .asg-image-caption2,
+                                            .asg-image-caption2 a{
                                                 color: #ffffff;
                                             }
-                                            #awesome-gallery-{$page->kind}-{$page->section} .asg-bottom .asg-load-more{
+                                            .asg-bottom .asg-load-more{
                                                 background-color: #000;
                                                 color: #ffffff;
                                                 box-shadow: 1.5px 3px 0 0 #eee;
                                             }
-                                            #awesome-gallery-{$page->kind}-{$page->section} .asg-bottom .asg-all-loaded {
+                                            .asg-bottom .asg-all-loaded {
                                                 border-radius: 0;
                                                 -webkit-border-radius: 0;
                                                 -moz-border-radius: 0;
                                                 -ms-border-radius: 0;
                                                 -o-border-radius: 0;
                                             }
-                                            #awesome-gallery-{$page->kind}-{$page->section} .asg-bottom .asg-all-loaded {
+                                            .asg-bottom .asg-all-loaded {
                                                 background-color: #888888;
                                                 color: #cccccc;
                                             }
-                                            #awesome-gallery-{$page->kind}-{$page->section} .asg-bottom .asg-all-loaded {
+                                            .asg-bottom .asg-all-loaded {
                                                 border-bottom-color: #bbbbbb;
                                             }
-                                            #awesome-gallery-{$page->kind}-{$page->section} .asg-bottom > div {
+                                            .asg-bottom > div {
                                                 -webkit-border-radius: 0px;
                                                 -moz-border-radius: 0px;
                                                 -ms-border-radius: 0px;
@@ -194,11 +194,11 @@
 
                                                 padding: 12px 30px;
                                             }
-                                            #awesome-gallery-{$page->kind}-{$page->section} .asg-image-caption1 {
+                                            .asg-image-caption1 {
                                                 font-size: 14px;
                                                 line-height: 1.4;
                                             }
-                                            #awesome-gallery-{$page->kind}-{$page->section} .asg-image-caption2 {
+                                            .asg-image-caption2 {
                                                 font-size: 14px;
                                                 line-height: 1.4;
                                             }
@@ -208,80 +208,82 @@
                                             let id = 'asg-wrapper-{$page->kind}-{$page->section}';
                                             let el = document.getElementById(id);
                                             let options = {
-                                                "id": "{$page->kind}-{$page->section}",
+                                                "id": "{$page->kind}",
                                                 "scriptUrl": "/static/frontend/js/awesome-gallery.js",
                                                 "gallerySlug": "{$page->kind}-hang-co-san",
-                                                "rand": 1,
-                                                "layout": {
-                                                    "mode": "usual",
-                                                    "width": 240,
-                                                    "height": 260,
-                                                    "gap": 5,
-                                                    "border": 0,
-                                                    "allowHanging": false
+                                                "rand":1,
+                                                "layout":{
+                                                    "mode":"usual",
+                                                    "width":240,
+                                                    "height":260,
+                                                    "gap":5,
+                                                    "border":0,
+                                                    "allowHanging":false
                                                 },
-                                                "image": {
-                                                    "blur": "off",
-                                                    "bw": "off"
+                                                "image":{
+                                                    "blur":"off",
+                                                    "bw":"off"
                                                 },
-                                                "caption": {
-                                                    "mode": "on-hover",
-                                                    "color": "#FFFFFF",
-                                                    "color2": "#FFFFFF",
-                                                    "background_color": "#000",
-                                                    "opacity": "0.8",
-                                                    "effect": "fade",
-                                                    "align": "center",
-                                                    "position": "bottom",
-                                                    "font1": {
-                                                        "family": "",
-                                                        "style": "",
-                                                        "size": "14"
+                                                "caption":{
+                                                    "mode":"on-hover",
+                                                    "color":"#FFFFFF",
+                                                    "color2":"#FFFFFF",
+                                                    "background_color":"#000",
+                                                    "opacity":"0.8",
+                                                    "effect":"fade",
+                                                    "align":"center",
+                                                    "position":"bottom",
+                                                    "font1":{
+                                                        "family":"",
+                                                        "style":"",
+                                                        "size":"14"
                                                     },
-                                                    "font2": {
-                                                        "family": "",
-                                                        "style": "",
-                                                        "size": "14"
+                                                    "font2":{
+                                                        "family":"",
+                                                        "style":"",
+                                                        "size":"14"
                                                     }
                                                 },
-                                                "overlay": {
-                                                    "mode": "on-hover",
-                                                    "color": "#000",
-                                                    "opacity": "0.3",
-                                                    "effect": "fade",
-                                                    "image": ""
+                                                "overlay":{
+                                                    "mode":"on-hover",
+                                                    "color":"#000",
+                                                    "opacity":"0.3",
+                                                    "effect":"fade",
+                                                    "image":""
                                                 },
-                                                "filters": {
-                                                    "enabled": "",
-                                                    "align": "center",
-                                                    "sort": "1",
-                                                    "style": "tabs",
-                                                    "all": "All",
-                                                    "color": "#FFFFFF",
-                                                    "background_color": "#222222",
-                                                    "accent_color": "#FFFFFF",
-                                                    "accent_background_color": "#444444",
-                                                    "border_radius": "0",
-                                                    "list": [],
-                                                    "active": "_"
+                                                "filters":{
+                                                    "enabled":"",
+                                                    "align":"center",
+                                                    "sort":"1",
+                                                    "style":"tabs",
+                                                    "all":"All",
+                                                    "color":"#FFFFFF",
+                                                    "background_color":"#222222",
+                                                    "accent_color":"#FFFFFF",
+                                                    "accent_background_color":"#444444",
+                                                    "border_radius":"0",
+                                                    "list":[
+
+                                                    ],
+                                                    "active":"_"
                                                 },
-                                                "loadMore": {
-                                                    "style": "load-more",
-                                                    "page_size": "48",
-                                                    "loading_text": "Loading...",
-                                                    "load_more_text": "XEM THÊM",
-                                                    "all_images_loaded": "All images loaded",
-                                                    "width": "full",
-                                                    "color": "#FFFFFF",
-                                                    "color_loaded": "#CCCCCC",
-                                                    "background_color": "#000",
-                                                    "background_color_loaded": "#888888",
-                                                    "shadow_width": "3",
-                                                    "shadow_color": "#EEE",
-                                                    "shadow_color_loaded": "#BBBBBB",
-                                                    "border_radius": "0",
-                                                    "vertical_padding": "12",
-                                                    "horizontal_padding": "30"
+                                                "loadMore":{
+                                                    "style":"load-more",
+                                                    "page_size":"48",
+                                                    "loading_text":"Loading...",
+                                                    "load_more_text":"XEM TH\u00caM",
+                                                    "all_images_loaded":"All images loaded",
+                                                    "width":"full",
+                                                    "color":"#FFFFFF",
+                                                    "color_loaded":"#CCCCCC",
+                                                    "background_color":"#000",
+                                                    "background_color_loaded":"#888888",
+                                                    "shadow_width":"3",
+                                                    "shadow_color":"#EEE",
+                                                    "shadow_color_loaded":"#BBBBBB",
+                                                    "border_radius":"0",
+                                                    "vertical_padding":"12",
+                                                    "horizontal_padding":"30"
                                                 },
                                                 "images": {if !empty($metadata[$page->section])} {$metadata[$page->section]} {else} [] {/if}
                                             };
@@ -636,6 +638,53 @@
                                             <div class="fb-share-button fb_iframe_widget" data-href="https://trumgiasi.com/shop/vay-dam-quang-chau/" data-layout="button_count" data-size="small" data-mobile-iframe="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=616754451826546&amp;container_width=1255&amp;href=https%3A%2F%2Ftrumgiasi.com%2Fshop%2Fvay-dam-quang-chau%2F&amp;layout=button_count&amp;locale=vi_VN&amp;mobile_iframe=true&amp;sdk=joey&amp;size=small"><span style="vertical-align: bottom; width: 78px; height: 20px;"><iframe name="f27151e691df1e" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:share_button Facebook Social Plugin" src="https://www.facebook.com/v2.3/plugins/share_button.php?app_id=616754451826546&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FoVjM2wVZ10b.js%3Fversion%3D42%23cb%3Df12df40d2cbbda%26domain%3Dtrumgiasi.com%26origin%3Dhttps%253A%252F%252Ftrumgiasi.com%252Ff254ebf3c2c8964%26relation%3Dparent.parent&amp;container_width=1255&amp;href=https%3A%2F%2Ftrumgiasi.com%2Fshop%2Fvay-dam-quang-chau%2F&amp;layout=button_count&amp;locale=vi_VN&amp;mobile_iframe=true&amp;sdk=joey&amp;size=small" style="border: none; visibility: visible; width: 78px; height: 20px;" class=""></iframe></span></div>
                                         </div>
                                     </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {/if}
+            {/if}
+            {if $page->kind eq 'list_3'}
+                {if !empty($metadata[$page->section])}
+                    <div class="vc_row row vc_custom_1508071268070 vc_row-has-fill">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_text_column wpb_content_element" style="padding-left:10%;padding-right:10%;">
+                                        <div class="wpb_wrapper">
+                                            <p><strong>{$page->title}</strong></p>
+                                            <ul>
+                                            {foreach from=$metadata[$page->section] key=index item=item}
+                                                <li>{$item->title}</li>
+                                            {/foreach}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {/if}
+            {/if}
+            {if $page->kind eq 'video'}
+                {if !empty($metadata[$page->section])}
+                    <div class="vc_row row vc_custom_1508071268070 vc_row-has-fill">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_text_column wpb_content_element" style="padding-left:10%;padding-right:10%;">
+                                        <div class="wpb_wrapper">
+                                            <div class="wpb_video_widget wpb_content_element vc_clearfix vc_video-aspect-ratio-169 vc_video-el-width-100 vc_video-align-center">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_video_wrapper">
+                                                        {foreach from=$metadata[$page->section] key=index item=item}
+                                                            {$item->detail}
+                                                        {/foreach}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
