@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/tgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/tgs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/frontend/home/view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/home/view.tpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,17 +16,8 @@
       <file leaf-file-name="tgs.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+            <state relative-caret-position="336">
+              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -36,8 +25,17 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="518">
+              <caret line="59" column="38" lean-forward="true" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sitemap.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sitemap.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -45,19 +43,18 @@
       <file leaf-file-name="Home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/frontend/Home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="197" selection-start-line="197" selection-end-line="197" />
+            <state relative-caret-position="358">
+              <caret line="123" column="45" lean-forward="true" selection-start-line="123" selection-start-column="45" selection-end-line="123" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.tpl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/frontend/home/view.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="610" column="14" lean-forward="true" selection-start-line="610" selection-start-column="14" selection-end-line="610" selection-end-column="14" />
+            <state relative-caret-position="464">
+              <caret line="526" column="57" lean-forward="true" selection-start-line="526" selection-start-column="57" selection-end-line="526" selection-end-column="57" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
                 <element signature="e#353#1706#0#Smarty" />
                 <element signature="e#1719#6219#0#Smarty" />
                 <element signature="e#6232#8468#0#Smarty" />
@@ -68,8 +65,6 @@
                 <element signature="e#30735#34455#0#Smarty" />
                 <element signature="e#34468#34828#0#Smarty" />
                 <element signature="e#34841#36777#0#Smarty" />
-                <element signature="e#36790#39043#0#Smarty" />
-                <element signature="e#39056#43693#0#Smarty" />
                 <element signature="n#style#0;n#span#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#11;n#section#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -79,8 +74,8 @@
       <file leaf-file-name="tgs.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/tgs.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="12" column="65" lean-forward="true" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
+            <state relative-caret-position="208">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -156,6 +151,7 @@
         <option value="$PROJECT_DIR$/application/controllers/frontend/Home.php" />
         <option value="$PROJECT_DIR$/application/views/frontend/home/view.tpl" />
         <option value="$PROJECT_DIR$/application/config/tgs.txt" />
+        <option value="$PROJECT_DIR$/sitemap.xml" />
       </list>
     </option>
   </component>
@@ -265,7 +261,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../portal" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../starhub" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -306,12 +302,12 @@
       <workItem from="1527816274577" duration="11707000" />
       <workItem from="1527841496935" duration="663000" />
       <workItem from="1527857251906" duration="10261000" />
-      <workItem from="1527903604514" duration="1803000" />
+      <workItem from="1527903604514" duration="4979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56309000" />
+    <option name="totallyTimeSpent" value="59485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -345,20 +341,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/chatbox.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="63" lean-forward="true" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/mobi.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/extra.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -522,20 +504,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/frontend/home/shop.tpl" />
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/breadcrumb.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -562,33 +530,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/tgs.txt">
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="65" lean-forward="true" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
+        <state relative-caret-position="-2504">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/frontend/Home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="197" selection-start-line="197" selection-end-line="197" />
+        <state relative-caret-position="336">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/frontend/home/view.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="610" column="14" lean-forward="true" selection-start-line="610" selection-start-column="14" selection-end-line="610" selection-end-column="14" />
+        <state relative-caret-position="464">
+          <caret line="526" column="57" lean-forward="true" selection-start-line="526" selection-start-column="57" selection-end-line="526" selection-end-column="57" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
             <element signature="e#353#1706#0#Smarty" />
             <element signature="e#1719#6219#0#Smarty" />
             <element signature="e#6232#8468#0#Smarty" />
@@ -599,10 +559,39 @@
             <element signature="e#30735#34455#0#Smarty" />
             <element signature="e#34468#34828#0#Smarty" />
             <element signature="e#34841#36777#0#Smarty" />
-            <element signature="e#36790#39043#0#Smarty" />
-            <element signature="e#39056#43693#0#Smarty" />
             <element signature="n#style#0;n#span#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#11;n#section#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/frontend/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="123" column="45" lean-forward="true" selection-start-line="123" selection-start-column="45" selection-end-line="123" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/tgs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="59" column="38" lean-forward="true" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sitemaps.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sitemap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
         </state>
       </provider>
     </entry>
