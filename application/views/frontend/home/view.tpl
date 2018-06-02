@@ -570,16 +570,20 @@
                                                             <a href="/san-pham/{friendly_url($item->title)}-{$item->id}">{$item->title}</a>
                                                         </h4>
                                                         <span class="type">
-                                                            <a href="/shop/vay-dam-quang-chau" rel="tag">{$style->title}</a>
+                                                            <a href="#" rel="tag">{$style->title}</a>
                                                         </span>
                                                         <div class="divider"></div>
                                                         <span class="price" style="width: 100%;">GIÁ SỈ:
-                                                            <span class="woocommerce-Price-amount amount">{$item->des}&nbsp;
+                                                            <span class="woocommerce-Price-amount amount">
+                                                                {$item->des}
                                                                 <span class="woocommerce-Price-currencySymbol">₫</span>
                                                             </span>
                                                         </span>
                                                         <span class="price2" style="color: #dd1f26;font-size: 22px;"></span>
-                                                        <a class="add-to-cart-btn add-to-cart glyphicon glyphicon-shopping-cart" data-id="{$item->id}" data-toggle="tooltip" data-placement="bottom" title="" href="#" data-original-title="Thêm vào giỏ">
+                                                        <!--<a class="add-to-cart-btn add-to-cart glyphicon glyphicon-shopping-cart" data-id="{$item->id}" data-toggle="tooltip" data-placement="bottom" title="" href="#" data-original-title="Thêm vào giỏ">
+                                                            <span class="glyphicon glyphicon-ok-sign"></span>
+                                                        </a>-->
+                                                        <a class="add-to-cart-btn glyphicon glyphicon-shopping-cart" data-id="{$item->id}" data-toggle="tooltip" data-placement="bottom" title="" href="javascript:void(0);" data-original-title="Thêm vào giỏ">
                                                             <span class="glyphicon glyphicon-ok-sign"></span>
                                                         </a>
                                                         <div class="error-container"></div>

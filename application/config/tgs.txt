@@ -8,6 +8,6 @@
 		+ contact  -> sdt, fb, zalo lien he
 		+ list_1   -> liet ke tinh nang dang image + text
 		+ list_2   -> liet ke tinh nang dang theo muc luc
-		+ text     ->
-		+ box      ->
-		+ option_4 ->
+		+ text     -> mo ta chi bao gom chu
+		+ box      -> mo ta chi bao gom chu co kem khung vien
+		+ option_4 -> option trinh bay 4 lua chon theo hang ngang
