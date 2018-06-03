@@ -63,7 +63,6 @@ $route['shop'] = "frontend/home/shop";
 $route['shop/(:any)'] = "frontend/home/shop/$1";
 $route['shop/(:any)/(:any)'] = "frontend/home/shop/$1/$2";
 $route['san-pham/(:any)'] = "frontend/home/product/$1";
-$route['(:any)'] = "frontend/home/shop/$1";
 
 // backend
 $route['admin'] = 'admin/users/login';
@@ -71,6 +70,7 @@ $route['admin/manage-home/(:any)'] = "admin/ManageHome/$1";
 $route['admin/manage-home/(:any)/(:any)'] = "admin/ManageHome/$1/$2";
 
 // default
+$route['(:any)'] = "frontend/home/shop/$1";
 $route['(\w{2})/(.*)'] = '$2';
 $route['(\w{2})'] = $route['default_controller'];
 

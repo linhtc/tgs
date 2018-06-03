@@ -37,7 +37,8 @@ class hashpassword {
         }
 
         $password_hash = $this->hash($password_type);
-
+//        echo $this->hash('conglinh'); exit;
+//        echo $password_hash; echo '<br >'; echo $password; exit;
         if ($password_hash == $password) {
             return TRUE;
         } else {

@@ -73,17 +73,18 @@ class Users extends MY_Controller {
             );
 
             $user = (array) $this->User->get_by_username($data_user_post['username']);
-
+//            print_r($user); exit;
             if(count($user) > 0){
                 $this->load->helper('hashpassword');
                 $hashpass = new hashpassword();
                 if ($hashpass->checkPassword($user['password'], $data_user_post['password']) == TRUE) {
+//                    echo 1; exit;
                     /* Cai dat ngon ngu */
                     global $CFG;
                     $config = & $CFG->config;
-                    $language_abbr = $config['language_abbr'];
-                    $language = ($language != $language_abbr && !empty($language_abbr)) ? $language.'/' : '';
-
+//                    $language_abbr = $config['language_abbr'];
+//                    $language = ($language != $language_abbr && !empty($language_abbr)) ? $language.'/' : '';
+                    $language = '';
                     // lay permission tu group id
                     $this->load->model('groups/Group');
                     $this->model_name = 'Group';
@@ -131,7 +132,7 @@ class Users extends MY_Controller {
                         $this->System_log->insert_system_log('users', 'sign_in', 'n/a', 1, 1);
 
                         $this->session->set_userdata('user_lang', $language);
-
+//                        echo 2; exit;
                         if(!empty($r)){
                             redirect(urldecode($r));
                         } else{
