@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/tgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/tgs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/frontend/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/frontend/Home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/frontend/home/view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/home/view.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/frontend/js/awesome-gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/js/awesome-gallery.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,8 +27,8 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+            <state relative-caret-position="443">
+              <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -38,34 +36,54 @@
       <file leaf-file-name="Home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/frontend/Home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+            <state relative-caret-position="308">
+              <caret line="199" column="23" selection-start-line="199" selection-start-column="23" selection-end-line="199" selection-end-column="23" />
+              <folding>
+                <element signature="e#7#191#0#PHP" expanded="true" />
+                <element signature="n#__construct#0;n#Home#0;n#!!top" />
+                <element signature="e#740#763#0#PHP" />
+                <element signature="n#view#0;n#Home#0;n#!!top" />
+                <element signature="e#3510#3533#0#PHP" />
+                <element signature="n#shop#0;n#Home#0;n#!!top" />
+                <element signature="e#6224#6250#0#PHP" />
+                <element signature="n#contact#0;n#Home#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.tpl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/frontend/home/product.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/frontend/home/view.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="144" column="44" selection-start-line="144" selection-start-column="44" selection-end-line="144" selection-end-column="44" />
+            <state relative-caret-position="345">
+              <caret line="645" column="17" lean-forward="true" selection-start-line="645" selection-start-column="17" selection-end-line="645" selection-end-column="17" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="e#476#1829#0#Smarty" />
-                <element signature="e#1842#6342#0#Smarty" />
-                <element signature="e#6355#8591#0#Smarty" />
-                <element signature="e#24410#26520#0#Smarty" />
-                <element signature="e#26533#28048#0#Smarty" />
-                <element signature="e#28061#30963#0#Smarty" />
-                <element signature="e#30976#34696#0#Smarty" />
-                <element signature="e#34709#35069#0#Smarty" />
-                <element signature="e#35082#37018#0#Smarty" />
-                <element signature="e#37031#39284#0#Smarty" />
-                <element signature="e#39297#44405#0#Smarty" />
-                <element signature="e#44418#49272#0#Smarty" />
-                <element signature="e#49314#50887#0#Smarty" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#13;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#13;n#section#0;n#!!top" expanded="true" />
+                <element signature="e#476#1858#0#Smarty" />
+                <element signature="e#1871#6371#0#Smarty" />
+                <element signature="e#6384#8620#0#Smarty" />
+                <element signature="e#8633#23636#0#Smarty" />
+                <element signature="e#23649#25759#0#Smarty" />
+                <element signature="e#25772#27287#0#Smarty" />
+                <element signature="e#27300#30202#0#Smarty" />
+                <element signature="e#30215#33935#0#Smarty" />
+                <element signature="e#33948#34308#0#Smarty" />
+                <element signature="e#34321#36257#0#Smarty" />
+                <element signature="e#36270#38523#0#Smarty" />
+                <element signature="e#38536#43644#0#Smarty" />
+                <element signature="e#43657#48511#0#Smarty" />
+                <element signature="e#48524#49763#0#Smarty" />
+                <element signature="e#49776#51359#0#Smarty" />
+                <element signature="e#51372#51732#0#Smarty" />
               </folding>
             </state>
           </provider>
@@ -84,7 +102,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fon</find>
       <find>js_com</find>
       <find>font-Arimo-css</find>
       <find>../fonts/</find>
@@ -114,6 +131,7 @@
       <find>add-to-cart</find>
       <find>vc_custom_1521533964140</find>
       <find>asg-image-caption-wrapper</find>
+      <find>main-image-slider</find>
     </findStrings>
     <replaceStrings>
       <replace>font/</replace>
@@ -148,10 +166,11 @@
         <option value="$PROJECT_DIR$/application/helpers/leon_helper.php" />
         <option value="$PROJECT_DIR$/sitemap.xml" />
         <option value="$PROJECT_DIR$/application/views/frontend/layouts/head.tpl" />
-        <option value="$PROJECT_DIR$/application/controllers/frontend/Home.php" />
-        <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/config/tgs.txt" />
         <option value="$PROJECT_DIR$/application/views/frontend/home/view.tpl" />
+        <option value="$PROJECT_DIR$/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/application/controllers/frontend/Home.php" />
+        <option value="$PROJECT_DIR$/application/views/frontend/home/product.tpl" />
       </list>
     </option>
   </component>
@@ -180,6 +199,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,7 +276,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -268,9 +287,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/views/frontend/home" />
       <recent name="$PROJECT_DIR$/static/frontend/fonts" />
       <recent name="$PROJECT_DIR$/application/helpers" />
-      <recent name="$PROJECT_DIR$/application/views/frontend/home" />
       <recent name="$PROJECT_DIR$/static/frontend/css/font" />
       <recent name="$PROJECT_DIR$/static/frontend" />
     </key>
@@ -306,14 +325,16 @@
       <workItem from="1527926982692" duration="214000" />
       <workItem from="1527928562546" duration="5009000" />
       <workItem from="1527946494493" duration="5495000" />
+      <workItem from="1528006417688" duration="4633000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70203000" />
+    <option name="totallyTimeSpent" value="74836000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1600" height="875" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19625" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -343,13 +364,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/extra.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/frontend/home/view.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4160">
@@ -556,20 +570,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/cache/smarty/compiled/1b22f12a80212abed2be33cc716e45307fc0b950_0.file.head.tpl.php" />
-    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/frontend/Home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/tgs.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -579,26 +579,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/frontend/home/view.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="144" column="44" selection-start-line="144" selection-start-column="44" selection-end-line="144" selection-end-column="44" />
+        <state relative-caret-position="345">
+          <caret line="645" column="17" lean-forward="true" selection-start-line="645" selection-start-column="17" selection-end-line="645" selection-end-column="17" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="e#476#1829#0#Smarty" />
-            <element signature="e#1842#6342#0#Smarty" />
-            <element signature="e#6355#8591#0#Smarty" />
-            <element signature="e#24410#26520#0#Smarty" />
-            <element signature="e#26533#28048#0#Smarty" />
-            <element signature="e#28061#30963#0#Smarty" />
-            <element signature="e#30976#34696#0#Smarty" />
-            <element signature="e#34709#35069#0#Smarty" />
-            <element signature="e#35082#37018#0#Smarty" />
-            <element signature="e#37031#39284#0#Smarty" />
-            <element signature="e#39297#44405#0#Smarty" />
-            <element signature="e#44418#49272#0#Smarty" />
-            <element signature="e#49314#50887#0#Smarty" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#13;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#13;n#section#0;n#!!top" expanded="true" />
+            <element signature="e#476#1858#0#Smarty" />
+            <element signature="e#1871#6371#0#Smarty" />
+            <element signature="e#6384#8620#0#Smarty" />
+            <element signature="e#8633#23636#0#Smarty" />
+            <element signature="e#23649#25759#0#Smarty" />
+            <element signature="e#25772#27287#0#Smarty" />
+            <element signature="e#27300#30202#0#Smarty" />
+            <element signature="e#30215#33935#0#Smarty" />
+            <element signature="e#33948#34308#0#Smarty" />
+            <element signature="e#34321#36257#0#Smarty" />
+            <element signature="e#36270#38523#0#Smarty" />
+            <element signature="e#38536#43644#0#Smarty" />
+            <element signature="e#43657#48511#0#Smarty" />
+            <element signature="e#48524#49763#0#Smarty" />
+            <element signature="e#49776#51359#0#Smarty" />
+            <element signature="e#51372#51732#0#Smarty" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/frontend/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="199" column="23" selection-start-line="199" selection-start-column="23" selection-end-line="199" selection-end-column="23" />
+          <folding>
+            <element signature="e#7#191#0#PHP" expanded="true" />
+            <element signature="n#__construct#0;n#Home#0;n#!!top" />
+            <element signature="e#740#763#0#PHP" />
+            <element signature="n#view#0;n#Home#0;n#!!top" />
+            <element signature="e#3510#3533#0#PHP" />
+            <element signature="n#shop#0;n#Home#0;n#!!top" />
+            <element signature="e#6224#6250#0#PHP" />
+            <element signature="n#contact#0;n#Home#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/home/product.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
         </state>
       </provider>
     </entry>

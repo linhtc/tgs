@@ -62,6 +62,7 @@ $route['translate_uri_dashes'] = FALSE;
 $route['shop'] = "frontend/home/shop";
 $route['shop/(:any)'] = "frontend/home/shop/$1";
 $route['shop/(:any)/(:any)'] = "frontend/home/shop/$1/$2";
+$route['san-pham/(:any)'] = "frontend/home/product/$1";
 $route['(:any)'] = "frontend/home/shop/$1";
 
 // backend

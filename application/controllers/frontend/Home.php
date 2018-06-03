@@ -182,6 +182,44 @@ class Home extends MY_Controller {
     }
 
     /**
+     * Product
+     */
+    public function product($string=null) {
+        if(empty($string)){
+            redirect(base_url()); exit;
+        }
+        $ids = explode('-', $string);
+        $id = $ids[count($ids)-1];
+
+        $this->layout->set_layout_dir('views/frontend/layouts/');
+        $this->layout->set_layout('tgs');
+
+        $product = $this->db->select('id, title, des, detail, photo')
+            ->from($this->metadataModel)
+            ->where('deleted', 0)
+            ->where('id', $id)
+            ->order_by('sort', 'asc')
+            ->get()
+            ->row()
+        ;
+        $style = $this->db->select('style, title')
+            ->from($this->styleModel)
+            ->where('deleted', 0)
+            ->where('page', 'shop')
+            ->get()
+            ->row()
+        ;
+        $product->url = $string;
+
+        $data = array(
+            'style' => $style,
+            'product' => $product
+        );
+
+        $this->parser->parse($this->viewPath."product", $data);
+    }
+
+    /**
      * Contact
      */
     public function contact() {

@@ -691,6 +691,23 @@
                     </div>
                 {/if}
             {/if}
+            {if $page->kind eq 'free'}
+                {if !empty($metadata[$page->section])}
+                    <div class="vc_row row">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class="lab_wpb_banner wpb_content_element banner banner-white text-button-center">
+                                        {foreach from=$metadata[$page->section] key=index item=item}
+                                            {$item->des}
+                                        {/foreach}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {/if}
+            {/if}
         </section>
     {/foreach}
 {/if}
