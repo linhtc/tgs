@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/backend/home/view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/backend/home/view.tpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,8 +42,8 @@
       <file leaf-file-name="view.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="912" column="69" selection-start-line="912" selection-start-column="69" selection-end-line="912" selection-end-column="69" />
+            <state relative-caret-position="754">
+              <caret line="912" column="102" selection-start-line="912" selection-start-column="102" selection-end-line="912" selection-end-column="102" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
                 <element signature="e#476#1858#0#Smarty" />
@@ -360,12 +359,12 @@
       <workItem from="1528006417688" duration="4824000" />
       <workItem from="1528031001301" duration="1894000" />
       <workItem from="1528076544405" duration="3409000" />
-      <workItem from="1528083689045" duration="18700000" />
+      <workItem from="1528083689045" duration="18856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99034000" />
+    <option name="totallyTimeSpent" value="99190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -727,8 +726,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="912" column="69" selection-start-line="912" selection-start-column="69" selection-end-line="912" selection-end-column="69" />
+        <state relative-caret-position="754">
+          <caret line="912" column="102" selection-start-line="912" selection-start-column="102" selection-end-line="912" selection-end-column="102" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
             <element signature="e#476#1858#0#Smarty" />
