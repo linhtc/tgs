@@ -2,55 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/application/controllers/admin/Metadata.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/controllers/admin/Sections.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/controllers/backend/Backend.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/controllers/backend/Home.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/controllers/backend/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/controllers/frontend/Backend.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/admin/metadata/aio.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/admin/metadata/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/admin/metadata/view.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/admin/sections/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/admin/sections/view.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/backend/home/product.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/backend/home/shop.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/backend/home/view.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/backend/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/backend/layouts/breadcrumb.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/backend/layouts/cart.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/backend/layouts/chatbox.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/backend/layouts/default.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/backend/layouts/default2.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/backend/layouts/extra.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/backend/layouts/footer.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/backend/layouts/fuma.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/backend/layouts/head.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/backend/layouts/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/backend/layouts/mobi.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/backend/layouts/snp.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/backend/layouts/tgs.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/admin/js/extra/metadata.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/admin/js/extra/sections.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/plugins/simditor/images/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/plugins/simditor/scripts/hotkeys.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/plugins/simditor/scripts/hotkeys.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/plugins/simditor/scripts/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/plugins/simditor/scripts/mobilecheck.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/plugins/simditor/scripts/module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/plugins/simditor/scripts/module.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/plugins/simditor/scripts/simditor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/plugins/simditor/scripts/simditor.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/plugins/simditor/scripts/uploader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/plugins/simditor/scripts/uploader.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/plugins/simditor/styles/editor.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/plugins/simditor/styles/fonticon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/plugins/simditor/styles/simditor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/frontend/plugins/simditor/styles/simditor.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/admin/layouts/portal.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/layouts/portal.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/backend/home/view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/backend/home/view.tpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,8 +26,8 @@
       <file leaf-file-name="Home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/backend/Home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="256" column="48" selection-start-line="256" selection-start-column="48" selection-end-line="256" selection-end-column="48" />
+            <state relative-caret-position="342">
+              <caret line="245" column="58" lean-forward="true" selection-start-line="245" selection-start-column="58" selection-end-line="245" selection-end-column="58" />
               <folding>
                 <element signature="e#7#191#0#PHP" expanded="true" />
                 <element signature="n#__construct#0;n#Home#0;n#!!top" />
@@ -90,8 +43,8 @@
       <file leaf-file-name="view.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="911" column="47" selection-start-line="911" selection-start-column="47" selection-end-line="911" selection-end-column="47" />
+            <state relative-caret-position="514">
+              <caret line="912" column="69" selection-start-line="912" selection-start-column="69" selection-end-line="912" selection-end-column="69" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
                 <element signature="e#476#1858#0#Smarty" />
@@ -407,18 +360,18 @@
       <workItem from="1528006417688" duration="4824000" />
       <workItem from="1528031001301" duration="1894000" />
       <workItem from="1528076544405" duration="3409000" />
-      <workItem from="1528083689045" duration="18324000" />
+      <workItem from="1528083689045" duration="18700000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98658000" />
+    <option name="totallyTimeSpent" value="99034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.20088544" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.20088544" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
@@ -427,7 +380,7 @@
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.329718" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -759,8 +712,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/backend/Home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="256" column="48" selection-start-line="256" selection-start-column="48" selection-end-line="256" selection-end-column="48" />
+        <state relative-caret-position="342">
+          <caret line="245" column="58" lean-forward="true" selection-start-line="245" selection-start-column="58" selection-end-line="245" selection-end-column="58" />
           <folding>
             <element signature="e#7#191#0#PHP" expanded="true" />
             <element signature="n#__construct#0;n#Home#0;n#!!top" />
@@ -774,8 +727,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="911" column="47" selection-start-line="911" selection-start-column="47" selection-end-line="911" selection-end-column="47" />
+        <state relative-caret-position="514">
+          <caret line="912" column="69" selection-start-line="912" selection-start-column="69" selection-end-line="912" selection-end-column="69" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
             <element signature="e#476#1858#0#Smarty" />

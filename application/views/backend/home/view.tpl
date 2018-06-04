@@ -909,6 +909,8 @@
                     for(let index=0; index<cloneElements.length; index++){
                         let editElement = cloneElements[index];
                         editElement.setAttribute("data-id", result.id);
+                        editElement.setAttribute("data-parent-clone", 'parent-clone-'+result.section);
+                        editElement.setAttribute("data-parent", 'item-'+result.section+'-'+result.id);
                         console.log(editElement);
                         extraEventListener(editElement);
                     }
