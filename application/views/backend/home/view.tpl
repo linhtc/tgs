@@ -408,7 +408,7 @@
                                                         <div class="wpb_single_image wpb_content_element vc_align_center">
                                                             <figure class="wpb_wrapper vc_figure">
                                                                 <div class="vc_single_image-wrapper vc_box_border_grey">
-                                                                    <img width="128" height="128" src="{$item->photo}" alt="{$item->title}" />
+                                                                    <img class="editable-act" data-parent-clone="parent-clone-{$page->section}" data-parent="item-{$page->section}-{$item->id}" data-field="photo" data-id="{$item->id}" data-edit-type="photo" width="128" height="128" src="{$item->photo}" alt="{$item->title}" />
                                                                 </div>
                                                             </figure>
                                                         </div>
@@ -762,6 +762,32 @@
     </div>
 </div>
 
+<div class="modal" id="edit-photo-container">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <iframe id="iframe" src="/media/filemanager/filemanager/dialog.php?type=0&field_id=filePath&relative_url=1" style="width: 100%; height: 500px; border: none" tabindex="0"></iframe>
+                <input id="filePath" type="hidden" value="" onchange="updatePhoto();">
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="saveData()">Save</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 <menu id="ctxMenu">
     <menu title="Edit" onclick="editData();"></menu>
     <menu title="Duplicate" onclick="cloneData();"></menu>
@@ -782,7 +808,7 @@
         background-color:red;
     }
     menu {
-        position:absolute;
+        position:fixed;
         display:block;
         left:0px;
         top:0px;
@@ -799,11 +825,12 @@
         background-color:#eef;
         font-weight:bold;
     }
-    menu:hover > menu{
+    /*menu:hover > menu{
         display:block;
-    }
+    }*/
     menu > menu{
-        display:none;
+        /*display:none;*/
+        display:block;
         position:relative;
         top:-20px;
         left:100%;
@@ -852,6 +879,8 @@
                 } else if(editType === 'html'){
                     info.data = editor.getValue();
                     that.innerHTML = info.data;
+                } else if(editType === 'photo'){
+                    info.data = that.getAttribute('src');
                 }
             }
         }
@@ -873,6 +902,11 @@
         });
     }
 
+    function updatePhoto(){
+        that.setAttribute('src', '/media/filemanager/source/'+document.getElementById('filePath').value);
+        saveData();
+    }
+
     function hideContextMenu(){
         let ctxMenu = document.getElementById("ctxMenu");
         ctxMenu.style.display = "";
@@ -888,6 +922,9 @@
         } else if(editType === 'html'){
             editor.setValue(that.innerHTML);
             $('#edit-html-container').modal('show');
+        } else if(editType === 'photo'){
+            /*editor.setValue(that.innerHTML);*/
+            $('#edit-photo-container').modal('show');
         }
     }
     function cloneData(){
@@ -942,8 +979,8 @@
             that = this;
             let ctxMenu = document.getElementById("ctxMenu");
             ctxMenu.style.display = "block";
-            ctxMenu.style.left = (event.pageX)+"px";
-            ctxMenu.style.top = (event.pageY)+"px";
+            ctxMenu.style.left = (event.clientX)+"px";
+            ctxMenu.style.top = (event.clientY)+"px";
         }, false);
         editElement.addEventListener("click", function(event){
             that = null;
@@ -968,16 +1005,18 @@
             if (mobilecheck()) {
                 toolbar = mobileToolbar;
             }
-            editor = new Simditor({
-                textarea: $('#edit-html-content'),
-                placeholder: 'Soạn nội dung',
-                toolbar: toolbar,
-                pasteImage: true,
-                defaultImage: 'assets/images/image.png',
-                upload: location.search === '?upload' ? {
-                    url: '/upload'
-                } : false
-            });
+            setTimeout(function(){
+                editor = new Simditor({
+                    textarea: $('#edit-html-content'),
+                    placeholder: 'Soạn nội dung',
+                    toolbar: toolbar,
+                    pasteImage: true,
+                    defaultImage: 'assets/images/image.png',
+                    upload: location.search === '?upload' ? {
+                        url: '/upload'
+                    } : false
+                });
+            }, 1000);
             $preview = $('#preview');
             if ($preview.length > 0) {
                 return editor.on('valuechanged', function(e) {

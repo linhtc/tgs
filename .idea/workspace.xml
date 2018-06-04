@@ -2,7 +2,100 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/media/filemanager/source/metadata/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/filemanager/source/metadata/laborator-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/filemanager/source/metadata/lienhe-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/filemanager/source/metadata/zalo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/filemanager/thumbs/metadata/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/filemanager/thumbs/metadata/laborator-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/filemanager/thumbs/metadata/lienhe-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/filemanager/thumbs/metadata/zalo2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/tgs.sql" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/tgs.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/tgs2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/tgs2.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/backend/home/view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/backend/home/view.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/backend/layouts/tgs.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/backend/layouts/tgs.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/chatbox.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/chatbox.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/about/gioi_thieu__chung.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/about/phuong_cham_hoat_dong.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/about/tam_nhin_su_menh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/comment/testimonials.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/customer/alitalia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/customer/cadent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/customer/ceph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/customer/editshare.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/customer/gategroup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/customer/infocus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/customer/runtastic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/customer/strider.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/design-pro/dreamholidays_vn1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/design-pro/regentbay_vn1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/design-pro/swapphone1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/design/cnc/dreamholidays_vn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/design/cnc/huyenmy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/design/cnc/regentbay_vn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/design/cnc/tkweb51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/source/design/cnc/zebra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/about/fit_gioi_thieu__chung.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/about/fit_phuong_cham_hoat_dong.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/about/fit_tam_nhin_su_menh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/about/gioi_thieu__chung.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/about/phuong_cham_hoat_dong.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/about/tam_nhin_su_menh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/comment/fit_testimonials.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/comment/testimonials.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/customer/alitalia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/customer/cadent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/customer/ceph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/customer/editshare.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/customer/fit_alitalia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/customer/fit_cadent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/customer/fit_ceph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/customer/fit_editshare.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/customer/fit_gategroup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/customer/fit_infocus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/customer/fit_runtastic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/customer/fit_strider.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/customer/gategroup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/customer/infocus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/customer/runtastic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/customer/strider.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/design-pro/dreamholidays_vn1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/design-pro/fit_dreamholidays_vn1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/design-pro/fit_regentbay_vn1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/design-pro/fit_swapphone1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/design-pro/regentbay_vn1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/design-pro/swapphone1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/design/cnc/dreamholidays_vn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/design/cnc/fit_dreamholidays_vn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/design/cnc/fit_huyenmy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/design/cnc/fit_regentbay_vn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/design/cnc/fit_tkweb51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/design/cnc/fit_zebra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/design/cnc/huyenmy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/design/cnc/regentbay_vn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/design/cnc/tkweb51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/design/cnc/zebra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/images/hanh-dong-ngay.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/images/hanh-dong-ngay.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/images/lien-he-ngay.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/images/lien-he-ngay.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/images/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/images/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/img/option/bo-si-quan-ao-cao-cap-hcm-400x280.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/img/option/bo-si-quan-ao-cao-cap-hcm-400x280.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/img/option/om-lo-hang-quang-chau-400x280.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/img/option/om-lo-hang-quang-chau-400x280.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/img/option/vay-dam-quang-chau-400x280.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/img/option/vay-dam-quang-chau-400x280.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/img/option/vay-dam-thiet-ke-400x280.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/img/option/vay-dam-thiet-ke-400x280.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/img/slide/bo-si-quan-ao-1000x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/img/slide/bo-si-quan-ao-1000x300.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/img/slide/bo-si-quan-ao-cao-cap-1000x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/img/slide/bo-si-quan-ao-cao-cap-1000x300.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/img/slide/bo-si-quan-ao-quang-chau-1000x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/img/slide/bo-si-quan-ao-quang-chau-1000x300.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/img/slide/bo-si-vam-dam-quang-chau-hcm.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/img/slide/bo-si-vam-dam-quang-chau-hcm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/img/slide/bo-si-vay-dam-quang-chau-1000x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/img/slide/bo-si-vay-dam-quang-chau-1000x300.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/img/slide/dat-hang-quan-ao-quang-chau-1000x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/img/slide/dat-hang-quan-ao-quang-chau-1000x300.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/img/slide/nguon-hang-quang-chau-1000x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/img/slide/nguon-hang-quang-chau-1000x300.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/img/slide/quan-ao-quang-chau-1000x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/img/slide/quan-ao-quang-chau-1000x300.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/js/awesome-gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/js/awesome-gallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/plugins/simditor/scripts/mobilecheck.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/plugins/simditor/scripts/mobilecheck.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +109,7 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
+            <state>
               <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
             </state>
           </provider>
@@ -25,14 +118,12 @@
       <file leaf-file-name="Home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/backend/Home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="245" column="58" lean-forward="true" selection-start-line="245" selection-start-column="58" selection-end-line="245" selection-end-column="58" />
+            <state relative-caret-position="237">
+              <caret line="252" column="15" selection-start-line="252" selection-start-column="15" selection-end-line="252" selection-end-column="15" />
               <folding>
                 <element signature="e#7#191#0#PHP" expanded="true" />
                 <element signature="n#__construct#0;n#Home#0;n#!!top" />
                 <element signature="e#739#762#0#PHP" />
-                <element signature="e#3508#3531#0#PHP" />
-                <element signature="e#6221#6247#0#PHP" />
                 <element signature="n#product#0;n#Home#0;n#!!top" />
               </folding>
             </state>
@@ -42,8 +133,8 @@
       <file leaf-file-name="view.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="912" column="102" selection-start-line="912" selection-start-column="102" selection-end-line="912" selection-end-column="102" />
+            <state relative-caret-position="578">
+              <caret line="906" column="17" selection-start-line="906" selection-start-column="17" selection-end-line="906" selection-end-column="17" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
                 <element signature="e#476#1858#0#Smarty" />
@@ -52,35 +143,33 @@
                 <element signature="e#8633#23636#0#Smarty" />
                 <element signature="e#23649#25759#0#Smarty" />
                 <element signature="e#25772#27287#0#Smarty" />
-                <element signature="e#30215#33935#0#Smarty" />
-                <element signature="e#33948#34308#0#Smarty" />
-                <element signature="e#34321#36257#0#Smarty" />
-                <element signature="e#36270#38523#0#Smarty" />
-                <element signature="e#38536#43644#0#Smarty" />
-                <element signature="e#43657#48511#0#Smarty" />
-                <element signature="e#48524#49763#0#Smarty" />
-                <element signature="e#49776#51359#0#Smarty" />
-                <element signature="e#51372#52245#0#Smarty" />
-                <element signature="n#div#1;n#!!top" />
-                <element signature="e#52910#52917#1#HTML" expanded="true" />
-                <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#div#2;n#!!top" />
-                <element signature="e#53704#53711#1#HTML" expanded="true" />
-                <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="e#30803#34523#0#Smarty" />
+                <element signature="e#34536#34896#0#Smarty" />
+                <element signature="e#34909#36845#0#Smarty" />
+                <element signature="e#36858#39111#0#Smarty" />
+                <element signature="e#39124#44232#0#Smarty" />
+                <element signature="e#44245#49099#0#Smarty" />
+                <element signature="e#49112#50351#0#Smarty" />
+                <element signature="e#50364#51947#0#Smarty" />
+                <element signature="e#51960#52833#0#Smarty" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#!!top" />
+                <element signature="e#55056#55063#1#HTML" expanded="true" />
                 <element signature="n#style#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="metadata.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/admin/js/extra/metadata.js">
+      <file leaf-file-name="upload.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/media/filemanager/filemanager/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="191" column="11" lean-forward="true" selection-start-line="171" selection-start-column="8" selection-end-line="191" selection-end-column="11" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="435">
+              <caret line="182" column="23" selection-start-line="182" selection-start-column="23" selection-end-line="182" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -88,8 +177,8 @@
       <file leaf-file-name="tgs.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/tgs.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="62" lean-forward="true" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
+            <state relative-caret-position="45">
+              <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -152,7 +241,6 @@
         <option value="$PROJECT_DIR$/static/frontend/js/oxygen-custom.js" />
         <option value="$PROJECT_DIR$/application/views/frontend/layouts/snp.tpl" />
         <option value="$PROJECT_DIR$/application/views/frontend/layouts/footer.tpl" />
-        <option value="$PROJECT_DIR$/application/views/frontend/layouts/chatbox.tpl" />
         <option value="$PROJECT_DIR$/application/views/frontend/layouts/mobi.tpl" />
         <option value="$PROJECT_DIR$/application/views/frontend/layouts/extra.tpl" />
         <option value="$PROJECT_DIR$/static/frontend/css/support.css" />
@@ -184,6 +272,10 @@
         <option value="$PROJECT_DIR$/application/views/backend/layouts/extra.tpl" />
         <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/controllers/backend/Home.php" />
+        <option value="$PROJECT_DIR$/application/views/backend/layouts/chatbox.tpl" />
+        <option value="$PROJECT_DIR$/application/views/frontend/layouts/chatbox.tpl" />
+        <option value="$PROJECT_DIR$/application/views/backend/layouts/tgs.tpl" />
+        <option value="$PROJECT_DIR$/media/filemanager/filemanager/upload.php" />
         <option value="$PROJECT_DIR$/application/views/backend/home/view.tpl" />
       </list>
     </option>
@@ -213,6 +305,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,6 +342,21 @@
               <item name="tgs" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="homes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -270,43 +378,54 @@
             <path>
               <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
               <item name="tgs" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tgs" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
               <item name="tgs" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
               <item name="tgs" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="simditor" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
               <item name="tgs" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="simditor" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="filemanager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="filemanager" type="462c0819:PsiDirectoryNode" />
+              <item name="filemanager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="filemanager" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="filemanager" type="462c0819:PsiDirectoryNode" />
+              <item name="thumbs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,11 +437,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/media/filemanager/thumbs/metadata" />
+      <recent name="$PROJECT_DIR$/media/filemanager/source/metadata" />
       <recent name="$PROJECT_DIR$/static/frontend/plugins/simditor/scripts" />
       <recent name="$PROJECT_DIR$/static/frontend/plugins" />
       <recent name="$PROJECT_DIR$/application/controllers" />
-      <recent name="$PROJECT_DIR$/application/views" />
-      <recent name="$PROJECT_DIR$/application/controllers/frontend" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -360,17 +479,19 @@
       <workItem from="1528031001301" duration="1894000" />
       <workItem from="1528076544405" duration="3409000" />
       <workItem from="1528083689045" duration="18856000" />
+      <workItem from="1528119362721" duration="292000" />
+      <workItem from="1528119723491" duration="4349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99190000" />
+    <option name="totallyTimeSpent" value="103831000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="0" y="25" width="1600" height="875" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.20088544" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.200625" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
@@ -398,16 +519,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/cache/smarty/compiled/462eb2a78509187863247876bd4120bd33a9ae4f_0.file.extra.tpl.php" />
-    <entry file="file://$PROJECT_DIR$/static/frontend/js/cff-scripts.js" />
-    <entry file="file://$PROJECT_DIR$/application/cache/smarty/compiled/01b2e281508faa66231ff08053530be5db7b9bf5_0.file.sidebar.tpl.php" />
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/default2.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/options.json" />
     <entry file="file://$PROJECT_DIR$/static/frontend/js/awesome-gallery.js" />
     <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/footer.tpl">
@@ -428,13 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/chatbox.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -529,23 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="880">
           <caret line="720" column="3" selection-start-line="720" selection-start-column="3" selection-end-line="720" selection-end-column="3" />
-          <folding>
-            <element signature="e#476#1858#0#Smarty" />
-            <element signature="e#1871#6371#0#Smarty" />
-            <element signature="e#6384#8620#0#Smarty" />
-            <element signature="e#8633#23636#0#Smarty" />
-            <element signature="e#23649#25759#0#Smarty" />
-            <element signature="e#25772#27287#0#Smarty" />
-            <element signature="e#27300#30202#0#Smarty" />
-            <element signature="e#30215#33935#0#Smarty" />
-            <element signature="e#33948#34308#0#Smarty" />
-            <element signature="e#34321#36257#0#Smarty" />
-            <element signature="e#36270#38523#0#Smarty" />
-            <element signature="e#38536#43644#0#Smarty" />
-            <element signature="e#43657#48511#0#Smarty" />
-            <element signature="e#48524#49763#0#Smarty" />
-            <element signature="e#49776#51359#0#Smarty" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -560,13 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2352">
           <caret line="238" selection-start-line="238" selection-end-line="238" />
-          <folding>
-            <element signature="e#7#191#0#PHP" expanded="true" />
-            <element signature="n#__construct#0;n#Home#0;n#!!top" />
-            <element signature="e#740#763#0#PHP" />
-            <element signature="n#shop#0;n#Home#0;n#!!top" />
-            <element signature="n#contact#0;n#Home#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -613,10 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1296">
           <caret line="84" column="112" selection-start-line="84" selection-start-column="112" selection-end-line="84" selection-end-column="112" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -631,10 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="135" column="45" lean-forward="true" selection-start-line="135" selection-start-column="45" selection-end-line="135" selection-end-column="45" />
-          <folding>
-            <element signature="n#index#0;n#Sections#0;n#!!top" />
-            <element signature="n#remove#0;n#Sections#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -649,11 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#aside#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#style#0;n#iframe#0;n#section#0;n#div#0;n#aside#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -673,31 +740,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/tgs.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="62" lean-forward="true" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/extra.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="101" column="10" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
+        <state relative-caret-position="45">
+          <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/admin/js/extra/metadata.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="191" column="11" lean-forward="true" selection-start-line="171" selection-start-column="8" selection-end-line="191" selection-end-column="11" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="2865">
+          <caret line="191" column="11" selection-start-line="171" selection-start-column="8" selection-end-line="191" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
+        <state>
           <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
         </state>
       </provider>
@@ -709,16 +766,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/chatbox.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/chatbox.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="6" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/tgs.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/extra.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="101" column="10" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/homes/view.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="104" column="56" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/filemanager/filemanager/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="182" column="23" selection-start-line="182" selection-start-column="23" selection-end-line="182" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/backend/Home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="245" column="58" lean-forward="true" selection-start-line="245" selection-start-column="58" selection-end-line="245" selection-end-column="58" />
+        <state relative-caret-position="237">
+          <caret line="252" column="15" selection-start-line="252" selection-start-column="15" selection-end-line="252" selection-end-column="15" />
           <folding>
             <element signature="e#7#191#0#PHP" expanded="true" />
             <element signature="n#__construct#0;n#Home#0;n#!!top" />
             <element signature="e#739#762#0#PHP" />
-            <element signature="e#3508#3531#0#PHP" />
-            <element signature="e#6221#6247#0#PHP" />
             <element signature="n#product#0;n#Home#0;n#!!top" />
           </folding>
         </state>
@@ -726,8 +828,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="912" column="102" selection-start-line="912" selection-start-column="102" selection-end-line="912" selection-end-column="102" />
+        <state relative-caret-position="578">
+          <caret line="906" column="17" selection-start-line="906" selection-start-column="17" selection-end-line="906" selection-end-column="17" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
             <element signature="e#476#1858#0#Smarty" />
@@ -736,21 +838,22 @@
             <element signature="e#8633#23636#0#Smarty" />
             <element signature="e#23649#25759#0#Smarty" />
             <element signature="e#25772#27287#0#Smarty" />
-            <element signature="e#30215#33935#0#Smarty" />
-            <element signature="e#33948#34308#0#Smarty" />
-            <element signature="e#34321#36257#0#Smarty" />
-            <element signature="e#36270#38523#0#Smarty" />
-            <element signature="e#38536#43644#0#Smarty" />
-            <element signature="e#43657#48511#0#Smarty" />
-            <element signature="e#48524#49763#0#Smarty" />
-            <element signature="e#49776#51359#0#Smarty" />
-            <element signature="e#51372#52245#0#Smarty" />
-            <element signature="n#div#1;n#!!top" />
-            <element signature="e#52910#52917#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#!!top" />
-            <element signature="e#53704#53711#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="e#30803#34523#0#Smarty" />
+            <element signature="e#34536#34896#0#Smarty" />
+            <element signature="e#34909#36845#0#Smarty" />
+            <element signature="e#36858#39111#0#Smarty" />
+            <element signature="e#39124#44232#0#Smarty" />
+            <element signature="e#44245#49099#0#Smarty" />
+            <element signature="e#49112#50351#0#Smarty" />
+            <element signature="e#50364#51947#0#Smarty" />
+            <element signature="e#51960#52833#0#Smarty" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#!!top" />
+            <element signature="e#55056#55063#1#HTML" expanded="true" />
             <element signature="n#style#0;n#!!top" />
           </folding>
         </state>
