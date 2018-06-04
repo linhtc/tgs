@@ -39,12 +39,18 @@
                 </header>
                 <div class="mdc-list-group mdc-drawer__content portal-hide-scrollbars portal-navigation" id="portal-navigation">
                     <nav class="mdc-list portal-navigation-list">
-                        <a class="portal-navigation-list__item mdc-list-item {if $page eq 'home'}mdc-list-item--activated{/if}" href="/admin/homes">
+                        <a class="portal-navigation-list__item mdc-list-item {if $page eq 'section'}mdc-list-item--activated{/if}" href="/admin/sections">
                             <span class="portal-navigation-list__text">
                                 <i class="material-icons mdc-list-item__graphic portal-navigation-list__icon" aria-hidden="true">dashboard</i>
-                                Trang chủ
+                                Section
                             </span>
                             <span class="portal-badge portal-badge--secondary">3</span>
+                        </a>
+                        <a class="portal-navigation-list__item mdc-list-item {if $page eq 'metadata'}mdc-list-item--activated{/if}" href="/admin/metadata">
+                            <span class="portal-navigation-list__text">
+                                <i class="material-icons mdc-list-item__graphic portal-navigation-list__icon" aria-hidden="true">list</i>
+                                Section detail
+                            </span>
                         </a>
                         <a class="portal-navigation-list__item mdc-list-item  {if $page eq 'introduction'}mdc-list-item--activated{/if}" href="/admin/introductions">
                             <span class="portal-navigation-list__text">
