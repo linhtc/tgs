@@ -376,13 +376,16 @@
                 {if !empty($metadata[$page->section])}
                     <div class="vc_row row vc_custom_1521533964140 vc_row-has-fill vc_row-o-content-middle vc_row-flex">
                         {foreach from=$metadata[$page->section] key=index item=item}
-                            <div class="wpb_column vc_column_container vc_col-sm-4">
+                            <div class="wpb_column vc_column_container vc_col-sm-4 editable-act" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-{$page->section}-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                                 <div class="vc_column-inner ">
                                     <div class="wpb_wrapper">
                                         <div class="wpb_single_image wpb_content_element vc_align_left">
                                             <figure class="wpb_wrapper vc_figure">
-                                                <a href="{$item->detail}" title="{$item->title}" target="_blank" class="vc_single_image-wrapper vc_box_border_grey">
-                                                    <img width="463" height="158" src="{$item->photo}" class="vc_single_image-img attachment-full" alt="{$item->title}" />
+                                                <a href="{$item->detail}" title="{$item->title}" target="_blank" class="vc_single_image-wrapper vc_box_border_grey prevent_click">
+                                                    <img class="vc_single_image-img attachment-full prevent_click" data-id="{$item->id}" data-edit-type="photo" width="463" height="158" src="{$item->photo}" alt="{$item->title}" />
+                                                    <input type="hidden" data-id="{$item->id}" data-edit-type="title" value="{$item->title}" />
+                                                    <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="des" data-only-text="1">{$item->des}</textarea>
+                                                    <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="detail" data-only-text="1">{$item->detail}</textarea>
                                                 </a>
                                             </figure>
                                         </div>
@@ -712,44 +715,26 @@
     {/foreach}
 {/if}
 
-<div class="modal" id="edit-html-container">
+<div class="modal" id="edit-container">
     <div class="modal-dialog">
         <div class="modal-content">
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Modal Heading</h4>
+                <h4 class="modal-title">Chỉnh sửa nội dung</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
             <!-- Modal body -->
             <div class="modal-body">
-                <textarea class="edit-text" id="edit-html-content" style="width: 100%; height: 100%;"></textarea>
-            </div>
-
-            <!-- Modal footer -->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="saveData()">Save</button>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<div class="modal" id="edit-text-container">
-    <div class="modal-dialog">
-        <div class="modal-content">
-
-            <!-- Modal Header -->
-            <div class="modal-header">
-                <h4 class="modal-title">Modal Heading</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-
-            <!-- Modal body -->
-            <div class="modal-body">
-                <textarea class="edit-text" id="edit-text-content" style="width: 100%; height: 100%;"></textarea>
+                <strong>Tiêu đề:</strong><br>
+                <input placeholder="title" class="edit-text" id="edit-content-title" value="">
+                <strong>Hình ảnh:</strong><br>
+                <input placeholder="title" class="edit-text" id="edit-content-photo" readonly="readonly" value="" onclick="$('#edit-photo-container').modal('show');">
+                <strong>Tóm tắt:</strong><br>
+                <textarea class="edit-text" id="edit-content-des" style="width: 100%; height: 100px;"></textarea>
+                <strong>Chi tiết:</strong><br>
+                <textarea class="edit-text" id="edit-content-detail" style="width: 100%; height: 250px;"></textarea>
             </div>
 
             <!-- Modal footer -->
@@ -765,17 +750,15 @@
 <div class="modal" id="edit-photo-container">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Modal Heading</h4>
+                <h4 class="modal-title">Quản lý hình ảnh</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
             <!-- Modal body -->
             <div class="modal-body">
-                <iframe id="iframe" src="/media/filemanager/filemanager/dialog.php?type=0&field_id=filePath&relative_url=1" style="width: 100%; height: 500px; border: none" tabindex="0"></iframe>
-                <input id="filePath" type="hidden" value="" onchange="updatePhoto();">
+                <iframe id="iframe" src="/media/filemanager/filemanager/dialog.php?type=0&field_id=edit-content-photo&relative_url=1" style="width: 100%; height: 500px; border: none" tabindex="0"></iframe>
             </div>
 
             <!-- Modal footer -->
@@ -783,7 +766,6 @@
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-success" data-dismiss="modal" onclick="saveData()">Save</button>
             </div>
-
         </div>
     </div>
 </div>
@@ -795,6 +777,17 @@
 </menu>
 
 <style>
+    .edit-text{
+        width: 100%;
+        padding: 5px;
+        margin: 10px 0;
+    }
+    .prevent_show{
+        display: none !important;
+    }
+    .prevent_click{
+        pointer-events: none !important;
+    }
     #ctxMenu{
         display:none;
         z-index:100;
@@ -845,11 +838,13 @@
 </style>
 
 <script>
+    let switchEditor = { des: true, detail: true };
     function allowDrop(ev) {
         ev.preventDefault();
     }
 
     function drag(ev) {
+        console.log(ev.target.id);
         ev.dataTransfer.setData("text", ev.target.id);
     }
 
@@ -858,6 +853,8 @@
         let data = ev.dataTransfer.getData("text");
         let target = el;
         let source = document.getElementById(data);
+        console.log(data);
+        console.log(source);
         let targetHtml = target.innerHTML;
         target.innerHTML = source.innerHTML;
         source.innerHTML = targetHtml;
@@ -871,16 +868,21 @@
     function saveData(info, callback){
         if(info === undefined){
             if(that !== null){
-                info = { type:'update', field: that.getAttribute('data-field'), id: that.getAttribute('data-id') };
-                let editType = that.getAttribute('data-edit-type');
-                if(editType === 'text'){
-                    info.data = $('#edit-text-content').val();
-                    that.innerText = info.data;
-                } else if(editType === 'html'){
-                    info.data = editor.getValue();
-                    that.innerHTML = info.data;
-                } else if(editType === 'photo'){
-                    info.data = that.getAttribute('src');
+                let desItem = $('edit-content-des');
+                console.log(desItem);
+                info = {
+                    type:'update',
+                    id: that.getAttribute('data-id'),
+                    title: $('#edit-content-title').val(),
+                    photo: $('#edit-content-photo').val(),
+                    des: editorDes.getValue(),
+                    detail: editorDetail.getValue()
+                };
+                if(!switchEditor.des){
+                    info.des = $("<p>").html(info.des).text()
+                }
+                if(!switchEditor.detail){
+                    info.detail = $("<p>").html(info.detail).text()
                 }
             }
         }
@@ -915,17 +917,49 @@
     }
     function editData(){
         hideContextMenu();
-        let editType = that.getAttribute('data-edit-type');
-        if(editType === 'text'){
+        let dataID = that.getAttribute('data-id');
+        if(dataID !== undefined){
+            let datas = $(that).find("[data-id='"+dataID+"']");
+            if(datas.length > 0){
+                for(var k=0; k<datas.length; k++){
+                    let item = $(datas[k]);
+                    let editValue = '';
+                    let editColumn = item.attr('data-edit-type');
+                    if(editColumn === 'photo'){
+                        editValue = item.attr('src');
+                        $('#edit-content-'+editColumn).val(editValue);
+                    } else if(editColumn === 'title'){
+                        editValue = item.val();
+                        $('#edit-content-'+editColumn).val(editValue);
+                    } else if(editColumn === 'des'){
+                        editValue = item.val();
+                        editorDes.setValue(editValue);
+                        let onlyText = item.attr('data-only-text');
+                        if(onlyText !== undefined){
+                            switchEditor.des = false;
+                        }
+                    } else if(editColumn === 'detail'){
+                        editValue = item.val();
+                        editorDetail.setValue(editValue);
+                        let onlyText = item.attr('data-only-text');
+                        if(onlyText !== undefined){
+                            switchEditor.detail = false;
+                        }
+                    }
+                }
+                $('#edit-container').modal('show');
+            }
+        }
+        /*if(editType === 'text'){
             $('#edit-text-content').html(that.innerText);
             $('#edit-text-container').modal('show');
         } else if(editType === 'html'){
             editor.setValue(that.innerHTML);
             $('#edit-html-container').modal('show');
         } else if(editType === 'photo'){
-            /*editor.setValue(that.innerHTML);*/
+            /!*editor.setValue(that.innerHTML);*!/
             $('#edit-photo-container').modal('show');
-        }
+        }*/
     }
     function cloneData(){
         hideContextMenu();
@@ -1006,8 +1040,18 @@
                 toolbar = mobileToolbar;
             }
             setTimeout(function(){
-                editor = new Simditor({
-                    textarea: $('#edit-html-content'),
+                editorDes = new Simditor({
+                    textarea: $('#edit-content-des'),
+                    placeholder: 'Soạn nội dung',
+                    toolbar: toolbar,
+                    pasteImage: true,
+                    defaultImage: 'assets/images/image.png',
+                    upload: location.search === '?upload' ? {
+                        url: '/upload'
+                    } : false
+                });
+                editorDetail = new Simditor({
+                    textarea: $('#edit-content-detail'),
                     placeholder: 'Soạn nội dung',
                     toolbar: toolbar,
                     pasteImage: true,

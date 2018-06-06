@@ -242,11 +242,14 @@ class Home extends MY_Controller {
             );
             $result = $this->db->update_batch($this->metadataModel, $batch, 'id');
         } elseif($req->type === 'update'){
-            $pull = array(
-                'modified' => date('Y-m-d H:i:s', time()),
-                $req->field => $req->data
-            );
-            $result = $this->db->where('id', $req->id)->update($this->metadataModel, $pull);
+//            $pull = array(
+//                'modified' => date('Y-m-d H:i:s', time()),
+//                $req->field => $req->data
+//            );
+            unset($pullClass['id']);
+            unset($pullClass['type']);
+            $pullClass['modified'] = date('Y-m-d H:i:s', time());
+            $result = $this->db->where('id', $req->id)->update($this->metadataModel, $pullClass);
         } elseif($req->type === 'clone'){
             $item = $this->db->select()->from($this->metadataModel)->where('id', $req->id)->get()->row();
             unset($item->id);

@@ -32,6 +32,7 @@
         });
     </script>
     <!--Start of Tawk.to Script (0.3.3)-->
+    <!--
     <script type="text/javascript">
         var Tawk_API=Tawk_API||{};
         var Tawk_LoadStart=new Date();
@@ -44,5 +45,6 @@
             s0.parentNode.insertBefore(s1,s0);
         })();
     </script>
+    -->
 {/literal}
 <!--End of Tawk.to Script (0.3.3)-->
