@@ -84,7 +84,7 @@
                 <div class="vc_row row">
                     {if !empty($metadata[$page->section])}
                         {foreach from=$metadata[$page->section] key=index item=item}
-                            <div class="wpb_column vc_column_container vc_col-sm-3">
+                            <div class="wpb_column vc_column_container vc_col-sm-3 editable-act" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-{$page->section}-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                                 <div class="vc_column-inner ">
                                     <div class="wpb_wrapper">
                                         <style>
@@ -97,18 +97,20 @@
                                             }
                                         </style>
                                         <div class="lab_wpb_banner_2 wpb_content_element banner-type-3" id="el_152764133018506_{$index}">
-                                            <a href="{$item->detail}" target="_self">
-                                                <img class="banner-img " src="{$item->photo}" width="400" height="280" alt="{$item->title}" title="{$item->title}" />
+                                            <a href="{$item->detail}" target="_self" class="prevent_click">
+                                                <img class="banner-img" src="{$item->photo}" data-id="{$item->id}" data-edit-type="photo" width="400" height="280" alt="{$item->title}" title="{$item->title}" />
                                                 <span class="ol" style="background-color: rgba(255,255,255,0.01);"></span>
                                                 <span class="centered">
                                                     <span class="title wow bounce" data-wow-delay="450ms">
-                                                        <strong>{$item->title} {$page->section}</strong>
+                                                        <strong data-apply-id="{$item->id}" data-edit-type="title">{$item->title} {$page->section}</strong>
                                                     </span>
                                                 </span>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
+                                <input type="hidden" data-id="{$item->id}" data-edit-type="title" value="{$item->title}" />
+                                <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="detail" data-only-text="1">{$item->detail}</textarea>
                             </div>
                         {/foreach}
                     {/if}
@@ -342,21 +344,21 @@
             {if $page->kind eq 'article'}
                 {if !empty($metadata[$page->section])}
                     {foreach from=$metadata[$page->section] key=index item=item}
-                        <div class="vc_row row">
+                        <div class="vc_row row editable-act" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-{$page->section}-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                             <div class="wpb_column vc_column_container vc_col-sm-12">
-                                <div class="vc_column-inner ">
+                                <div class="vc_column-inner">
                                     <div class="wpb_wrapper">
                                         <div class="lab_wpb_banner wpb_content_element banner  banner-white text-button-center">
                                             <div class="button_outer">
                                                 <div class="button_middle">
                                                     <div class="button_inner">
                                                         <div class="banner-content">
-                                                            <h1><strong>{$item->title}</strong></h1>
-                                                            <span>{$item->des}</span>
+                                                            <h1><strong data-apply-id="{$item->id}" data-edit-type="title">{$item->title}</strong></h1>
+                                                            <span data-apply-id="{$item->id}" data-edit-type="des">{$item->des}</span>
                                                         </div>
                                                         {if $item->detail neq ''}
                                                             <div class="banner-call-button">
-                                                                <a href="{$item->detail}" class="btn" target="">
+                                                                <a href="{$item->detail}" class="btn" target="" data-apply-id="{$item->id}" data-edit-type="detail">
                                                                     XEM THÊM!
                                                                 </a>
                                                             </div>
@@ -368,6 +370,9 @@
                                     </div>
                                 </div>
                             </div>
+                            <input type="hidden" data-id="{$item->id}" data-edit-type="title" value="{$item->title}" />
+                            <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="des">{$item->des}</textarea>
+                            <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="detail" data-only-text="1">{$item->detail}</textarea>
                         </div>
                     {/foreach}
                 {/if}
@@ -441,7 +446,7 @@
             {/if}
             {if $page->kind eq 'list_2'}
                 {if !empty($metadata[$page->section])}
-                    <div class="vc_row row">
+                    <div class="vc_row row" data-id="{$item->id}">
                         <div class="wpb_column vc_column_container vc_col-sm-12">
                             <div class="vc_column-inner ">
                                 <div class="wpb_wrapper">
@@ -459,11 +464,15 @@
                                                 <div style="line-height: 20.7999992370605px;">
                                                     <div style="padding: 10px; text-align: justify; border: 6px dotted #ee7d15; border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; border-radius: 4px; outline: 0px; vertical-align: baseline; line-height: 21px; font-family: Tahoma, Geneva, sans-serif; background-repeat: no-repeat;">
                                                         {foreach from=$metadata[$page->section] key=index item=item}
-                                                            <p style="color: #000000; font-family: Arial; font-size: 15px; line-height: 20.7999992370605px;">
-                                                                <span style="font-size: 18px; font-family: arial, helvetica, sans-serif;"><img class=" lazyloaded" style="line-height: 18px; margin: 0px; padding: 0px; max-width: 100%; border: 0px; outline: 0px; vertical-align: baseline; width: 60px; height: 20px; background: transparent;" src="/static/frontend/images/mui-ten.gif" alt="" data-lazy-src="/static/frontend/images/mui-ten.gif" data-pagespeed-url-hash="1743886238">
-                                                                    {$item->title}
-                                                                </span>
-                                                            </p>
+                                                            <div class="editable-act" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-{$page->section}-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+                                                                <p style="color: #000000; font-family: Arial; font-size: 15px; line-height: 20.7999992370605px;">
+                                                                    <span style="font-size: 18px; font-family: arial, helvetica, sans-serif;">
+                                                                        <img class=" lazyloaded" style="line-height: 18px; margin: 0px; padding: 0px; max-width: 100%; border: 0px; outline: 0px; vertical-align: baseline; width: 60px; height: 20px; background: transparent;" src="/static/frontend/images/mui-ten.gif" alt="" data-lazy-src="/static/frontend/images/mui-ten.gif" data-pagespeed-url-hash="1743886238">
+                                                                        <span data-apply-id="{$item->id}" data-edit-type="title">{$item->title}</span>
+                                                                    </span>
+                                                                </p>
+                                                                <input type="hidden" data-id="{$item->id}" data-edit-type="title" value="{$item->title}" />
+                                                            </div>
                                                         {/foreach}
                                                     </div>
                                                 </div>
@@ -481,8 +490,9 @@
             {if $page->kind eq 'text'}
                 {if !empty($metadata[$page->section])}
                     {foreach from=$metadata[$page->section] key=index item=item}
-                        <div class="term-description">
-                            {$item->des}
+                        <div class="term-description editable-act" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-{$page->section}-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+                            <div data-apply-id="{$item->id}" data-edit-type="des">{$item->des}</div>
+                            <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="des">{$item->des}</textarea>
                         </div>
                     {/foreach}
                 {/if}
@@ -523,7 +533,7 @@
                 {if !empty($metadata[$page->section])}
                     <div class="vc_row row">
                         {foreach from=$metadata[$page->section] key=index item=item}
-                            <div class="wpb_column vc_column_container vc_col-sm-6">
+                            <div class="wpb_column vc_column_container vc_col-sm-6 editable-act" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-{$page->section}-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                                 <div class="vc_column-inner ">
                                     <div class="wpb_wrapper">
                                         <style>
@@ -536,18 +546,20 @@
                                             }
                                         </style>
                                         <div class="lab_wpb_banner_2 wpb_content_element banner-type-3" id="el_152785966982702_{$index}">
-                                            <a href="{$item->detail}" target="_self">
-                                                <img class="banner-img " src="{$item->photo}" width="400" height="280" alt="{$item->title}" title="{$item->title}">
+                                            <a href="{$item->detail}" target="_self" class="prevent_click">
+                                                <img class="banner-img " src="{$item->photo}" width="400" height="280" alt="{$item->title}" title="{$item->title}" data-id="{$item->id}" data-edit-type="photo">
                                                 <span class="ol" style="background-color: rgba(255,255,255,0.01);"></span>
                                                 <span class="centered">
 												<span class="title wow bounce animated" data-wow-delay="450ms" style="visibility: visible; animation-delay: 450ms; animation-name: bounce;">
-                                                    <strong>{$item->title}</strong>
+                                                    <strong data-apply-id="{$item->id}" data-edit-type="title">{$item->title}</strong>
                                                 </span>
                                             </span>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
+                                <input type="hidden" data-id="{$item->id}" data-edit-type="title" value="{$item->title}" />
+                                <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="detail" data-only-text="1">{$item->detail}</textarea>
                             </div>
                         {/foreach}
                     </div>
@@ -622,26 +634,22 @@
                                 <div class="wpb_wrapper">
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                     {foreach from=$metadata[$page->section] key=index item=item}
-                                        <div class="wpb_single_image wpb_content_element vc_align_center">
+                                        <div class="wpb_single_image wpb_content_element vc_align_center editable-act" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-{$page->section}-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                                             <figure class="wpb_wrapper vc_figure">
                                         {if $item->detail eq ''}
-                                            <div class="vc_single_image-wrapper vc_box_border_grey">
-                                                <img src="{$item->photo}" class="vc_single_image-img attachment-full" alt="{$item->title}">
+                                            <div class="vc_single_image-wrapper vc_box_border_grey prevent_click">
+                                                <img src="{$item->photo}" class="vc_single_image-img attachment-full" data-id="{$item->id}" data-edit-type="photo" alt="{$item->title}">
                                             </div>
                                         {else}
-                                            <a href="{$item->detail}" target="_blank" class="vc_single_image-wrapper vc_box_border_grey">
-                                                <img src="{$item->photo}" class="vc_single_image-img attachment-full" alt="{$item->title}">
+                                            <a href="{$item->detail}" target="_blank" class="vc_single_image-wrapper vc_box_border_grey prevent_click">
+                                                <img src="{$item->photo}" class="vc_single_image-img attachment-full" data-id="{$item->id}" data-edit-type="photo" alt="{$item->title}">
                                             </a>
                                         {/if}
                                             </figure>
+                                            <input type="hidden" data-id="{$item->id}" data-edit-type="title" value="{$item->title}" />
+                                            <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="detail" data-only-text="1">{$item->detail}</textarea>
                                         </div>
                                     {/foreach}
-                                    <!--<div class="wpb_text_column wpb_content_element ">
-                                        <div class="wpb_wrapper">
-                                            <div class="fb-like fb_iframe_widget" data-href="https://facebook.com/trumgiasishop/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=616754451826546&amp;container_width=1255&amp;href=https%3A%2F%2Ffacebook.com%2Ftrumgiasishop%2F&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=false&amp;show_faces=true&amp;size=small"><span style="vertical-align: bottom; width: 81px; height: 20px;"><iframe name="f1ee07536d34f38" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.3/plugins/like.php?action=like&amp;app_id=616754451826546&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FoVjM2wVZ10b.js%3Fversion%3D42%23cb%3Df2172fe409e35d4%26domain%3Dtrumgiasi.com%26origin%3Dhttps%253A%252F%252Ftrumgiasi.com%252Ff254ebf3c2c8964%26relation%3Dparent.parent&amp;container_width=1255&amp;href=https%3A%2F%2Ffacebook.com%2Ftrumgiasishop%2F&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=false&amp;show_faces=true&amp;size=small" style="border: none; visibility: visible; width: 81px; height: 20px;" class=""></iframe></span></div>
-                                            <div class="fb-share-button fb_iframe_widget" data-href="https://trumgiasi.com/shop/vay-dam-quang-chau/" data-layout="button_count" data-size="small" data-mobile-iframe="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=616754451826546&amp;container_width=1255&amp;href=https%3A%2F%2Ftrumgiasi.com%2Fshop%2Fvay-dam-quang-chau%2F&amp;layout=button_count&amp;locale=vi_VN&amp;mobile_iframe=true&amp;sdk=joey&amp;size=small"><span style="vertical-align: bottom; width: 78px; height: 20px;"><iframe name="f27151e691df1e" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:share_button Facebook Social Plugin" src="https://www.facebook.com/v2.3/plugins/share_button.php?app_id=616754451826546&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FoVjM2wVZ10b.js%3Fversion%3D42%23cb%3Df12df40d2cbbda%26domain%3Dtrumgiasi.com%26origin%3Dhttps%253A%252F%252Ftrumgiasi.com%252Ff254ebf3c2c8964%26relation%3Dparent.parent&amp;container_width=1255&amp;href=https%3A%2F%2Ftrumgiasi.com%2Fshop%2Fvay-dam-quang-chau%2F&amp;layout=button_count&amp;locale=vi_VN&amp;mobile_iframe=true&amp;sdk=joey&amp;size=small" style="border: none; visibility: visible; width: 78px; height: 20px;" class=""></iframe></span></div>
-                                        </div>
-                                    </div>-->
                                 </div>
                             </div>
                         </div>
@@ -659,7 +667,10 @@
                                             <p><strong>{$page->title}</strong></p>
                                             <ul>
                                             {foreach from=$metadata[$page->section] key=index item=item}
-                                                <li>{$item->title}</li>
+                                                <li class="editable-act" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-{$page->section}-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+                                                    <span data-apply-id="{$item->id}" data-edit-type="title">{$item->title}</span>
+                                                    <input type="hidden" data-id="{$item->id}" data-edit-type="title" value="{$item->title}" />
+                                                </li>
                                             {/foreach}
                                             </ul>
                                         </div>
@@ -680,11 +691,14 @@
                                         <div class="wpb_wrapper">
                                             <div class="wpb_video_widget wpb_content_element vc_clearfix vc_video-aspect-ratio-169 vc_video-el-width-100 vc_video-align-center">
                                                 <div class="wpb_wrapper">
-                                                    <div class="wpb_video_wrapper">
-                                                        {foreach from=$metadata[$page->section] key=index item=item}
-                                                            {$item->detail}
-                                                        {/foreach}
+                                                    {foreach from=$metadata[$page->section] key=index item=item}
+                                                    <div class="wpb_video_wrapper editable-act" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-{$page->section}-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+                                                        <div class="prevent_click">
+                                                            <iframe width="1170" height="878" src="{$item->detail}" data-apply-id="{$item->id}" data-edit-type="detail" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                                        </div>
+                                                        <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="detail" data-only-text="1">{$item->detail}</textarea>
                                                     </div>
+                                                    {/foreach}
                                                 </div>
                                             </div>
                                         </div>
@@ -947,6 +961,10 @@
                                 } else if (editColumn === 'detail') {
                                     if (item.tagName === 'TEXTAREA') {
                                         item.value = info.detail;
+                                    } else if(item.tagName === 'A'){
+                                        item.setAttribute('href', info.detail);
+                                    }  else if(item.tagName === 'IFRAME'){
+                                        item.setAttribute('src', info.detail);
                                     } else {
                                         item.innerHTML = info.detail;
                                     }

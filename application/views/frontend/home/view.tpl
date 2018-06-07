@@ -676,11 +676,11 @@
                                         <div class="wpb_wrapper">
                                             <div class="wpb_video_widget wpb_content_element vc_clearfix vc_video-aspect-ratio-169 vc_video-el-width-100 vc_video-align-center">
                                                 <div class="wpb_wrapper">
+                                                    {foreach from=$metadata[$page->section] key=index item=item}
                                                     <div class="wpb_video_wrapper">
-                                                        {foreach from=$metadata[$page->section] key=index item=item}
-                                                            {$item->detail}
-                                                        {/foreach}
+                                                        <iframe width="1170" height="878" src="{$item->detail}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
                                                     </div>
+                                                    {/foreach}
                                                 </div>
                                             </div>
                                         </div>
