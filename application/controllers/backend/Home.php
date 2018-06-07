@@ -233,11 +233,11 @@ class Home extends MY_Controller {
             $batch = array(
                 array(
                     'id' => $req->source,
-                    'sort' => $req->st
+                    'sort' => $req->ss
                 ),
                 array(
                     'id' => $req->target,
-                    'sort' => $req->ss
+                    'sort' => $req->st
                 )
             );
             $result = $this->db->update_batch($this->metadataModel, $batch, 'id');
@@ -258,6 +258,7 @@ class Home extends MY_Controller {
             $result = $this->db->insert($this->metadataModel, $pull);
             $response->id = $this->db->insert_id();
             $response->section = $item->section;
+            $response->sort = $item->sort;
         } elseif($req->type === 'remove'){
             $pull = array(
                 'modified' => date('Y-m-d H:i:s', time()),

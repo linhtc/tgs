@@ -384,7 +384,6 @@
                                                 <a href="{$item->detail}" title="{$item->title}" target="_blank" class="vc_single_image-wrapper vc_box_border_grey prevent_click">
                                                     <img class="vc_single_image-img attachment-full prevent_click" data-id="{$item->id}" data-edit-type="photo" width="463" height="158" src="{$item->photo}" alt="{$item->title}" />
                                                     <input type="hidden" data-id="{$item->id}" data-edit-type="title" value="{$item->title}" />
-                                                    <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="des" data-only-text="1">{$item->des}</textarea>
                                                     <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="detail" data-only-text="1">{$item->detail}</textarea>
                                                 </a>
                                             </figure>
@@ -401,7 +400,7 @@
                 {if !empty($metadata[$page->section])}
                     <div class="vc_row row vc_custom_1487213667707 vc_row-has-fill vc_row-o-content-middle vc_row-flex" id="parent-clone-{$page->section}">
                         {foreach from=$metadata[$page->section] key=index item=item}
-                            <div class="wpb_column vc_column_container vc_col-sm-6" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-{$page->section}-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+                            <div class="wpb_column vc_column_container vc_col-sm-6 editable-act" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-{$page->section}-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                                 <div class="vc_column-inner ">
                                     <div class="wpb_wrapper">
                                         <div class="vc_row wpb_row vc_inner vc_row-fluid">
@@ -411,7 +410,7 @@
                                                         <div class="wpb_single_image wpb_content_element vc_align_center">
                                                             <figure class="wpb_wrapper vc_figure">
                                                                 <div class="vc_single_image-wrapper vc_box_border_grey">
-                                                                    <img class="editable-act" data-parent-clone="parent-clone-{$page->section}" data-parent="item-{$page->section}-{$item->id}" data-field="photo" data-id="{$item->id}" data-edit-type="photo" width="128" height="128" src="{$item->photo}" alt="{$item->title}" />
+                                                                    <img data-id="{$item->id}" data-edit-type="photo" data-apply-id="{$item->id}" width="128" height="128" src="{$item->photo}" alt="{$item->title}" />
                                                                 </div>
                                                             </figure>
                                                         </div>
@@ -423,8 +422,8 @@
                                                     <div class="wpb_wrapper">
                                                         <div class="wpb_text_column wpb_content_element ">
                                                             <div class="wpb_wrapper">
-                                                                <p><strong class="editable-act" data-parent-clone="parent-clone-{$page->section}" data-parent="item-{$page->section}-{$item->id}" data-field="title" data-id="{$item->id}" data-edit-type="text">{$item->title}</strong></p>
-                                                                <div class="editable-act" data-parent-clone="parent-clone-{$page->section}" data-parent="item-{$page->section}-{$item->id}" data-field="des" data-id="{$item->id}" data-edit-type="html">{$item->des}</div>
+                                                                <p><strong data-apply-id="{$item->id}" data-edit-type="title">{$item->title}</strong></p>
+                                                                <div data-apply-id="{$item->id}" data-edit-type="des">{$item->des}</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -433,6 +432,8 @@
                                         </div>
                                     </div>
                                 </div>
+                                <input type="hidden" data-id="{$item->id}" data-edit-type="title" value="{$item->title}" />
+                                <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="des">{$item->des}</textarea>
                             </div>
                         {/foreach}
                     </div>
@@ -716,7 +717,7 @@
 {/if}
 
 <div class="modal" id="edit-container">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
 
             <!-- Modal Header -->
@@ -727,14 +728,22 @@
 
             <!-- Modal body -->
             <div class="modal-body">
-                <strong>Tiêu đề:</strong><br>
-                <input placeholder="title" class="edit-text" id="edit-content-title" value="">
-                <strong>Hình ảnh:</strong><br>
-                <input placeholder="title" class="edit-text" id="edit-content-photo" readonly="readonly" value="" onclick="$('#edit-photo-container').modal('show');">
-                <strong>Tóm tắt:</strong><br>
-                <textarea class="edit-text" id="edit-content-des" style="width: 100%; height: 100px;"></textarea>
-                <strong>Chi tiết:</strong><br>
-                <textarea class="edit-text" id="edit-content-detail" style="width: 100%; height: 250px;"></textarea>
+                <div class="prevent_show">
+                    <strong>Tiêu đề:</strong><br>
+                    <input placeholder="title" class="edit-text" id="edit-content-title" value="">
+                </div>
+                <div class="prevent_show">
+                    <strong>Hình ảnh:</strong><br>
+                    <input placeholder="title" class="edit-text" id="edit-content-photo" readonly="readonly" value="" onclick="$('#edit-photo-container').modal('show');">
+                </div>
+                <div class="prevent_show" id="edit-content-container-des">
+                    <strong>Tóm tắt:</strong><br>
+                    <textarea class="edit-text" id="edit-content-des" style="width: 100%; height: 100px;"></textarea>
+                </div>
+                <div class="prevent_show" id="edit-content-container-detail">
+                    <strong>Chi tiết:</strong><br>
+                    <textarea class="edit-text" id="edit-content-detail" style="width: 100%; height: 250px;"></textarea>
+                </div>
             </div>
 
             <!-- Modal footer -->
@@ -746,7 +755,6 @@
         </div>
     </div>
 </div>
-
 <div class="modal" id="edit-photo-container">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -758,7 +766,8 @@
 
             <!-- Modal body -->
             <div class="modal-body">
-                <iframe id="iframe" src="/media/filemanager/filemanager/dialog.php?type=0&field_id=edit-content-photo&relative_url=1" style="width: 100%; height: 500px; border: none" tabindex="0"></iframe>
+                <iframe id="iframe" src="/media/filemanager/filemanager/dialog.php?type=0&field_id=choosed-photo-path&relative_url=1" style="width: 100%; height: 500px; border: none" tabindex="0"></iframe>
+                <input type="hidden" id="choosed-photo-path" onchange="updatePhoto(this);" />
             </div>
 
             <!-- Modal footer -->
@@ -844,7 +853,6 @@
     }
 
     function drag(ev) {
-        console.log(ev.target.id);
         ev.dataTransfer.setData("text", ev.target.id);
     }
 
@@ -853,23 +861,25 @@
         let data = ev.dataTransfer.getData("text");
         let target = el;
         let source = document.getElementById(data);
-        console.log(data);
-        console.log(source);
         let targetHtml = target.innerHTML;
+        let targetDataID = target.getAttribute('data-id');
         target.innerHTML = source.innerHTML;
         source.innerHTML = targetHtml;
+        target.setAttribute('data-id', source.getAttribute('data-id'));
+        source.setAttribute('data-id', targetDataID);
         let info = {
             type:'move', source: source.getAttribute('data-id'), target: target.getAttribute('data-id'),
             ss: source.getAttribute('data-sort'), st: target.getAttribute('data-sort')
         };
-        saveData(info);
+        saveData(info, function(result){
+            extraEventListener(source);
+            extraEventListener(target);
+        });
     }
 
     function saveData(info, callback){
         if(info === undefined){
             if(that !== null){
-                let desItem = $('edit-content-des');
-                console.log(desItem);
                 info = {
                     type:'update',
                     id: that.getAttribute('data-id'),
@@ -886,7 +896,6 @@
                 }
             }
         }
-        console.log(info);
         $.ajax({
             type: 'post',
             url: '/backend/save',
@@ -894,6 +903,58 @@
             dataType: 'json',
             success: function (result) {
                 console.log(result);
+                if(info.type === 'update') {
+                    let dataID = that.getAttribute('data-id');
+                    if (dataID !== undefined) {
+                        let datas = that.querySelectorAll('[data-id="' + dataID + '"]');
+                        if (datas.length > 0) {
+                            for (let k = 0; k < datas.length; k++) {
+                                let item = datas[k];
+                                let editColumn = item.getAttribute('data-edit-type');
+                                if (editColumn === 'photo') {
+                                    item.setAttribute('src', info.photo);
+                                } else if (editColumn === 'title') {
+                                    item.value = info.title;
+                                } else if (editColumn === 'des') {
+                                    item.value = info.des;
+                                } else if (editColumn === 'detail') {
+                                    item.value = info.detail;
+                                }
+                            }
+                        }
+                        datas = that.querySelectorAll('[data-apply-id="' + dataID + '"]');
+                        if (datas.length > 0) {
+                            for (let k = 0; k < datas.length; k++) {
+                                let item = datas[k];
+                                console.log(item.tagName);
+                                let editColumn = item.getAttribute('data-edit-type');
+                                if (editColumn === 'photo') {
+                                    if (item.tagName === 'IMG') {
+                                        item.setAttribute('src', info.photo);
+                                    }
+                                } else if (editColumn === 'title') {
+                                    if (item.tagName === 'INPUT') {
+                                        item.value = info.title;
+                                    } else {
+                                        item.textContent = info.title;
+                                    }
+                                } else if (editColumn === 'des') {
+                                    if (item.tagName === 'TEXTAREA') {
+                                        item.value = info.des;
+                                    } else {
+                                        item.innerHTML = info.des;
+                                    }
+                                } else if (editColumn === 'detail') {
+                                    if (item.tagName === 'TEXTAREA') {
+                                        item.value = info.detail;
+                                    } else {
+                                        item.innerHTML = info.detail;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
                 if(callback !== undefined){
                     callback(result);
                 }
@@ -903,12 +964,9 @@
             }
         });
     }
-
-    function updatePhoto(){
-        that.setAttribute('src', '/media/filemanager/source/'+document.getElementById('filePath').value);
-        saveData();
+    function updatePhoto(item){
+        document.getElementById('edit-content-photo').value = '/media/filemanager/source/'+item.value
     }
-
     function hideContextMenu(){
         let ctxMenu = document.getElementById("ctxMenu");
         ctxMenu.style.display = "";
@@ -921,16 +979,23 @@
         if(dataID !== undefined){
             let datas = $(that).find("[data-id='"+dataID+"']");
             if(datas.length > 0){
-                for(var k=0; k<datas.length; k++){
+                let preventShow = { };
+                for(let k=0; k<datas.length; k++){
                     let item = $(datas[k]);
                     let editValue = '';
                     let editColumn = item.attr('data-edit-type');
+                    preventShow[editColumn] = 1;
+                    let input = null;
                     if(editColumn === 'photo'){
                         editValue = item.attr('src');
-                        $('#edit-content-'+editColumn).val(editValue);
+                        input = $('#edit-content-'+editColumn);
+                        input.val(editValue);
+                        input.parent().removeClass("prevent_show");
                     } else if(editColumn === 'title'){
                         editValue = item.val();
-                        $('#edit-content-'+editColumn).val(editValue);
+                        input = $('#edit-content-'+editColumn);
+                        input.val(editValue);
+                        input.parent().removeClass("prevent_show");
                     } else if(editColumn === 'des'){
                         editValue = item.val();
                         editorDes.setValue(editValue);
@@ -938,6 +1003,7 @@
                         if(onlyText !== undefined){
                             switchEditor.des = false;
                         }
+
                     } else if(editColumn === 'detail'){
                         editValue = item.val();
                         editorDetail.setValue(editValue);
@@ -945,68 +1011,81 @@
                         if(onlyText !== undefined){
                             switchEditor.detail = false;
                         }
+                        $('#edit-content-'+editColumn).parent().removeClass("prevent_show");
                     }
+                }
+                if(preventShow.hasOwnProperty('photo')){
+                    $('#edit-content-photo').parent().removeClass("prevent_show");
+                } else{
+                    $('#edit-content-photo').parent().addClass("prevent_show");
+                }
+                if(preventShow.hasOwnProperty('title')){
+                    $('#edit-content-title').parent().removeClass("prevent_show");
+                } else{
+                    $('#edit-content-title').parent().addClass("prevent_show");
+                }
+                if(preventShow.hasOwnProperty('des')){
+                    $('#edit-content-container-des').removeClass("prevent_show");
+                } else{
+                    $('#edit-content-container-des').addClass("prevent_show");
+                }
+                if(preventShow.hasOwnProperty('detail')){
+                    $('#edit-content-container-detail').removeClass("prevent_show");
+                } else{
+                    $('#edit-content-container-detail').addClass("prevent_show");
                 }
                 $('#edit-container').modal('show');
             }
         }
-        /*if(editType === 'text'){
-            $('#edit-text-content').html(that.innerText);
-            $('#edit-text-container').modal('show');
-        } else if(editType === 'html'){
-            editor.setValue(that.innerHTML);
-            $('#edit-html-container').modal('show');
-        } else if(editType === 'photo'){
-            /!*editor.setValue(that.innerHTML);*!/
-            $('#edit-photo-container').modal('show');
-        }*/
     }
     function cloneData(){
         hideContextMenu();
-        let parentClone = that.getAttribute('data-parent-clone');
-        let editParent = that.getAttribute('data-parent');
-        if(editParent !== undefined){
+        let dataID = that.getAttribute('data-id');
+        if(dataID !== undefined){
             let info = {
-                type:'clone', id: that.getAttribute('data-id')
+                type:'clone', id: dataID
             };
             document.body.style.cursor = 'wait';
             saveData(info, function(result){
                 document.body.style.cursor = 'default';
-                let cloneItem = document.getElementById(editParent).cloneNode(true);
-                cloneItem.setAttribute("data-id", result.id);
+                let cloneItem = that.cloneNode(true);
                 cloneItem.setAttribute("id", 'item-'+result.section+'-'+result.id);
-                let cloneElements = cloneItem.getElementsByClassName('editable-act');
-                if(cloneElements.length > 0){
-                    for(let index=0; index<cloneElements.length; index++){
-                        let editElement = cloneElements[index];
-                        editElement.setAttribute("data-id", result.id);
-                        editElement.setAttribute("data-parent-clone", 'parent-clone-'+result.section);
-                        editElement.setAttribute("data-parent", 'item-'+result.section+'-'+result.id);
-                        extraEventListener(editElement);
+                cloneItem.setAttribute("data-id", result.id);
+                cloneItem.setAttribute("data-sort", result.sort);
+                extraEventListener(cloneItem);
+                that.parentNode.appendChild(cloneItem);
+                that = null;
+                let datas = cloneItem.querySelectorAll('[data-id="'+dataID+'"]');
+                if(datas.length > 0){
+                    for(let k=0; k<datas.length; k++){
+                        let item = datas[k];
+                        item.setAttribute('data-id', result.id);
                     }
                 }
-                document.getElementById(parentClone).appendChild(cloneItem);
+                datas = cloneItem.querySelectorAll('[data-apply-id="'+dataID+'"]');
+                if(datas.length > 0){
+                    for(let k=0; k<datas.length; k++){
+                        let item = datas[k];
+                        item.setAttribute('data-apply-id', result.id);
+                    }
+                }
             });
-            that = null;
         }
     }
     function removeData(){
         hideContextMenu();
-        let parentClone = that.getAttribute('data-parent-clone');
-        let editParent = that.getAttribute('data-parent');
-        if(editParent !== undefined){
-            document.getElementById(parentClone).removeChild(document.getElementById(editParent));
+        let dataID = that.getAttribute('data-id');
+        if(dataID !== undefined){
+            that.remove();
             let info = {
-                type:'remove', id: that.getAttribute('data-id')
+                type:'remove', id: dataID
             };
             saveData(info, function(result){
                 console.log('callback result');
-                console.log(result);
+                that = null;
             });
-            that = null;
         }
     }
-
     function extraEventListener(editElement){
         editElement.addEventListener("contextmenu", function(event){
             event.preventDefault();
@@ -1060,7 +1139,7 @@
                         url: '/upload'
                     } : false
                 });
-            }, 1000);
+            }, 10);
             $preview = $('#preview');
             if ($preview.length > 0) {
                 return editor.on('valuechanged', function(e) {
@@ -1068,6 +1147,13 @@
                 });
             }
         });
+        $( '#edit-photo-container' ).on( 'hidden.bs.modal' , function() {
+            if ( $( '.modal:visible' ).length ) {
+                setTimeout(function(){
+                    $( 'body' ).addClass( 'modal-open' );
+                }, 100);
+            }
+        } );
     };
 </script>
 <!-- Include Sim-editor file. -->
