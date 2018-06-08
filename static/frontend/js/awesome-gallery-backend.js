@@ -95,6 +95,10 @@
 	  }
 	};
 
+    window.awesomeRenderNode = function(el){
+
+    }
+
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
@@ -31799,7 +31803,7 @@
 	    value: function render() {
 	      var props = this.props;
 	      var overlayClass = ["asg-image-overlay", 'asg-mode-' + props.overlay.mode, 'asg-effect-' + props.overlay.effect];
-	      var classNames = (0, _classnames2.default)('asg-image', {
+	      var classNames = (0, _classnames2.default)('asg-image editable-act', {
 	        'asg-loaded': this.state.loaded && !!this.props.rect,
 	        'asg-visible': this.state.loaded && !!this.props.rect
 	      }, 'asg-blur-' + this.props.image.blur, 'asg-bw-' + this.props.image.bw);
@@ -31825,16 +31829,37 @@
 	        }
 	      }
 	      var component = !!this.props.link_url || !!this.props.lightbox_url ? 'a' : 'div';
-	      return _react2.default.createElement(
+	      var myEle = _react2.default.createElement(
 	        'div',
-	        { className: classNames, key: props.key, style: props.style, onClick: this.onClick },
+	        {
+	            'data-react': true,
+	            'data-id': props.data_id,
+	            'data-sort': props.data_sort,
+                'draggable': true,
+                onDragStart: drag,
+                onDrop: drop,
+                id: 'item-'+props.data_section+'-'+props.data_id,
+                className: classNames, key: props.key, style: props.style, onClick: this.onvalueClick
+            },
 	        _react2.default.createElement(component, { className: "asg-image-wrapper",
-	          href: this.props.link_url || this.props.lightbox_url }, ['grid' === props.layout ? _react2.default.createElement(_fitFill2.default, { src: props.thumbnail_url, alt: props.caption_1,
-	          onLoad: this.onLoad, key: 'image' }) : null], ['grid' !== props.layout ? _react2.default.createElement(
-	          'div',
-	          { className: 'image-fit image-fit-all', key: 'image2' },
-	          _react2.default.createElement('img', { src: props.thumbnail_url, alt: props.caption_1, onLoad: this.onLoad, key: 'image2' })
-	        ) : null]),
+	          href: this.props.link_url || this.props.lightbox_url },
+                ['grid' === props.layout ? _react2.default.createElement(_fitFill2.default, {
+                    'data-id': props.data_id,
+                    'data-edit-type': 'photo',
+                    src: props.thumbnail_url, alt: props.caption_1,
+	                onLoad: this.onLoad, key: 'image'
+                }) : null],
+                [
+	              'grid' !== props.layout ? _react2.default.createElement(
+                  'div',
+                  { className: 'image-fit image-fit-all', key: 'image2' },
+                  _react2.default.createElement('img', {
+                      'data-id': props.data_id,
+                      'data-edit-type': 'photo',
+                      src: props.thumbnail_url, alt: props.caption_1, onLoad: this.onLoad, key: 'image2'
+                  })
+	        ) : null
+                ]),
 	        showCaption ? _react2.default.createElement(
 	          'div',
 	          { className: captionClassNames, ref: 'captionWrapper', key: 'caption' },
@@ -31845,8 +31870,32 @@
 	            !!props.caption_2 ? _react2.default.createElement('div', { className: 'asg-image-caption2', ref: 'caption2', key: 'caption2', dangerouslySetInnerHTML: { __html: props.caption_2 } }) : null
 	          )
 	        ) : null,
-	        props.overlay.mode !== 'off' ? _react2.default.createElement('div', { className: (0, _classnames2.default)(overlayClass), key: 'overlay' }) : null
+	        props.overlay.mode !== 'off' ? _react2.default.createElement('div', { className: (0, _classnames2.default)(overlayClass), key: 'overlay' }) : null,
+            _react2.default.createElement('textarea', { className: 'prevent_show',
+                'data-id': props.data_id,
+                'data-edit-type': 'des',
+                defaultValue: props.caption_1
+              })
 	      );
+	      setTimeout(function(){
+	          var myID = 'item-'+props.data_section+'-'+props.data_id;
+	          if(myMapGlobal === undefined || !myMapGlobal.hasOwnProperty(myID)){
+                  myMapGlobal[myID] = true;
+                  var item = document.getElementById(myID);
+                  item.ondragstart = function(){
+                      drag(event);
+                  };
+                  item.ondrop = function(){
+                      drop(event, document.getElementById(myID));
+                  };
+                  item.ondragover = function(){
+                      allowDrop(event);
+                  };
+                  extraEventListener(item);
+                  console.log('s->'+myID);
+              }
+          }, 1000);
+	      return myEle;
 	    }
 	  }]);
 	  return Image;

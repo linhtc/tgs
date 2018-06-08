@@ -34,9 +34,9 @@ class Home extends MY_Controller {
      * View
      */
     public function view($s1='') {
-        if(!empty($s1)){
+//        if(!empty($s1)){
 //            echo $s1; exit;
-        }
+//        }
         $this->layout->set_layout_dir('views/backend/layouts/');
         $this->layout->set_layout('tgs');
 
@@ -81,6 +81,9 @@ class Home extends MY_Controller {
                         $image->link_attr = new stdClass();
                         $image->options = null;
                         $image->attachment_id = null;
+                        $image->data_section = $page->section;
+                        $image->data_id = $item->id;
+                        $image->data_sort = $item->sort;
                         array_push($images, $image);
                     }
                     $metadata[$page->section] = json_encode($images/*, JSON_UNESCAPED_UNICODE*/);
@@ -154,7 +157,7 @@ class Home extends MY_Controller {
                         $image->lightbox_caption_2 = null;
                         $image->link_attr = new stdClass();
                         $image->options = null;
-                        $image->attachment_id = null;
+                        $image->attachment_id = $item->id;
                         array_push($images, $image);
                     }
                     $metadata[$page->section] = json_encode($images/*, JSON_UNESCAPED_UNICODE*/);

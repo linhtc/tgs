@@ -209,9 +209,9 @@
                                         <script>
                                             let id = 'asg-wrapper-{$page->kind}-{$page->section}';
                                             let el = document.getElementById(id);
-                                            let options = {
+                                            var options = {
                                                 "id": "{$page->kind}",
-                                                "scriptUrl": "/static/frontend/js/awesome-gallery.js",
+                                                "scriptUrl": "/static/frontend/js/awesome-gallery-backend.js",
                                                 "gallerySlug": "{$page->kind}-hang-co-san",
                                                 "rand":1,
                                                 "layout":{
@@ -315,6 +315,8 @@
                                             function loadScript(callback, url, id){
                                                 let script = document.getElementById(id);
                                                 if (!script) {
+                                                    console.log(id);
+                                                    console.log(url);
                                                     script = document.createElement('SCRIPT');
                                                     script.setAttribute('src', url);
                                                     script.id = id;
@@ -500,7 +502,7 @@
             {if $page->kind eq 'box'}
                 {if !empty($metadata[$page->section])}
                     {foreach from=$metadata[$page->section] key=index item=item}
-                        <div class="vc_row row">
+                        <div class="vc_row row editable-act" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-{$page->section}-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                             <div class="wpb_column vc_column_container vc_col-sm-12">
                                 <div class="vc_column-inner ">
                                     <div class="wpb_wrapper">
@@ -511,11 +513,11 @@
                                                         <div class="banner-content">
                                                             <strong>
                                                                 <p></p>
-                                                                <h2>{$item->title}</h2>
+                                                                <h2 data-apply-id="{$item->id}" data-edit-type="title">{$item->title}</h2>
                                                             </strong>
                                                             <p>
                                                                 <strong></strong>
-                                                                <span>{$item->des}</span>
+                                                                <span data-apply-id="{$item->id}" data-edit-type="des">{$item->des}</span>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -525,6 +527,8 @@
                                     </div>
                                 </div>
                             </div>
+                            <input type="hidden" data-id="{$item->id}" data-edit-type="title" value="{$item->title}" />
+                            <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="des" data-only-text="1">{$item->des}</textarea>
                         </div>
                     {/foreach}
                 {/if}
@@ -570,31 +574,30 @@
                     <div class="row">
                         <div class="shop-grid">
                             <section class="items-env">
+                                <div class="clear"></div>
                                 <div class="items">
-                                    <div class="clear"></div>
                                     {foreach from=$metadata[$page->section] key=index item=item}
-                                        <div class="col-sm-3 first post-{$item->id} product type-product status-publish has-post-thumbnail instock shipping-taxable purchasable product-type-simple">
+                                        <div class="col-sm-3 first post-{$item->id} product type-product status-publish has-post-thumbnail instock shipping-taxable purchasable product-type-simple editable-act" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-{$page->section}-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                                             <div class="item-wrapper">
                                                 <div class="item">
-                                                    <a href="/san-pham/{friendly_url($item->title)}-{$item->id}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
-                                                    </a>
-                                                    <div class="image full-gallery">
-                                                        <a href="/san-pham/{friendly_url($item->title)}-{$item->id}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
-                                                        </a>
+                                                    <a href="/san-pham/{friendly_url($item->title)}-{$item->id}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link prevent_click"></a>
+                                                    <div class="image full-gallery prevent_click">
+                                                        <a href="/san-pham/{friendly_url($item->title)}-{$item->id}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
                                                         <a href="/san-pham/{friendly_url($item->title)}-{$item->id}" class="thumb">
-                                                            <img width="520" height="625" src="{$item->photo}" class="attachment-shop-thumb-1 size-shop-thumb-1" alt=""> </a>
+                                                            <img data-id="{$item->id}" data-edit-type="photo" width="520" height="625" src="{$item->photo}" class="attachment-shop-thumb-1 size-shop-thumb-1" alt="">
+                                                        </a>
                                                     </div>
                                                     <div class="white-block description">
                                                         <h4 class="title">
-                                                            <a href="/san-pham/{friendly_url($item->title)}-{$item->id}">{$item->title}</a>
+                                                            <span data-apply-id="{$item->id}" data-edit-type="title" href="/san-pham/{friendly_url($item->title)}-{$item->id}">{$item->title}</span>
                                                         </h4>
                                                         <span class="type">
-                                                            <a href="#" rel="tag">{$style->title}</a>
+                                                            <a href="#" rel="tag" class="prevent_click">{$style->title}</a>
                                                         </span>
                                                         <div class="divider"></div>
                                                         <span class="price" style="width: 100%;">GIÁ SỈ:
                                                             <span class="woocommerce-Price-amount amount">
-                                                                {$item->des}
+                                                                <span data-apply-id="{$item->id}" data-edit-type="des">{$item->des}</span>
                                                                 <span class="woocommerce-Price-currencySymbol">₫</span>
                                                             </span>
                                                         </span>
@@ -617,10 +620,13 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <input type="hidden" data-id="{$item->id}" data-edit-type="title" value="{$item->title}" />
+                                            <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="des" data-only-text="1">{$item->des}</textarea>
+                                            <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="detail">{$item->detail}</textarea>
                                         </div>
                                     {/foreach}
-                                    <div class="clear"></div>
                                 </div>
+                                <div class="clear"></div>
                             </section>
                         </div>
                     </div>
@@ -717,7 +723,14 @@
                                 <div class="wpb_wrapper">
                                     <div class="lab_wpb_banner wpb_content_element banner banner-white text-button-center">
                                         {foreach from=$metadata[$page->section] key=index item=item}
-                                            {$item->des}
+                                            <div class="editable-act" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-{$page->section}-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+                                                <div data-apply-id="{$item->id}" data-edit-type="des">
+                                                    {$item->des}
+                                                </div>
+                                                <div>
+                                                    <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="des">{$item->des}</textarea>
+                                                </div>
+                                            </div>
                                         {/foreach}
                                     </div>
                                 </div>
@@ -861,6 +874,7 @@
 </style>
 
 <script>
+    myMapGlobal = { };
     let switchEditor = { des: true, detail: true };
     function allowDrop(ev) {
         ev.preventDefault();
@@ -874,6 +888,10 @@
         ev.preventDefault();
         let data = ev.dataTransfer.getData("text");
         let target = el;
+        /* them cai if nay cho cai custom react awesome gallary cua facebook */
+        if(target.type !== undefined && target.type === 'react-drop'){
+            return false;
+        }
         let source = document.getElementById(data);
         let targetHtml = target.innerHTML;
         let targetDataID = target.getAttribute('data-id');
@@ -1071,6 +1089,29 @@
                 cloneItem.setAttribute("data-id", result.id);
                 cloneItem.setAttribute("data-sort", result.sort);
                 extraEventListener(cloneItem);
+                let react = cloneItem.getAttribute('data-react');
+                if(react !== undefined){
+                    console.log('photo -> react');
+                    let items = that.parentNode.querySelectorAll('[data-react="true"]');
+                    if(items.length > 0) {
+                        let lastItem = items[items.length - 1];
+                        let translate = lastItem.style.transform;
+                        let translates = translate.replace('translate(', '').replace(')', '').replace('px', '').replace(' ', '').split(',');
+                        if (translates.length === 2) {
+                            try {
+                                let transx = parseInt(translates[0]);
+                                transx += 219;
+                                let transy = translates[1];
+                                cloneItem.style.transform = '';
+                                let transform = "translate(" + transx + "px, " + transy + ")";
+                                cloneItem.style.transform = transform;
+                                cloneItem.style.transform = transform;
+                            } catch (e) {
+                                console.log(e.message);
+                            }
+                        }
+                    }
+                }
                 that.parentNode.appendChild(cloneItem);
                 that = null;
                 let datas = cloneItem.querySelectorAll('[data-id="'+dataID+'"]');
