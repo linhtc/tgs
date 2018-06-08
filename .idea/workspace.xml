@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/backend/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/backend/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/backend/home/view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/backend/home/view.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/frontend/js/awesome-gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/js/awesome-gallery.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,9 +41,8 @@
         <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="416">
-              <caret line="1109" column="55" lean-forward="true" selection-start-line="1109" selection-start-column="55" selection-end-line="1109" selection-end-column="55" />
+              <caret line="1109" column="55" selection-start-line="1109" selection-start-column="55" selection-end-line="1109" selection-end-column="55" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
                 <element signature="e#476#1858#0#Smarty" />
                 <element signature="e#1871#6371#0#Smarty" />
                 <element signature="e#6384#9216#0#Smarty" />
@@ -63,36 +59,6 @@
                 <element signature="e#51887#53644#0#Smarty" />
                 <element signature="e#53657#55929#0#Smarty" />
                 <element signature="e#55942#57549#0#Smarty" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#!!top" />
-                <element signature="e#63260#63872#0#HTML" />
-                <element signature="e#64053#67470#0#HTML" />
-                <element signature="e#67517#67588#0#HTML" />
-                <element signature="e#68177#71036#0#HTML" />
-                <element signature="e#73876#73933#0#HTML" />
-                <element signature="e#73978#74070#0#HTML" />
-                <element signature="e#75438#75494#0#HTML" />
-                <element signature="e#75528#76419#0#HTML" />
-                <element signature="e#76501#76660#0#HTML" />
-                <element signature="e#76795#76932#0#HTML" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="awesome-gallery-backend.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/frontend/js/awesome-gallery-backend.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-314">
-              <caret line="38766" column="56" lean-forward="true" selection-start-line="38766" selection-start-column="56" selection-end-line="38766" selection-end-column="56" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#3447#4277#0" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -355,18 +321,19 @@
       <workItem from="1528432806650" duration="1994000" />
       <workItem from="1528439648664" duration="5518000" />
       <workItem from="1528445812141" duration="2578000" />
-      <workItem from="1528448592314" duration="4421000" />
+      <workItem from="1528448592314" duration="4496000" />
+      <workItem from="1528453199610" duration="11000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145501000" />
+    <option name="totallyTimeSpent" value="145587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2114001" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21361372" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
@@ -673,10 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="31830" column="61" selection-start-line="31830" selection-start-column="61" selection-end-line="31830" selection-end-column="61" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -695,12 +658,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/frontend/js/awesome-gallery-backend.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-314">
-          <caret line="38766" column="56" lean-forward="true" selection-start-line="38766" selection-start-column="56" selection-end-line="38766" selection-end-column="56" />
+        <state relative-caret-position="620256">
+          <caret line="38766" column="56" selection-start-line="38766" selection-start-column="56" selection-end-line="38766" selection-end-column="56" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#3447#4277#0" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -708,9 +669,8 @@
     <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
-          <caret line="1109" column="55" lean-forward="true" selection-start-line="1109" selection-start-column="55" selection-end-line="1109" selection-end-column="55" />
+          <caret line="1109" column="55" selection-start-line="1109" selection-start-column="55" selection-end-line="1109" selection-end-column="55" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
             <element signature="e#476#1858#0#Smarty" />
             <element signature="e#1871#6371#0#Smarty" />
             <element signature="e#6384#9216#0#Smarty" />
@@ -727,22 +687,6 @@
             <element signature="e#51887#53644#0#Smarty" />
             <element signature="e#53657#55929#0#Smarty" />
             <element signature="e#55942#57549#0#Smarty" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#!!top" />
-            <element signature="e#63260#63872#0#HTML" />
-            <element signature="e#64053#67470#0#HTML" />
-            <element signature="e#67517#67588#0#HTML" />
-            <element signature="e#68177#71036#0#HTML" />
-            <element signature="e#73876#73933#0#HTML" />
-            <element signature="e#73978#74070#0#HTML" />
-            <element signature="e#75438#75494#0#HTML" />
-            <element signature="e#75528#76419#0#HTML" />
-            <element signature="e#76501#76660#0#HTML" />
-            <element signature="e#76795#76932#0#HTML" />
           </folding>
         </state>
       </provider>
