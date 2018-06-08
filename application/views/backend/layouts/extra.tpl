@@ -85,7 +85,8 @@
     <script type='text/javascript' src='/static/frontend/js/TweenMax.min.js'></script>
     <script type='text/javascript' src='/static/frontend/js/joinable.js'></script>
     <script type='text/javascript' src='/static/frontend/js/resizable.js'></script>
-    <script type='text/javascript' src='/static/frontend/js/jquery.cycle2.min.js'></script>
+    <script type='text/javascript' src='/static/frontend/js/jquery.cycle2.js'></script>
+    <!--<script type='text/javascript' src='/static/frontend/js/jquery.cycle2.min.js'></script>-->
     <script type='text/javascript' src='/static/frontend/js/jquery.cycle2.carousel.min.js'></script>
     <script type='text/javascript' src='/static/frontend/js/jquery.cycle2.swipe.min.js'></script>
     <script type='text/javascript' src='/static/frontend/js/jquery.cycle2.tile.min.js'></script>

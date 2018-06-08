@@ -31807,7 +31807,7 @@
 	        'asg-loaded': this.state.loaded && !!this.props.rect,
 	        'asg-visible': this.state.loaded && !!this.props.rect
 	      }, 'asg-blur-' + this.props.image.blur, 'asg-bw-' + this.props.image.bw);
-	      var captionClassNames = ['asg-image-caption-wrapper-outer', 'asg-position-' + props.caption.position, 'asg-mode-' + props.caption.mode, 'asg-effect-' + props.caption.effect];
+	      var captionClassNames = ['asg-image-caption-wrapper-outer prevent_click', 'asg-position-' + props.caption.position, 'asg-mode-' + props.caption.mode, 'asg-effect-' + props.caption.effect];
 	      if (this.state['slide-in']) {
 	        captionClassNames.push('asg-slide-in-' + this.state['slide-in']);
 	      }
@@ -31841,7 +31841,7 @@
                 id: 'item-'+props.data_section+'-'+props.data_id,
                 className: classNames, key: props.key, style: props.style, onClick: this.onvalueClick
             },
-	        _react2.default.createElement(component, { className: "asg-image-wrapper",
+	        _react2.default.createElement(component, { className: "asg-image-wrapper prevent_click",
 	          href: this.props.link_url || this.props.lightbox_url },
                 ['grid' === props.layout ? _react2.default.createElement(_fitFill2.default, {
                     'data-id': props.data_id,
@@ -31874,6 +31874,7 @@
             _react2.default.createElement('textarea', { className: 'prevent_show',
                 'data-id': props.data_id,
                 'data-edit-type': 'des',
+                'data-only-text': '1',
                 defaultValue: props.caption_1
               })
 	      );

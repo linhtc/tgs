@@ -1093,18 +1093,38 @@
                 if(react !== undefined){
                     console.log('photo -> react');
                     let items = that.parentNode.querySelectorAll('[data-react="true"]');
+                    console.log(items.length);
                     if(items.length > 0) {
+                        let pitem = document.getElementById('photo');
+                        let secondItem = items[Math.ceil(pitem.offsetWidth/that.offsetWidth)];
                         let lastItem = items[items.length - 1];
                         let translate = lastItem.style.transform;
-                        let translates = translate.replace('translate(', '').replace(')', '').replace('px', '').replace(' ', '').split(',');
+                        let sctranslate = secondItem.style.transform;
+                        let translates = translate.replace('translate(', '').replace(')', '').replace('px', '').replace('px', '').replace(' ', '').split(',');
+                        let sctranslates = sctranslate.replace('translate(', '').replace(')', '').replace('px', '').replace('px', '').replace(' ', '').split(',');
                         if (translates.length === 2) {
                             try {
-                                let transx = parseInt(translates[0]);
-                                transx += 219;
-                                let transy = translates[1];
+                                let extrax = 219;
+                                let extray = 230.694;
+                                if(sctranslates.length === 2){
+                                    extrax = parseFloat(sctranslates[0]);
+                                    extray = parseFloat(sctranslates[1]);
+                                }
+                                let transx = parseFloat(translates[0]);
+                                transx += extrax;
+                                let transy = parseFloat(translates[1]);
+                                console.log(transx + that.offsetWidth);
+                                console.log(pitem.offsetWidth);
+                                if((transx + that.offsetWidth) > pitem.offsetWidth){
+
+                                    transx = 0;
+                                    transy+=extray;
+                                    let pheight = parseFloat(pitem.style.height.replace('px', '')) + extray;
+                                    pitem.style.height = pheight+'px';
+                                }
                                 cloneItem.style.transform = '';
-                                let transform = "translate(" + transx + "px, " + transy + ")";
-                                cloneItem.style.transform = transform;
+                                let transform = "translate(" + transx + "px, " + transy + "px)";
+                                console.log(transform);
                                 cloneItem.style.transform = transform;
                             } catch (e) {
                                 console.log(e.message);

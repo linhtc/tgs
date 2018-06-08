@@ -14,7 +14,7 @@
 		var slide = jQuery( optionHash.slides[ index ] );
 		
 		/* Cascade effect */
-		slide.find('.cycloneslider-caption-title').fadeIn(speed, function(){ 
+		slide.find('.cycloneslider-caption-title').fadeIn(speed, function(){
 			slide.find('.cycloneslider-caption-description').fadeIn(speed, function(){
 				slide.find('.cycloneslider-caption-more').fadeIn(speed);
 			});

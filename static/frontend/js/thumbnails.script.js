@@ -7,7 +7,9 @@
 		
 	});
 	
-	jQuery(document).on('cycle-before', '.cycloneslider-template-thumbnails .cycloneslider-slides', function( event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag ) {
+	jQuery(document).on('cycle-before',
+		'.cycloneslider-template-thumbnails .cycloneslider-slides',
+		function( event, optionHash, outgoingSlideEl, incomingSlideEl, forwardFlag ) {
 		var i = optionHash.nextSlide;
 		
 		jQuery(this).parent().next().find('li').removeClass('current').eq(i).addClass('current');
