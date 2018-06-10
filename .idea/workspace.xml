@@ -3,19 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/tgs.sql" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/tgs.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/backend/home/view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/backend/home/view.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/backend/layouts/extra.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/backend/layouts/extra.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/filemanager/source/metadata/bang-hieu-trumgiasi-1-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/filemanager/source/metadata/bang-hieu-trumgiasi-1-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/filemanager/source/metadata/set-quan-the-thao-trang-den-21091-520x625.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/filemanager/source/metadata/set-quan-the-thao-trang-den-21091-520x625.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/filemanager/source/metadata/test_o.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/filemanager/source/metadata/test_o.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/filemanager/source/metadata/trumgiasi-logo-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/filemanager/source/metadata/trumgiasi-logo-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/metadata/bang-hieu-trumgiasi-1-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/filemanager/thumbs/metadata/bang-hieu-trumgiasi-1-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/metadata/set-quan-the-thao-trang-den-21091-520x625.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/filemanager/thumbs/metadata/set-quan-the-thao-trang-den-21091-520x625.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/filemanager/thumbs/metadata/test_o.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/filemanager/thumbs/metadata/test_o.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/frontend/js/awesome-gallery-backend.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/js/awesome-gallery-backend.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/frontend/js/dark.script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/js/dark.script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/frontend/js/thumbnails.script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/js/thumbnails.script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/js/jquery.cycle2.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/js/jquery.cycle2.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,8 +27,8 @@
       <file leaf-file-name="Home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/backend/Home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="91" column="9" lean-forward="true" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+            <state relative-caret-position="1215">
+              <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
               <folding>
                 <element signature="e#7#191#0#PHP" expanded="true" />
                 <element signature="n#__construct#0;n#Home#0;n#!!top" />
@@ -50,32 +39,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.cycle2.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jquery.cycle2.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/frontend/js/jquery.cycle2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="519" column="35" selection-start-line="519" selection-start-column="35" selection-end-line="519" selection-end-column="35" />
+            <state relative-caret-position="257">
+              <caret line="519" column="46" selection-start-line="519" selection-start-column="46" selection-end-line="519" selection-end-column="46" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#6#12#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extra.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/extra.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="88" column="8" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.tpl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="view.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="51" column="120" lean-forward="true" selection-start-line="51" selection-start-column="120" selection-end-line="51" selection-end-column="120" />
+            <state relative-caret-position="432">
+              <caret line="815" column="98" selection-start-line="815" selection-start-column="98" selection-end-line="815" selection-end-column="98" />
               <folding>
                 <element signature="e#476#1858#0#Smarty" />
                 <element signature="e#6384#9216#0#Smarty" />
@@ -94,8 +75,6 @@
                 <element signature="e#55942#57549#0#Smarty" />
                 <element signature="n#div#1;n#!!top" />
                 <element signature="n#div#2;n#!!top" />
-                <element signature="n#menu#0;n#!!top" />
-                <element signature="n#style#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -145,14 +124,14 @@
       <find>refresh</find>
       <find>myID</find>
       <find>cycloneslider-home-1</find>
-      <find>cycloneslider-pager</find>
       <find>cycloneslider</find>
       <find>slider</find>
       <find>cyclone</find>
-      <find>span</find>
       <find>cycl</find>
       <find>slides_selector</find>
       <find>cycle-pager-active</find>
+      <find>cycloneslider-pager</find>
+      <find>span</find>
     </findStrings>
     <replaceStrings>
       <replace>font/</replace>
@@ -214,12 +193,12 @@
         <option value="$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl" />
         <option value="$PROJECT_DIR$/static/frontend/js/awesome-gallery.js" />
         <option value="$PROJECT_DIR$/application/controllers/backend/Home.php" />
-        <option value="$PROJECT_DIR$/application/views/backend/home/view.tpl" />
         <option value="$PROJECT_DIR$/static/frontend/js/awesome-gallery-backend.js" />
         <option value="$PROJECT_DIR$/static/frontend/js/thumbnails.script.js" />
         <option value="$PROJECT_DIR$/static/frontend/js/dark.script.js" />
         <option value="$PROJECT_DIR$/application/views/backend/layouts/extra.tpl" />
         <option value="$PROJECT_DIR$/static/frontend/js/jquery.cycle2.js" />
+        <option value="$PROJECT_DIR$/application/views/backend/home/view.tpl" />
       </list>
     </option>
   </component>
@@ -393,11 +372,12 @@
       <workItem from="1528448592314" duration="4496000" />
       <workItem from="1528453199610" duration="11000" />
       <workItem from="1528465438119" duration="6602000" />
+      <workItem from="1528635889001" duration="7322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152189000" />
+    <option name="totallyTimeSpent" value="159511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1600" height="875" extended-state="6" />
@@ -405,16 +385,16 @@
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.329718" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.213125" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Find" order="6" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
@@ -677,9 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="31809" column="68" selection-start-line="31809" selection-start-column="68" selection-end-line="31809" selection-end-column="68" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -692,41 +669,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/backend/Home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="91" column="9" lean-forward="true" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+        <state relative-caret-position="1215">
+          <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
           <folding>
             <element signature="e#7#191#0#PHP" expanded="true" />
             <element signature="n#__construct#0;n#Home#0;n#!!top" />
             <element signature="e#739#762#0#PHP" />
             <element signature="n#product#0;n#Home#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="51" column="120" lean-forward="true" selection-start-line="51" selection-start-column="120" selection-end-line="51" selection-end-column="120" />
-          <folding>
-            <element signature="e#476#1858#0#Smarty" />
-            <element signature="e#6384#9216#0#Smarty" />
-            <element signature="e#9229#24379#0#Smarty" />
-            <element signature="e#24392#27250#0#Smarty" />
-            <element signature="e#27263#29370#0#Smarty" />
-            <element signature="e#29383#32951#0#Smarty" />
-            <element signature="e#32964#37360#0#Smarty" />
-            <element signature="e#37373#38119#0#Smarty" />
-            <element signature="e#38132#40633#0#Smarty" />
-            <element signature="e#40646#43496#0#Smarty" />
-            <element signature="e#43509#49414#0#Smarty" />
-            <element signature="e#49427#51874#0#Smarty" />
-            <element signature="e#51887#53644#0#Smarty" />
-            <element signature="e#53657#55929#0#Smarty" />
-            <element signature="e#55942#57549#0#Smarty" />
-            <element signature="n#div#1;n#!!top" />
-            <element signature="n#div#2;n#!!top" />
-            <element signature="n#menu#0;n#!!top" />
-            <element signature="n#style#0;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -752,26 +701,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/frontend/js/jquery.cycle2.min.js">
+    <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/extra.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="383" selection-end-line="15" />
+        <state relative-caret-position="413">
+          <caret line="88" column="8" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/extra.tpl">
+    <entry file="file://$PROJECT_DIR$/static/frontend/js/jquery.cycle2.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="88" column="8" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
+        <state relative-caret-position="321">
+          <caret line="11" column="1391" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/frontend/js/jquery.cycle2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="519" column="35" selection-start-line="519" selection-start-column="35" selection-end-line="519" selection-end-column="35" />
+        <state relative-caret-position="257">
+          <caret line="519" column="46" selection-start-line="519" selection-start-column="46" selection-end-line="519" selection-end-column="46" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#6#12#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="815" column="98" selection-start-line="815" selection-start-column="98" selection-end-line="815" selection-end-column="98" />
+          <folding>
+            <element signature="e#476#1858#0#Smarty" />
+            <element signature="e#6384#9216#0#Smarty" />
+            <element signature="e#9229#24379#0#Smarty" />
+            <element signature="e#24392#27250#0#Smarty" />
+            <element signature="e#27263#29370#0#Smarty" />
+            <element signature="e#29383#32951#0#Smarty" />
+            <element signature="e#32964#37360#0#Smarty" />
+            <element signature="e#37373#38119#0#Smarty" />
+            <element signature="e#38132#40633#0#Smarty" />
+            <element signature="e#40646#43496#0#Smarty" />
+            <element signature="e#43509#49414#0#Smarty" />
+            <element signature="e#49427#51874#0#Smarty" />
+            <element signature="e#51887#53644#0#Smarty" />
+            <element signature="e#53657#55929#0#Smarty" />
+            <element signature="e#55942#57549#0#Smarty" />
+            <element signature="n#div#1;n#!!top" />
+            <element signature="n#div#2;n#!!top" />
           </folding>
         </state>
       </provider>

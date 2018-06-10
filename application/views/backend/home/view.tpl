@@ -48,10 +48,10 @@
                                                             <div class="cycloneslider-slides cycle-slideshow" data-cycle-allow-wrap="true" data-cycle-dynamic-height="off" data-cycle-auto-height="1000:300" data-cycle-auto-height-easing="null" data-cycle-auto-height-speed="250" data-cycle-delay="0" data-cycle-easing="" data-cycle-fx="fade" data-cycle-hide-non-active="true" data-cycle-log="false" data-cycle-next="#cycloneslider-home-1 .cycloneslider-next" data-cycle-pager="#cycloneslider-home-1 .cycloneslider-pager" data-cycle-pause-on-hover="true" data-cycle-prev="#cycloneslider-home-1 .cycloneslider-prev" data-cycle-slides="&gt; div" data-cycle-speed="1000" data-cycle-swipe="1" data-cycle-tile-count="7" data-cycle-tile-delay="100" data-cycle-tile-vertical="true" data-cycle-timeout="10000" >
                                                                 {if !empty($metadata[$page->section])}
                                                                     {foreach from=$metadata[$page->section] key=index item=item}
-                                                                        <div class="cycloneslider-slide cycloneslider-slide-image" >
-                                                                            <img src="{$item->photo}" alt="" title="" />
+                                                                        <div class="cycloneslider-slide cycloneslider-slide-image editable-act" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-{$page->section}-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+                                                                            <img class="prevent_click" src="{$item->photo}" data-id="{$item->id}" data-edit-type="photo" alt="" title="" />
                                                                             {if $item->title neq ''}
-                                                                                <div class="cycloneslider-caption">
+                                                                                <div class="cycloneslider-caption prevent_click">
                                                                                     <div class="cycloneslider-caption-title">{$item->title}</div>
                                                                                     <div class="cycloneslider-caption-description">{$item->des}</div>
                                                                                     <a class="cycloneslider-caption-more" href="{$item->detail}">Đọc Tiếp</a>
@@ -813,6 +813,9 @@
 </menu>
 
 <style>
+    .cycloneslider-template-dark div[data-cycle-dynamic-height="off"] .cycloneslider-slide-image {
+        opacity: 0.9 !important;
+    }
     .edit-text{
         width: 100%;
         padding: 5px;
@@ -881,6 +884,7 @@
     }
 
     function drag(ev) {
+        console.log(ev.target.id);
         ev.dataTransfer.setData("text", ev.target.id);
     }
 
@@ -888,11 +892,26 @@
         ev.preventDefault();
         let data = ev.dataTransfer.getData("text");
         let target = el;
+        /* neu la slide show thi keo tha xuong pager */
+        if(el.getAttribute('slideshow') !== undefined){
+            try{
+                let index = $(el).index();
+                let slideshow = document.getElementsByClassName('cycle-slideshow');
+                if(slideshow.length > 0){
+                    slideshow = slideshow[0].children;
+                }
+                target = slideshow[index];
+            } catch (e) {
+                console.log(e.message);
+            }
+        }
         /* them cai if nay cho cai custom react awesome gallary cua facebook */
         if(target.type !== undefined && target.type === 'react-drop'){
             return false;
         }
         let source = document.getElementById(data);
+        console.log(target);
+        console.log(source);
         let targetHtml = target.innerHTML;
         let targetDataID = target.getAttribute('data-id');
         target.innerHTML = source.innerHTML;

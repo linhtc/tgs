@@ -517,7 +517,7 @@
             pagerActiveClass: "cycle-pager-active",
             pagerEvent: "click.cycle",
             pagerEventBubble: void 0,
-            pagerTemplate: "<span>&bull;</span>"
+            pagerTemplate: '<span slideshow="1" draggable="true" ondrop="drop(event, this)" ondragover="allowDrop(event)">&bull;</span>'
         }), a(document).on("cycle-bootstrap", function(a, c, d) {
             d.buildPagerLink = b
         }), a(document).on("cycle-slide-added", function(a, b, d, e) {
