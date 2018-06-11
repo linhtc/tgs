@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/backend/home/view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/backend/home/view.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/frontend/js/jquery.cycle2.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/js/jquery.cycle2.js" afterDir="false" />
     </list>
@@ -42,11 +41,10 @@
       <file leaf-file-name="jquery.cycle2.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/frontend/js/jquery.cycle2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="519" column="46" selection-start-line="519" selection-start-column="46" selection-end-line="519" selection-end-column="46" />
+            <state relative-caret-position="30">
+              <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="35" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#6#12#1" expanded="true" />
+                <element signature="e#94#100#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,26 +53,10 @@
       <file leaf-file-name="view.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="815" column="98" selection-start-line="815" selection-start-column="98" selection-end-line="815" selection-end-column="98" />
+            <state relative-caret-position="342">
+              <caret line="1167" column="58" selection-start-line="1167" selection-start-column="58" selection-end-line="1167" selection-end-column="58" />
               <folding>
                 <element signature="e#476#1858#0#Smarty" />
-                <element signature="e#6384#9216#0#Smarty" />
-                <element signature="e#9229#24379#0#Smarty" />
-                <element signature="e#24392#27250#0#Smarty" />
-                <element signature="e#27263#29370#0#Smarty" />
-                <element signature="e#29383#32951#0#Smarty" />
-                <element signature="e#32964#37360#0#Smarty" />
-                <element signature="e#37373#38119#0#Smarty" />
-                <element signature="e#38132#40633#0#Smarty" />
-                <element signature="e#40646#43496#0#Smarty" />
-                <element signature="e#43509#49414#0#Smarty" />
-                <element signature="e#49427#51874#0#Smarty" />
-                <element signature="e#51887#53644#0#Smarty" />
-                <element signature="e#53657#55929#0#Smarty" />
-                <element signature="e#55942#57549#0#Smarty" />
-                <element signature="n#div#1;n#!!top" />
-                <element signature="n#div#2;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -102,7 +84,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>main-image-slider</find>
       <find>sliderModel</find>
       <find>frontend/</find>
       <find>filePath</find>
@@ -122,7 +103,6 @@
       <find>render'</find>
       <find>reload</find>
       <find>refresh</find>
-      <find>myID</find>
       <find>cycloneslider-home-1</find>
       <find>cycloneslider</find>
       <find>slider</find>
@@ -131,6 +111,8 @@
       <find>slides_selector</find>
       <find>cycle-pager-active</find>
       <find>cycloneslider-pager</find>
+      <find>imagesLoaded</find>
+      <find>myID</find>
       <find>span</find>
     </findStrings>
     <replaceStrings>
@@ -227,7 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,6 +285,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -373,28 +355,30 @@
       <workItem from="1528453199610" duration="11000" />
       <workItem from="1528465438119" duration="6602000" />
       <workItem from="1528635889001" duration="7322000" />
+      <workItem from="1528724049787" duration="4593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159511000" />
+    <option name="totallyTimeSpent" value="164104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1600" height="875" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.329718" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.213125" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.213125" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Find" order="6" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
@@ -412,13 +396,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/helpers/leon_helper.php" />
     <entry file="file://$PROJECT_DIR$/static/frontend/fonts/glyphicons-halflings-regular.svg" />
-    <entry file="file://$PROJECT_DIR$/static/frontend/js/oxygen-custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="545" column="25" selection-start-line="545" selection-start-column="25" selection-end-line="545" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2504">
@@ -715,39 +692,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/frontend/js/oxygen-custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6487">
+          <caret line="389" column="21" lean-forward="true" selection-start-line="389" selection-start-column="21" selection-end-line="389" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/frontend/js/jquery.cycle2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="519" column="46" selection-start-line="519" selection-start-column="46" selection-end-line="519" selection-end-column="46" />
+        <state relative-caret-position="30">
+          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="35" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#6#12#1" expanded="true" />
+            <element signature="e#94#100#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="815" column="98" selection-start-line="815" selection-start-column="98" selection-end-line="815" selection-end-column="98" />
+        <state relative-caret-position="342">
+          <caret line="1167" column="58" selection-start-line="1167" selection-start-column="58" selection-end-line="1167" selection-end-column="58" />
           <folding>
             <element signature="e#476#1858#0#Smarty" />
-            <element signature="e#6384#9216#0#Smarty" />
-            <element signature="e#9229#24379#0#Smarty" />
-            <element signature="e#24392#27250#0#Smarty" />
-            <element signature="e#27263#29370#0#Smarty" />
-            <element signature="e#29383#32951#0#Smarty" />
-            <element signature="e#32964#37360#0#Smarty" />
-            <element signature="e#37373#38119#0#Smarty" />
-            <element signature="e#38132#40633#0#Smarty" />
-            <element signature="e#40646#43496#0#Smarty" />
-            <element signature="e#43509#49414#0#Smarty" />
-            <element signature="e#49427#51874#0#Smarty" />
-            <element signature="e#51887#53644#0#Smarty" />
-            <element signature="e#53657#55929#0#Smarty" />
-            <element signature="e#55942#57549#0#Smarty" />
-            <element signature="n#div#1;n#!!top" />
-            <element signature="n#div#2;n#!!top" />
           </folding>
         </state>
       </provider>

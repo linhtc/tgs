@@ -48,7 +48,7 @@
                                                             <div class="cycloneslider-slides cycle-slideshow" data-cycle-allow-wrap="true" data-cycle-dynamic-height="off" data-cycle-auto-height="1000:300" data-cycle-auto-height-easing="null" data-cycle-auto-height-speed="250" data-cycle-delay="0" data-cycle-easing="" data-cycle-fx="fade" data-cycle-hide-non-active="true" data-cycle-log="false" data-cycle-next="#cycloneslider-home-1 .cycloneslider-next" data-cycle-pager="#cycloneslider-home-1 .cycloneslider-pager" data-cycle-pause-on-hover="true" data-cycle-prev="#cycloneslider-home-1 .cycloneslider-prev" data-cycle-slides="&gt; div" data-cycle-speed="1000" data-cycle-swipe="1" data-cycle-tile-count="7" data-cycle-tile-delay="100" data-cycle-tile-vertical="true" data-cycle-timeout="10000" >
                                                                 {if !empty($metadata[$page->section])}
                                                                     {foreach from=$metadata[$page->section] key=index item=item}
-                                                                        <div class="cycloneslider-slide cycloneslider-slide-image editable-act" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-{$page->section}-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+                                                                        <div class="cycloneslider-slide cycloneslider-slide-image editable-act" data-slider="1" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-{$page->section}-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
                                                                             <img class="prevent_click" src="{$item->photo}" data-id="{$item->id}" data-edit-type="photo" alt="" title="" />
                                                                             {if $item->title neq ''}
                                                                                 <div class="cycloneslider-caption prevent_click">
@@ -57,6 +57,9 @@
                                                                                     <a class="cycloneslider-caption-more" href="{$item->detail}">Đọc Tiếp</a>
                                                                                 </div>
                                                                             {/if}
+                                                                            <input type="hidden" data-id="{$item->id}" data-edit-type="title" value="{$item->title}" />
+                                                                            <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="des" data-only-text="1">{$item->des}</textarea>
+                                                                            <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="detail" data-only-text="1">{$item->detail}</textarea>
                                                                         </div>
                                                                     {/foreach}
                                                                 {/if}
@@ -884,8 +887,17 @@
     }
 
     function drag(ev) {
-        console.log(ev.target.id);
-        ev.dataTransfer.setData("text", ev.target.id);
+        if(ev.target.id){
+            ev.dataTransfer.setData("text", ev.target.id);
+        } else{
+            let index = $(ev.target).index();
+            let slideshow = document.getElementsByClassName('cycle-slideshow');
+            if(slideshow.length > 0){
+                slideshow = slideshow[0].children;
+            }
+            let target = slideshow[index];
+            ev.dataTransfer.setData("text", target.id);
+        }
     }
 
     function drop(ev, el) {
@@ -910,8 +922,8 @@
             return false;
         }
         let source = document.getElementById(data);
-        console.log(target);
-        console.log(source);
+        /*console.log(target);
+        console.log(source);*/
         let targetHtml = target.innerHTML;
         let targetDataID = target.getAttribute('data-id');
         target.innerHTML = source.innerHTML;
@@ -1150,6 +1162,10 @@
                             }
                         }
                     }
+                }
+                let dataSlider = cloneItem.getAttribute('data-slider');
+                if(dataSlider !== undefined){
+                    $('.cycle-slideshow').cycle('reinit');
                 }
                 that.parentNode.appendChild(cloneItem);
                 that = null;
