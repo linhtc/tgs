@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/backend/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/backend/Home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/backend/home/view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/backend/home/view.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/frontend/js/jquery.cycle2.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/js/jquery.cycle2.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,25 +27,19 @@
       <file leaf-file-name="Home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/backend/Home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
-              <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+            <state relative-caret-position="270">
+              <caret line="120" column="40" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="40" />
               <folding>
                 <element signature="e#7#191#0#PHP" expanded="true" />
                 <element signature="n#__construct#0;n#Home#0;n#!!top" />
                 <element signature="e#739#762#0#PHP" />
+                <element signature="n#view#0;n#Home#0;n#!!top" />
+                <element signature="e#3695#3718#0#PHP" />
+                <element signature="e#6419#6445#0#PHP" />
                 <element signature="n#product#0;n#Home#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.cycle2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/frontend/js/jquery.cycle2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="35" />
-              <folding>
-                <element signature="e#94#100#1" expanded="true" />
+                <element signature="e#7432#7457#0#PHP" />
+                <element signature="e#9672#9698#0#PHP" />
+                <element signature="n#contact#0;n#Home#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -53,10 +48,44 @@
       <file leaf-file-name="view.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="1167" column="58" selection-start-line="1167" selection-start-column="58" selection-end-line="1167" selection-end-column="58" />
+            <state relative-caret-position="435">
+              <caret line="472" column="44" selection-start-line="472" selection-start-column="44" selection-end-line="472" selection-end-column="44" />
               <folding>
-                <element signature="e#476#1858#0#Smarty" />
+                <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="e#1871#7227#0#Smarty" />
+                <element signature="e#7240#10072#0#Smarty" />
+                <element signature="e#10085#25235#0#Smarty" />
+                <element signature="e#25248#28106#0#Smarty" />
+                <element signature="e#28119#30226#0#Smarty" />
+                <element signature="e#30239#33807#0#Smarty" />
+                <element signature="e#38229#38975#0#Smarty" />
+                <element signature="e#38988#41489#0#Smarty" />
+                <element signature="e#41502#44352#0#Smarty" />
+                <element signature="e#44365#50270#0#Smarty" />
+                <element signature="e#50283#52730#0#Smarty" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#13;n#section#0;n#!!top" expanded="true" />
+                <element signature="e#54513#56785#0#Smarty" />
+                <element signature="e#56798#58405#0#Smarty" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
+                <element signature="n#style#0;n#textarea#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" />
+                <element signature="n#div#2;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#!!top" />
+                <element signature="n#style#0;n#!!top" />
+                <element signature="e#63306#63372#0#HTML" />
+                <element signature="e#63750#64050#0#HTML" />
+                <element signature="e#64061#64116#0#HTML" />
+                <element signature="e#69461#69532#0#HTML" />
+                <element signature="e#73158#73214#0#HTML" />
+                <element signature="e#73308#77304#0#HTML" />
+                <element signature="e#77512#77569#0#HTML" />
+                <element signature="e#77614#77706#0#HTML" />
+                <element signature="e#79074#79130#0#HTML" />
+                <element signature="e#79164#80055#0#HTML" />
+                <element signature="e#80137#80296#0#HTML" />
+                <element signature="e#80381#80578#0#HTML" />
               </folding>
             </state>
           </provider>
@@ -174,12 +203,12 @@
         <option value="$PROJECT_DIR$/application/views/frontend/home/view.tpl" />
         <option value="$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl" />
         <option value="$PROJECT_DIR$/static/frontend/js/awesome-gallery.js" />
-        <option value="$PROJECT_DIR$/application/controllers/backend/Home.php" />
         <option value="$PROJECT_DIR$/static/frontend/js/awesome-gallery-backend.js" />
         <option value="$PROJECT_DIR$/static/frontend/js/thumbnails.script.js" />
         <option value="$PROJECT_DIR$/static/frontend/js/dark.script.js" />
         <option value="$PROJECT_DIR$/application/views/backend/layouts/extra.tpl" />
         <option value="$PROJECT_DIR$/static/frontend/js/jquery.cycle2.js" />
+        <option value="$PROJECT_DIR$/application/controllers/backend/Home.php" />
         <option value="$PROJECT_DIR$/application/views/backend/home/view.tpl" />
       </list>
     </option>
@@ -355,28 +384,27 @@
       <workItem from="1528453199610" duration="11000" />
       <workItem from="1528465438119" duration="6602000" />
       <workItem from="1528635889001" duration="7322000" />
-      <workItem from="1528724049787" duration="4593000" />
+      <workItem from="1528724049787" duration="4688000" />
+      <workItem from="1528810960455" duration="2464000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164104000" />
+    <option name="totallyTimeSpent" value="166663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1600" height="875" extended-state="6" />
-    <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.213125" />
       <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.329718" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.213125" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="0" />
-      <window_info anchor="bottom" id="Find" order="6" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.329718" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -385,6 +413,7 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -644,19 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/backend/Home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
-          <folding>
-            <element signature="e#7#191#0#PHP" expanded="true" />
-            <element signature="n#__construct#0;n#Home#0;n#!!top" />
-            <element signature="e#739#762#0#PHP" />
-            <element signature="n#product#0;n#Home#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/frontend/js/dark.script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -702,19 +718,69 @@
     <entry file="file://$PROJECT_DIR$/static/frontend/js/jquery.cycle2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="35" />
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/backend/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="120" column="40" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="40" />
           <folding>
-            <element signature="e#94#100#1" expanded="true" />
+            <element signature="e#7#191#0#PHP" expanded="true" />
+            <element signature="n#__construct#0;n#Home#0;n#!!top" />
+            <element signature="e#739#762#0#PHP" />
+            <element signature="n#view#0;n#Home#0;n#!!top" />
+            <element signature="e#3695#3718#0#PHP" />
+            <element signature="e#6419#6445#0#PHP" />
+            <element signature="n#product#0;n#Home#0;n#!!top" />
+            <element signature="e#7432#7457#0#PHP" />
+            <element signature="e#9672#9698#0#PHP" />
+            <element signature="n#contact#0;n#Home#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="1167" column="58" selection-start-line="1167" selection-start-column="58" selection-end-line="1167" selection-end-column="58" />
+        <state relative-caret-position="435">
+          <caret line="472" column="44" selection-start-line="472" selection-start-column="44" selection-end-line="472" selection-end-column="44" />
           <folding>
-            <element signature="e#476#1858#0#Smarty" />
+            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="e#1871#7227#0#Smarty" />
+            <element signature="e#7240#10072#0#Smarty" />
+            <element signature="e#10085#25235#0#Smarty" />
+            <element signature="e#25248#28106#0#Smarty" />
+            <element signature="e#28119#30226#0#Smarty" />
+            <element signature="e#30239#33807#0#Smarty" />
+            <element signature="e#38229#38975#0#Smarty" />
+            <element signature="e#38988#41489#0#Smarty" />
+            <element signature="e#41502#44352#0#Smarty" />
+            <element signature="e#44365#50270#0#Smarty" />
+            <element signature="e#50283#52730#0#Smarty" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#13;n#section#0;n#!!top" expanded="true" />
+            <element signature="e#54513#56785#0#Smarty" />
+            <element signature="e#56798#58405#0#Smarty" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#style#0;n#textarea#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#div#2;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#!!top" />
+            <element signature="n#style#0;n#!!top" />
+            <element signature="e#63306#63372#0#HTML" />
+            <element signature="e#63750#64050#0#HTML" />
+            <element signature="e#64061#64116#0#HTML" />
+            <element signature="e#69461#69532#0#HTML" />
+            <element signature="e#73158#73214#0#HTML" />
+            <element signature="e#73308#77304#0#HTML" />
+            <element signature="e#77512#77569#0#HTML" />
+            <element signature="e#77614#77706#0#HTML" />
+            <element signature="e#79074#79130#0#HTML" />
+            <element signature="e#79164#80055#0#HTML" />
+            <element signature="e#80137#80296#0#HTML" />
+            <element signature="e#80381#80578#0#HTML" />
           </folding>
         </state>
       </provider>

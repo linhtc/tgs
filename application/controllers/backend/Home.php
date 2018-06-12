@@ -41,7 +41,7 @@ class Home extends MY_Controller {
         $this->layout->set_layout('tgs');
 
         $metadata = array();
-        $pages = $this->db->select('kind, section, title, des')
+        $pages = $this->db->select('id, kind, section, title, des')
             ->from($this->pageModel)
             ->where('deleted', 0)
             ->where('page', 'home')
@@ -118,7 +118,7 @@ class Home extends MY_Controller {
         $this->layout->set_layout('tgs');
 
         $metadata = array();
-        $pages = $this->db->select('kind, section, title, des')
+        $pages = $this->db->select('id, kind, section, title, des')
             ->from($this->pageModel)
             ->where('deleted', 0)
             ->where('page', $s1)
@@ -245,14 +245,20 @@ class Home extends MY_Controller {
             );
             $result = $this->db->update_batch($this->metadataModel, $batch, 'id');
         } elseif($req->type === 'update'){
-//            $pull = array(
-//                'modified' => date('Y-m-d H:i:s', time()),
-//                $req->field => $req->data
-//            );
-            unset($pullClass['id']);
-            unset($pullClass['type']);
-            $pullClass['modified'] = date('Y-m-d H:i:s', time());
-            $result = $this->db->where('id', $req->id)->update($this->metadataModel, $pullClass);
+            if(empty($req->page)){
+                unset($pullClass['id']);
+                unset($pullClass['type']);
+                $pullClass['modified'] = date('Y-m-d H:i:s', time());
+                $result = $this->db->where('id', $req->id)->update($this->metadataModel, $pullClass);
+            } else{
+                unset($pullClass['page']);
+                unset($pullClass['id']);
+                unset($pullClass['type']);
+                unset($pullClass['photo']);
+                unset($pullClass['detail']);
+                $pullClass['modified'] = date('Y-m-d H:i:s', time());
+                $result = $this->db->where('id', $req->id)->update($this->pageModel, $pullClass);
+            }
         } elseif($req->type === 'clone'){
             $item = $this->db->select()->from($this->metadataModel)->where('id', $req->id)->get()->row();
             unset($item->id);

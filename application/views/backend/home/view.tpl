@@ -12,7 +12,7 @@
     {foreach from=$pages key=i item=page}
         <section id="section-{$page->section}" {if $style->style eq 'shop' and $i gte 2}style="background:#ffffff;padding:{if $i eq 2}40px{else}0{/if} 10px 0 10px;"{/if}>
             {if $page->title neq '' and $page->kind neq 'photo' and $page->kind neq 'list_2' and $page->kind neq 'list_3'}
-                <div class="vc_row row">
+                <div class="vc_row row editable-act-head" data-id="{$page->id}">
                     <div class="wpb_column vc_column_container vc_col-sm-12">
                         <div class="vc_column-inner vc_custom_1489660256079">
                             <div class="wpb_wrapper">
@@ -20,7 +20,7 @@
                                     <span class="vc_sep_holder vc_sep_holder_l">
                                         <span  class="vc_sep_line"></span>
                                     </span>
-                                    <h4>
+                                    <h4 data-apply-id="{$page->id}">
                                         {$page->title}
                                         <span>{$page->des}</span>
                                     </h4>
@@ -31,6 +31,9 @@
                             </div>
                         </div>
                     </div>
+                    <input type="hidden" data-id="{$page->id}" data-edit-type="title" value="{$page->title}" />
+                    <input type="hidden" data-id="{$page->id}" data-edit-type="page" value="1" />
+                    <textarea class="prevent_show" data-id="{$page->id}" data-edit-type="des" data-only-text="1">{$page->des}</textarea>
                 </div>
             {/if}
             {if $page->kind eq 'slide'}
@@ -124,17 +127,20 @@
                     <div class="wpb_column vc_column_container vc_col-sm-12">
                         <div class="vc_column-inner ">
                             <div class="wpb_wrapper">
-                                <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_shadow vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine one-line-border vc_separator-has-text">
-                                <span class="vc_sep_holder vc_sep_holder_l">
-                                    <span  class="vc_sep_line"></span>
-                                </span>
-                                    <h4>
-                                        {$page->title}
-                                        <span>{$page->des}</span>
-                                    </h4>
-                                    <span class="vc_sep_holder vc_sep_holder_r">
-                                    <span  class="vc_sep_line"></span>
-                                </span>
+                                <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_shadow vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine one-line-border vc_separator-has-text editable-act-head" data-id="{$page->id}">
+                                    <span class="vc_sep_holder vc_sep_holder_l">
+                                        <span  class="vc_sep_line"></span>
+                                    </span>
+                                        <h4 data-apply-id="{$page->id}">
+                                            {$page->title}
+                                            <span>{$page->des}</span>
+                                        </h4>
+                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                        <span  class="vc_sep_line"></span>
+                                    </span>
+                                    <input type="hidden" data-id="{$page->id}" data-edit-type="title" value="{$page->title}" />
+                                    <input type="hidden" data-id="{$page->id}" data-edit-type="page" value="1" />
+                                    <textarea class="prevent_show" data-id="{$page->id}" data-edit-type="des" data-only-text="1">{$page->des}</textarea>
                                 </div>
                                 <div class="wpb_text_column wpb_content_element ">
                                     <div class="wpb_wrapper">
@@ -455,13 +461,16 @@
                         <div class="wpb_column vc_column_container vc_col-sm-12">
                             <div class="vc_column-inner ">
                                 <div class="wpb_wrapper">
-                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_shadow vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine one-line-border vc_separator-has-text">
+                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_shadow vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine one-line-border vc_separator-has-text editable-act-head" data-id="{$page->id}">
                                         <span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span>
-                                        <h4>
+                                        <h4 data-apply-id="{$page->id}">
                                             {$page->title}
                                             <span>{$page->des}</span>
                                         </h4>
                                         <span class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
+                                        <input type="hidden" data-id="{$page->id}" data-edit-type="title" value="{$page->title}" />
+                                        <input type="hidden" data-id="{$page->id}" data-edit-type="page" value="1" />
+                                        <!--<textarea class="prevent_show" data-id="{$page->id}" data-edit-type="des" data-only-text="1">{$page->des}</textarea>-->
                                     </div>
                                     <div class="wpb_text_column wpb_content_element  vc_custom_1509912445903">
                                         <div class="wpb_wrapper">
@@ -761,6 +770,7 @@
                 <div class="prevent_show">
                     <strong>Tiêu đề:</strong><br>
                     <input placeholder="title" class="edit-text" id="edit-content-title" value="">
+                    <input id="edit-content-page" value="" type="hidden">
                 </div>
                 <div class="prevent_show">
                     <strong>Hình ảnh:</strong><br>
@@ -947,6 +957,7 @@
                     type:'update',
                     id: that.getAttribute('data-id'),
                     title: $('#edit-content-title').val(),
+                    page: $('#edit-content-page').val(),
                     photo: $('#edit-content-photo').val(),
                     des: editorDes.getValue(),
                     detail: editorDetail.getValue()
@@ -966,6 +977,18 @@
             dataType: 'json',
             success: function (result) {
                 console.log(result);
+                if(info.page !== ''){
+                    let dataID = that.getAttribute('data-id');
+                    let datas = that.querySelectorAll('[data-apply-id="' + dataID + '"]');
+                    if (datas.length > 0) {
+                        for (let k = 0; k < datas.length; k++) {
+                            let item = datas[k];
+                            if (item.tagName === 'H4') {
+                                item.innerHTML = info.title+'<span>'+info.des+'</span>';
+                            }
+                        }
+                    }
+                }
                 if(info.type === 'update') {
                     let dataID = that.getAttribute('data-id');
                     if (dataID !== undefined) {
@@ -1070,7 +1093,6 @@
                         if(onlyText !== undefined){
                             switchEditor.des = false;
                         }
-
                     } else if(editColumn === 'detail'){
                         editValue = item.val();
                         editorDetail.setValue(editValue);
@@ -1079,6 +1101,10 @@
                             switchEditor.detail = false;
                         }
                         $('#edit-content-'+editColumn).parent().removeClass("prevent_show");
+                    } else{
+                        editValue = item.val();
+                        input = $('#edit-content-'+editColumn);
+                        input.val(editValue);
                     }
                 }
                 if(preventShow.hasOwnProperty('photo')){
@@ -1217,6 +1243,14 @@
 
     let that = null;
     let editElements = document.getElementsByClassName('editable-act');
+    if(editElements.length > 0){
+        for(let index=0; index<editElements.length; index++){
+            let editElement = editElements[index];
+            extraEventListener(editElement);
+        }
+    }
+
+    editElements = document.getElementsByClassName('editable-act-head');
     if(editElements.length > 0){
         for(let index=0; index<editElements.length; index++){
             let editElement = editElements[index];
