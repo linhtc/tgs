@@ -771,6 +771,7 @@
                     <strong>Tiêu đề:</strong><br>
                     <input placeholder="title" class="edit-text" id="edit-content-title" value="">
                     <input id="edit-content-page" value="" type="hidden">
+                    <input id="edit-content-config" value="" type="hidden">
                 </div>
                 <div class="prevent_show">
                     <strong>Hình ảnh:</strong><br>
@@ -842,7 +843,7 @@
     }
     #ctxMenu{
         display:none;
-        z-index:100;
+        z-index:1000;
     }
     #notepad{
         position:absolute;
@@ -958,6 +959,7 @@
                     id: that.getAttribute('data-id'),
                     title: $('#edit-content-title').val(),
                     page: $('#edit-content-page').val(),
+                    config: $('#edit-content-config').val(),
                     photo: $('#edit-content-photo').val(),
                     des: editorDes.getValue(),
                     detail: editorDetail.getValue()

@@ -12,8 +12,9 @@
         <div class="logo logo-image">
 
             <p>
-                <a href="{base_url()}backend">
-                    <img src="/media/filemanager/source/metadata/trumgiasi-logo-2.png" alt="Trùm Giá Sỉ - Nguồn Hàng Tin Cậy" />
+                <a href="{base_url()}backend" class="editable-act" data-id="{$smarty.session.sys_cnf->cnf_logo->id}">
+                    <img data-id="{$smarty.session.sys_cnf->cnf_logo->id}" data-edit-type="photo" src="{$smarty.session.sys_cnf->cnf_logo->v1}" alt="{$smarty.session.sys_cnf->cnf_logo->n}" />
+                    <input type="hidden" data-id="{$smarty.session.sys_cnf->cnf_logo->id}" data-edit-type="config" value="1" />
                 </a>
             </p>
 

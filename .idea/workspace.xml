@@ -3,8 +3,29 @@
   <component name="ChangeListManager">
     <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/backend/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/backend/Home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/core/MY_Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/MY_Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/backend/home/view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/backend/home/view.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fb.bk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fb2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fb2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fb_comments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fb_comments_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fb_comments_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fb_login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fbr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum_plugin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum_plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum_plugin_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phan.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,66 +48,97 @@
       <file leaf-file-name="Home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/backend/Home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="120" column="40" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="40" />
+            <state relative-caret-position="540">
+              <caret line="269" column="44" selection-start-line="269" selection-start-column="44" selection-end-line="269" selection-end-column="44" />
               <folding>
                 <element signature="e#7#191#0#PHP" expanded="true" />
-                <element signature="n#__construct#0;n#Home#0;n#!!top" />
                 <element signature="e#739#762#0#PHP" />
                 <element signature="n#view#0;n#Home#0;n#!!top" />
-                <element signature="e#3695#3718#0#PHP" />
-                <element signature="e#6419#6445#0#PHP" />
+                <element signature="e#3699#3722#0#PHP" />
+                <element signature="n#shop#0;n#Home#0;n#!!top" />
+                <element signature="e#6427#6453#0#PHP" />
                 <element signature="n#product#0;n#Home#0;n#!!top" />
-                <element signature="e#7432#7457#0#PHP" />
-                <element signature="e#9672#9698#0#PHP" />
+                <element signature="e#7440#7465#0#PHP" />
+                <element signature="e#9998#10024#0#PHP" />
                 <element signature="n#contact#0;n#Home#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.tpl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/config/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="81" column="24" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="472" column="44" selection-start-line="472" selection-start-column="44" selection-end-line="472" selection-end-column="44" />
+            <state relative-caret-position="344">
+              <caret line="773" column="50" selection-start-line="773" selection-start-column="50" selection-end-line="773" selection-end-column="50" />
               <folding>
-                <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="e#1871#7227#0#Smarty" />
-                <element signature="e#7240#10072#0#Smarty" />
-                <element signature="e#10085#25235#0#Smarty" />
-                <element signature="e#25248#28106#0#Smarty" />
-                <element signature="e#28119#30226#0#Smarty" />
-                <element signature="e#30239#33807#0#Smarty" />
-                <element signature="e#38229#38975#0#Smarty" />
-                <element signature="e#38988#41489#0#Smarty" />
-                <element signature="e#41502#44352#0#Smarty" />
-                <element signature="e#44365#50270#0#Smarty" />
-                <element signature="e#50283#52730#0#Smarty" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#13;n#section#0;n#!!top" expanded="true" />
-                <element signature="e#54513#56785#0#Smarty" />
-                <element signature="e#56798#58405#0#Smarty" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="e#2286#7642#0#Smarty" />
+                <element signature="e#7655#10487#0#Smarty" />
+                <element signature="n#div#2;n#section#0;n#!!top" />
+                <element signature="e#10500#26153#0#Smarty" />
+                <element signature="e#26166#29024#0#Smarty" />
+                <element signature="e#29037#31144#0#Smarty" />
+                <element signature="e#31157#34725#0#Smarty" />
+                <element signature="e#34738#39616#0#Smarty" />
+                <element signature="e#39629#40375#0#Smarty" />
+                <element signature="e#40388#42889#0#Smarty" />
+                <element signature="e#42902#45752#0#Smarty" />
+                <element signature="e#45765#51670#0#Smarty" />
+                <element signature="e#51683#54130#0#Smarty" />
+                <element signature="e#54143#55900#0#Smarty" />
+                <element signature="e#55913#58185#0#Smarty" />
+                <element signature="e#58198#59805#0#Smarty" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
-                <element signature="n#style#0;n#textarea#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" />
                 <element signature="n#div#2;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
                 <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#!!top" />
+                <element signature="n#menu#0;n#!!top" />
                 <element signature="n#style#0;n#!!top" />
-                <element signature="e#63306#63372#0#HTML" />
-                <element signature="e#63750#64050#0#HTML" />
-                <element signature="e#64061#64116#0#HTML" />
-                <element signature="e#69461#69532#0#HTML" />
-                <element signature="e#73158#73214#0#HTML" />
-                <element signature="e#73308#77304#0#HTML" />
-                <element signature="e#77512#77569#0#HTML" />
-                <element signature="e#77614#77706#0#HTML" />
-                <element signature="e#79074#79130#0#HTML" />
-                <element signature="e#79164#80055#0#HTML" />
-                <element signature="e#80137#80296#0#HTML" />
-                <element signature="e#80381#80578#0#HTML" />
+                <element signature="e#64780#64846#0#HTML" />
+                <element signature="e#65224#65524#0#HTML" />
+                <element signature="e#65535#65590#0#HTML" />
+                <element signature="e#67528#71537#0#HTML" />
+                <element signature="e#71584#71655#0#HTML" />
+                <element signature="e#72244#75288#0#HTML" />
+                <element signature="e#75466#75522#0#HTML" />
+                <element signature="e#75616#79612#0#HTML" />
+                <element signature="e#79820#79877#0#HTML" />
+                <element signature="e#79922#80014#0#HTML" />
+                <element signature="e#81663#81719#0#HTML" />
+                <element signature="e#81753#82644#0#HTML" />
+                <element signature="e#82726#82885#0#HTML" />
+                <element signature="e#83020#83157#0#HTML" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="113" selection-start-line="16" selection-start-column="113" selection-end-line="16" selection-end-column="113" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MY_Controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/core/MY_Controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -170,7 +222,6 @@
         <option value="$PROJECT_DIR$/application/views/frontend/layouts/mobi.tpl" />
         <option value="$PROJECT_DIR$/application/views/frontend/layouts/extra.tpl" />
         <option value="$PROJECT_DIR$/static/frontend/css/support.css" />
-        <option value="$PROJECT_DIR$/application/config/database.php" />
         <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl" />
         <option value="$PROJECT_DIR$/application/views/frontend/home/shop.tpl" />
@@ -185,7 +236,6 @@
         <option value="$PROJECT_DIR$/application/helpers/hashpassword_helper.php" />
         <option value="$PROJECT_DIR$/application/controllers/admin/Users.php" />
         <option value="$PROJECT_DIR$/application/controllers/admin/Homes.php" />
-        <option value="$PROJECT_DIR$/application/core/MY_Controller.php" />
         <option value="$PROJECT_DIR$/application/views/admin/sections/view.tpl" />
         <option value="$PROJECT_DIR$/application/controllers/admin/Sections.php" />
         <option value="$PROJECT_DIR$/application/views/admin/layouts/portal.tpl" />
@@ -201,15 +251,17 @@
         <option value="$PROJECT_DIR$/media/filemanager/filemanager/upload.php" />
         <option value="$PROJECT_DIR$/application/views/backend/layouts/mobi.tpl" />
         <option value="$PROJECT_DIR$/application/views/frontend/home/view.tpl" />
-        <option value="$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl" />
         <option value="$PROJECT_DIR$/static/frontend/js/awesome-gallery.js" />
         <option value="$PROJECT_DIR$/static/frontend/js/awesome-gallery-backend.js" />
         <option value="$PROJECT_DIR$/static/frontend/js/thumbnails.script.js" />
         <option value="$PROJECT_DIR$/static/frontend/js/dark.script.js" />
         <option value="$PROJECT_DIR$/application/views/backend/layouts/extra.tpl" />
         <option value="$PROJECT_DIR$/static/frontend/js/jquery.cycle2.js" />
-        <option value="$PROJECT_DIR$/application/controllers/backend/Home.php" />
+        <option value="$PROJECT_DIR$/application/core/MY_Controller.php" />
+        <option value="$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl" />
         <option value="$PROJECT_DIR$/application/views/backend/home/view.tpl" />
+        <option value="$PROJECT_DIR$/application/controllers/backend/Home.php" />
+        <option value="$PROJECT_DIR$/application/config/database.php" />
       </list>
     </option>
   </component>
@@ -238,6 +290,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,6 +307,12 @@
               <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
               <item name="tgs" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -262,6 +321,12 @@
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
@@ -284,37 +349,10 @@
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tgs" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tgs" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tgs" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tgs" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery.cycle2.js" type="620a8d5e:NestingTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -386,16 +424,18 @@
       <workItem from="1528635889001" duration="7322000" />
       <workItem from="1528724049787" duration="4688000" />
       <workItem from="1528810960455" duration="2464000" />
+      <workItem from="1528898243004" duration="3177000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166663000" />
+    <option name="totallyTimeSpent" value="169840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1600" height="875" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.213125" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.213125" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
@@ -423,15 +463,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/helpers/leon_helper.php" />
-    <entry file="file://$PROJECT_DIR$/static/frontend/fonts/glyphicons-halflings-regular.svg" />
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2504">
-          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -489,13 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="36" column="36" lean-forward="true" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/core/MY_Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="93" column="17" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -638,13 +662,6 @@
     <entry file="file://$PROJECT_DIR$/application/views/backend/home/shop.tpl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
@@ -722,66 +739,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/backend/Home.php">
+    <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/default.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/default2.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="120" column="40" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="40" />
-          <folding>
-            <element signature="e#7#191#0#PHP" expanded="true" />
-            <element signature="n#__construct#0;n#Home#0;n#!!top" />
-            <element signature="e#739#762#0#PHP" />
-            <element signature="n#view#0;n#Home#0;n#!!top" />
-            <element signature="e#3695#3718#0#PHP" />
-            <element signature="e#6419#6445#0#PHP" />
-            <element signature="n#product#0;n#Home#0;n#!!top" />
-            <element signature="e#7432#7457#0#PHP" />
-            <element signature="e#9672#9698#0#PHP" />
-            <element signature="n#contact#0;n#Home#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="495">
+          <caret line="33" column="72" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/core/MY_Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="113" selection-start-line="16" selection-start-column="113" selection-end-line="16" selection-end-column="113" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="472" column="44" selection-start-line="472" selection-start-column="44" selection-end-line="472" selection-end-column="44" />
+        <state relative-caret-position="344">
+          <caret line="773" column="50" selection-start-line="773" selection-start-column="50" selection-end-line="773" selection-end-column="50" />
           <folding>
-            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="e#1871#7227#0#Smarty" />
-            <element signature="e#7240#10072#0#Smarty" />
-            <element signature="e#10085#25235#0#Smarty" />
-            <element signature="e#25248#28106#0#Smarty" />
-            <element signature="e#28119#30226#0#Smarty" />
-            <element signature="e#30239#33807#0#Smarty" />
-            <element signature="e#38229#38975#0#Smarty" />
-            <element signature="e#38988#41489#0#Smarty" />
-            <element signature="e#41502#44352#0#Smarty" />
-            <element signature="e#44365#50270#0#Smarty" />
-            <element signature="e#50283#52730#0#Smarty" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#13;n#section#0;n#!!top" expanded="true" />
-            <element signature="e#54513#56785#0#Smarty" />
-            <element signature="e#56798#58405#0#Smarty" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="e#2286#7642#0#Smarty" />
+            <element signature="e#7655#10487#0#Smarty" />
+            <element signature="n#div#2;n#section#0;n#!!top" />
+            <element signature="e#10500#26153#0#Smarty" />
+            <element signature="e#26166#29024#0#Smarty" />
+            <element signature="e#29037#31144#0#Smarty" />
+            <element signature="e#31157#34725#0#Smarty" />
+            <element signature="e#34738#39616#0#Smarty" />
+            <element signature="e#39629#40375#0#Smarty" />
+            <element signature="e#40388#42889#0#Smarty" />
+            <element signature="e#42902#45752#0#Smarty" />
+            <element signature="e#45765#51670#0#Smarty" />
+            <element signature="e#51683#54130#0#Smarty" />
+            <element signature="e#54143#55900#0#Smarty" />
+            <element signature="e#55913#58185#0#Smarty" />
+            <element signature="e#58198#59805#0#Smarty" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
-            <element signature="n#style#0;n#textarea#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" />
             <element signature="n#div#2;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" />
             <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
             <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#!!top" />
+            <element signature="n#menu#0;n#!!top" />
             <element signature="n#style#0;n#!!top" />
-            <element signature="e#63306#63372#0#HTML" />
-            <element signature="e#63750#64050#0#HTML" />
-            <element signature="e#64061#64116#0#HTML" />
-            <element signature="e#69461#69532#0#HTML" />
-            <element signature="e#73158#73214#0#HTML" />
-            <element signature="e#73308#77304#0#HTML" />
-            <element signature="e#77512#77569#0#HTML" />
-            <element signature="e#77614#77706#0#HTML" />
-            <element signature="e#79074#79130#0#HTML" />
-            <element signature="e#79164#80055#0#HTML" />
-            <element signature="e#80137#80296#0#HTML" />
-            <element signature="e#80381#80578#0#HTML" />
+            <element signature="e#64780#64846#0#HTML" />
+            <element signature="e#65224#65524#0#HTML" />
+            <element signature="e#65535#65590#0#HTML" />
+            <element signature="e#67528#71537#0#HTML" />
+            <element signature="e#71584#71655#0#HTML" />
+            <element signature="e#72244#75288#0#HTML" />
+            <element signature="e#75466#75522#0#HTML" />
+            <element signature="e#75616#79612#0#HTML" />
+            <element signature="e#79820#79877#0#HTML" />
+            <element signature="e#79922#80014#0#HTML" />
+            <element signature="e#81663#81719#0#HTML" />
+            <element signature="e#81753#82644#0#HTML" />
+            <element signature="e#82726#82885#0#HTML" />
+            <element signature="e#83020#83157#0#HTML" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/backend/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="269" column="44" selection-start-line="269" selection-start-column="44" selection-end-line="269" selection-end-column="44" />
+          <folding>
+            <element signature="e#7#191#0#PHP" expanded="true" />
+            <element signature="e#739#762#0#PHP" />
+            <element signature="n#view#0;n#Home#0;n#!!top" />
+            <element signature="e#3699#3722#0#PHP" />
+            <element signature="n#shop#0;n#Home#0;n#!!top" />
+            <element signature="e#6427#6453#0#PHP" />
+            <element signature="n#product#0;n#Home#0;n#!!top" />
+            <element signature="e#7440#7465#0#PHP" />
+            <element signature="e#9998#10024#0#PHP" />
+            <element signature="n#contact#0;n#Home#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="81" column="24" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
         </state>
       </provider>
     </entry>

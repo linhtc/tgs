@@ -19,6 +19,7 @@ class Home extends MY_Controller {
     private $pageModel;
 	private $styleModel;
     private $metadataModel;
+    private $configModel;
 
     function __construct() {
         parent::__construct(true);
@@ -28,6 +29,7 @@ class Home extends MY_Controller {
         $this->pageModel = 'sys_pages';
         $this->styleModel = 'sys_styles';
         $this->metadataModel = 'sys_metadata';
+        $this->configModel = 'sys_configurations';
     }
     
     /**
@@ -245,12 +247,27 @@ class Home extends MY_Controller {
             );
             $result = $this->db->update_batch($this->metadataModel, $batch, 'id');
         } elseif($req->type === 'update'){
-            if(empty($req->page)){
+            if(!empty($req->config)){
+                $pullClass['apply_name'] = $req->title;
+                $pullClass['apply_value'] = $req->photo;
+                unset($pullClass['id']);
+                unset($pullClass['config']);
+                unset($pullClass['title']);
+                unset($pullClass['type']);
+                unset($pullClass['page']);
+                unset($pullClass['photo']);
+                unset($pullClass['des']);
+                unset($pullClass['detail']);
+                $pullClass['modified'] = date('Y-m-d H:i:s', time());
+                $result = $this->db->where('id', $req->id)->update($this->configModel, $pullClass);
+            } elseif(empty($req->page)){
                 unset($pullClass['id']);
                 unset($pullClass['type']);
+                unset($pullClass['config']);
                 $pullClass['modified'] = date('Y-m-d H:i:s', time());
                 $result = $this->db->where('id', $req->id)->update($this->metadataModel, $pullClass);
             } else{
+                unset($pullClass['config']);
                 unset($pullClass['page']);
                 unset($pullClass['id']);
                 unset($pullClass['type']);
