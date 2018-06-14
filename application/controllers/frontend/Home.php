@@ -29,19 +29,28 @@ class Home extends MY_Controller {
         $this->styleModel = 'sys_styles';
         $this->metadataModel = 'sys_metadata';
     }
-    
+
     /**
      * View
      */
     public function view($s1='') {
-        if(!empty($s1)){
+//        if(!empty($s1)){
 //            echo $s1; exit;
-        }
+//        }
         $this->layout->set_layout_dir('views/frontend/layouts/');
         $this->layout->set_layout('tgs');
 
+        $contact = $this->db->select('id, title, des, detail, photo, sort')
+            ->from($this->metadataModel)
+            ->where('deleted', 0)
+            ->where('section', 99)
+            ->order_by('sort', 'asc')
+            ->get()
+            ->result()
+        ;
+//        print_r($contact); exit;
         $metadata = array();
-        $pages = $this->db->select('kind, section, title, des')
+        $pages = $this->db->select('id, kind, section, title, des')
             ->from($this->pageModel)
             ->where('deleted', 0)
             ->where('page', 'home')
@@ -51,7 +60,7 @@ class Home extends MY_Controller {
         ;
         if(!empty($pages)){
             foreach($pages as $index=>$page){
-                $section = $this->db->select('title, des, detail, photo')
+                $section = $this->db->select('id, title, des, detail, photo, sort')
                     ->from($this->metadataModel)
                     ->where('deleted', 0)
                     ->where('section', $page->section)
@@ -81,6 +90,9 @@ class Home extends MY_Controller {
                         $image->link_attr = new stdClass();
                         $image->options = null;
                         $image->attachment_id = null;
+                        $image->data_section = $page->section;
+                        $image->data_id = $item->id;
+                        $image->data_sort = $item->sort;
                         array_push($images, $image);
                     }
                     $metadata[$page->section] = json_encode($images/*, JSON_UNESCAPED_UNICODE*/);
@@ -101,7 +113,8 @@ class Home extends MY_Controller {
         $data = array(
             'style' => $style,
             'pages' => $pages,
-            'metadata' => $metadata
+            'metadata' => $metadata,
+            'metacontact' => $contact
         );
 
         $this->parser->parse($this->viewPath."view", $data);
@@ -114,8 +127,17 @@ class Home extends MY_Controller {
         $this->layout->set_layout_dir('views/frontend/layouts/');
         $this->layout->set_layout('tgs');
 
+        $contact = $this->db->select('id, title, des, detail, photo, sort')
+            ->from($this->metadataModel)
+            ->where('deleted', 0)
+            ->where('section', 99)
+            ->order_by('sort', 'asc')
+            ->get()
+            ->result()
+        ;
+
         $metadata = array();
-        $pages = $this->db->select('kind, section, title, des')
+        $pages = $this->db->select('id, kind, section, title, des')
             ->from($this->pageModel)
             ->where('deleted', 0)
             ->where('page', $s1)
@@ -125,7 +147,7 @@ class Home extends MY_Controller {
         ;
         if(!empty($pages)){
             foreach($pages as $index=>$page){
-                $section = $this->db->select('id, title, des, detail, photo')
+                $section = $this->db->select('id, title, des, detail, photo, sort')
                     ->from($this->metadataModel)
                     ->where('deleted', 0)
                     ->where('section', $page->section)
@@ -154,7 +176,7 @@ class Home extends MY_Controller {
                         $image->lightbox_caption_2 = null;
                         $image->link_attr = new stdClass();
                         $image->options = null;
-                        $image->attachment_id = null;
+                        $image->attachment_id = $item->id;
                         array_push($images, $image);
                     }
                     $metadata[$page->section] = json_encode($images/*, JSON_UNESCAPED_UNICODE*/);
@@ -175,7 +197,8 @@ class Home extends MY_Controller {
         $data = array(
             'style' => $style,
             'pages' => $pages,
-            'metadata' => $metadata
+            'metadata' => $metadata,
+            'metacontact' => $contact
         );
 
         $this->parser->parse($this->viewPath."view", $data);

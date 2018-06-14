@@ -42,6 +42,15 @@ class Home extends MY_Controller {
         $this->layout->set_layout_dir('views/backend/layouts/');
         $this->layout->set_layout('tgs');
 
+        $contact = $this->db->select('id, title, des, detail, photo, sort')
+            ->from($this->metadataModel)
+            ->where('deleted', 0)
+            ->where('section', 99)
+            ->order_by('sort', 'asc')
+            ->get()
+            ->result()
+        ;
+//        print_r($contact); exit;
         $metadata = array();
         $pages = $this->db->select('id, kind, section, title, des')
             ->from($this->pageModel)
@@ -106,7 +115,8 @@ class Home extends MY_Controller {
         $data = array(
             'style' => $style,
             'pages' => $pages,
-            'metadata' => $metadata
+            'metadata' => $metadata,
+            'metacontact' => $contact
         );
 
         $this->parser->parse($this->viewPath."view", $data);
@@ -118,6 +128,15 @@ class Home extends MY_Controller {
     public function shop($s1='shop') {
         $this->layout->set_layout_dir('views/backend/layouts/');
         $this->layout->set_layout('tgs');
+
+        $contact = $this->db->select('id, title, des, detail, photo, sort')
+            ->from($this->metadataModel)
+            ->where('deleted', 0)
+            ->where('section', 99)
+            ->order_by('sort', 'asc')
+            ->get()
+            ->result()
+        ;
 
         $metadata = array();
         $pages = $this->db->select('id, kind, section, title, des')
@@ -180,7 +199,8 @@ class Home extends MY_Controller {
         $data = array(
             'style' => $style,
             'pages' => $pages,
-            'metadata' => $metadata
+            'metadata' => $metadata,
+            'metacontact' => $contact
         );
 
         $this->parser->parse($this->viewPath."view", $data);
@@ -261,6 +281,7 @@ class Home extends MY_Controller {
                 $pullClass['modified'] = date('Y-m-d H:i:s', time());
                 $result = $this->db->where('id', $req->id)->update($this->configModel, $pullClass);
             } elseif(empty($req->page)){
+                unset($pullClass['page']);
                 unset($pullClass['id']);
                 unset($pullClass['type']);
                 unset($pullClass['config']);

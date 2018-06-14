@@ -916,7 +916,7 @@
         let data = ev.dataTransfer.getData("text");
         let target = el;
         /* neu la slide show thi keo tha xuong pager */
-        if(el.getAttribute('slideshow') !== undefined){
+        if(el.getAttribute('slideshow') !== undefined && el.getAttribute('slideshow') !== null){
             try{
                 let index = $(el).index();
                 let slideshow = document.getElementsByClassName('cycle-slideshow');
@@ -1029,6 +1029,8 @@
                                 } else if (editColumn === 'des') {
                                     if (item.tagName === 'TEXTAREA') {
                                         item.value = info.des;
+                                    } else if(item.tagName === 'A'){
+                                        item.innerText = info.des;
                                     } else {
                                         item.innerHTML = info.des;
                                     }

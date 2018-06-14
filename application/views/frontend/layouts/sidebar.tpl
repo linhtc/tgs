@@ -193,7 +193,7 @@
         <!-- /sidebar -->
     </div>
     <!-- /ZALO -->
-    <div class='support-online'>
+    <!--<div class='support-online'>
         <div class='support-img'><img src="/static/frontend/images/zaloicon.jpg" alt="Zalo Trùm Giá Sỉ" height="30" width="30"></div>
         <div class='support-phone'><a href="tel://0932642505">0932.642.505</a></div>
     </div>
@@ -208,7 +208,15 @@
     <div class='support-online'>
         <div class='support-img'><img src="/static/frontend/images/fbicon.jpg" alt="Facebook Trùm Giá Sỉ" height="30" width="30"></div>
         <div class='support-phone'><a href="https://www.facebook.com/trumgiasishop/" target="_blank">FACEBOOK</a></div>
-    </div>
+    </div>-->
+    {foreach from=$metacontact key=index item=item}
+        <div class='support-online'>
+            <div class='support-img prevent_click'>
+                <img src="{$item->photo}" alt="{$item->title}" height="30" width="30">
+            </div>
+            <div class='support-phone'><a href="{$item->detail}" target="_blank">{$item->des}</a></div>
+        </div>
+    {/foreach}
     {literal}
         <style>
             .support-online {height: 30px;border: 1px solid #ccc;margin: 10px;}

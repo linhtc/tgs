@@ -198,6 +198,7 @@
         <!-- /sidebar -->
     </div>
     <!-- /ZALO -->
+    <!--
     <div class='support-online'>
         <div class='support-img'><img src="/static/frontend/images/zaloicon.jpg" alt="Zalo Trùm Giá Sỉ" height="30" width="30"></div>
         <div class='support-phone'><a href="tel://0932642505">0932.642.505</a></div>
@@ -214,6 +215,20 @@
         <div class='support-img'><img src="/static/frontend/images/fbicon.jpg" alt="Facebook Trùm Giá Sỉ" height="30" width="30"></div>
         <div class='support-phone'><a href="https://www.facebook.com/trumgiasishop/" target="_blank">FACEBOOK</a></div>
     </div>
+    -->
+    {foreach from=$metacontact key=index item=item}
+        <div class='support-online editable-act' data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-99-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+            <div class='support-img prevent_click'>
+                <img data-id="{$item->id}" data-edit-type="photo" src="{$item->photo}" alt="{$item->title}" height="30" width="30">
+            </div>
+            <div class='support-phone prevent_click'>
+                <a data-apply-id="{$item->id}" data-edit-type="des" href="{$item->detail}" target="_blank">{$item->des}</a>
+            </div>
+            <input type="hidden" data-id="{$item->id}" data-edit-type="title" value="{$item->title}" />
+            <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="des" data-only-text="1">{$item->des}</textarea>
+            <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="detail" data-only-text="1">{$item->detail}</textarea>
+        </div>
+    {/foreach}
     {literal}
         <style>
             .support-online {height: 30px;border: 1px solid #ccc;margin: 10px;}
