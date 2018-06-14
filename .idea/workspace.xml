@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/backend/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/backend/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/frontend/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/frontend/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/backend/home/view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/backend/home/view.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl" afterDir="false" />
-    </list>
+    <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,22 +20,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/backend/Home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="206" selection-end-column="5" />
+            <state relative-caret-position="345">
+              <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
               <folding>
                 <element signature="e#7#191#0#PHP" expanded="true" />
                 <element signature="n#__construct#0;n#Home#0;n#!!top" />
                 <element signature="e#816#839#0#PHP" />
-                <element signature="e#3776#3799#0#PHP" />
-                <element signature="e#6504#6530#0#PHP" />
                 <element signature="n#product#0;n#Home#0;n#!!top" />
-                <element signature="e#7517#7542#0#PHP" />
-                <element signature="e#10839#10865#0#PHP" />
                 <element signature="n#contact#0;n#Home#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -50,8 +48,8 @@
       <file leaf-file-name="view.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="1016" column="58" lean-forward="true" selection-start-line="1016" selection-start-column="58" selection-end-line="1016" selection-end-column="58" />
+            <state relative-caret-position="6135">
+              <caret line="1016" column="58" selection-start-line="1016" selection-start-column="58" selection-end-line="1016" selection-end-column="58" />
               <folding>
                 <element signature="e#2286#7642#0#Smarty" />
                 <element signature="e#10500#26153#0#Smarty" />
@@ -73,7 +71,7 @@
       <file leaf-file-name="sidebar.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
+            <state relative-caret-position="3270">
               <caret line="218" column="4" selection-start-line="218" selection-start-column="4" selection-end-line="230" selection-end-column="14" />
             </state>
           </provider>
@@ -189,6 +187,7 @@
         <option value="$PROJECT_DIR$/application/controllers/backend/Home.php" />
         <option value="$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl" />
         <option value="$PROJECT_DIR$/application/controllers/frontend/Home.php" />
+        <option value="$PROJECT_DIR$/test.php" />
       </list>
     </option>
   </component>
@@ -217,6 +216,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,72 +224,10 @@
               <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
               <item name="tgs" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tgs" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tgs" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tgs" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tgs" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tgs" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tgs" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tgs" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tgs" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tgs" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,14 +238,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/media/filemanager/source/metadata" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/media/filemanager/thumbs/metadata" />
       <recent name="$PROJECT_DIR$/static/frontend/js" />
       <recent name="$PROJECT_DIR$/media/filemanager/thumbs" />
       <recent name="$PROJECT_DIR$/media/filemanager/source" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/media/filemanager/source/metadata" />
     </key>
   </component>
@@ -363,11 +301,12 @@
       <workItem from="1528810960455" duration="2464000" />
       <workItem from="1528898243004" duration="3242000" />
       <workItem from="1528986145501" duration="3742000" />
+      <workItem from="1528994573426" duration="971000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173647000" />
+    <option name="totallyTimeSpent" value="174618000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1600" height="875" extended-state="6" />
@@ -400,9 +339,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sitemaps.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/sitemap.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -688,15 +624,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
+        <state relative-caret-position="3270">
           <caret line="218" column="4" selection-start-line="218" selection-start-column="4" selection-end-line="230" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="1016" column="58" lean-forward="true" selection-start-line="1016" selection-start-column="58" selection-end-line="1016" selection-end-column="58" />
+        <state relative-caret-position="6135">
+          <caret line="1016" column="58" selection-start-line="1016" selection-start-column="58" selection-end-line="1016" selection-end-column="58" />
           <folding>
             <element signature="e#2286#7642#0#Smarty" />
             <element signature="e#10500#26153#0#Smarty" />
@@ -725,28 +661,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="126" column="53" selection-start-line="126" selection-start-column="53" selection-end-line="126" selection-end-column="53" />
-          <folding>
-            <element signature="e#740#763#0#PHP" />
-            <element signature="e#4051#4074#0#PHP" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/backend/Home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="206" selection-end-column="5" />
+        <state relative-caret-position="345">
+          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
           <folding>
             <element signature="e#7#191#0#PHP" expanded="true" />
             <element signature="n#__construct#0;n#Home#0;n#!!top" />
             <element signature="e#816#839#0#PHP" />
-            <element signature="e#3776#3799#0#PHP" />
-            <element signature="e#6504#6530#0#PHP" />
             <element signature="n#product#0;n#Home#0;n#!!top" />
-            <element signature="e#7517#7542#0#PHP" />
-            <element signature="e#10839#10865#0#PHP" />
             <element signature="n#contact#0;n#Home#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
