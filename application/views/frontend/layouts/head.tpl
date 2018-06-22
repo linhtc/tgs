@@ -1,12 +1,12 @@
 <link rel="stylesheet" href="/static/frontend/css/coccoc_alo.css">
 <link rel="stylesheet" href="/static/frontend/css/support.css">
-<link rel="shortcut icon" href="/static/frontend/images/favicon.ico" />
+<link rel="shortcut icon" href="{$smarty.session.sys_cnf->cnf_logo->v1}" />
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes">
 
-<title>Trùm Giá Sỉ - Chuyên Sỉ Váy Đầm - Nguồn Hàng Quảng Châu Cao Cấp</title>
+<title>Trùm Ôm Lô Nguồn Hàng Quảng Châu Giá Gốc</title>
 
 <style>
 

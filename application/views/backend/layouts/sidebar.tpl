@@ -96,12 +96,6 @@
                         CÁCH MUA HÀNG
                     </a>
                 </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2710">
-                    <a href="#">
-                        <i class="fa fa-registered"></i>
-                        ĐĂNG NHẬP / ĐĂNG KÝ
-                    </a>
-                </li>
             </ul>
             <div class="top-menu-mobile">
                 <ul id="menu-top-links-1" class="sec-nav-menu">
@@ -125,11 +119,6 @@
                             TUYỂN CTV
                         </a>
                     </li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2709">
-                        <a href="#">
-                            ĐĂNG NHẬP
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -138,42 +127,25 @@
         <div class="sidebar-menu">
             <ul id="menu-trum-gia-si-menu-2" class="nav">
                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1868">
-                    <a href="/backend/shop/"><i class="fa fa-shopping-bag"></i>CỬA HÀNG</a>
+                    {if !empty($smarty.session.sys_router)}
+                    <a href="#"><i class="fa fa-shopping-bag"></i>CỬA HÀNG</a>
                     <ul  class="sub-menu">
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1775">
-                            <a href="/backend/shop/vay-dam-quang-chau">
+                        {foreach from=$smarty.session.sys_router key=index item=item}
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1775 editable-act"  data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-{$page->section}-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+                            <a href="/backend/{if $item->style eq 'shop'}shop/{/if}{$item->page}" data-apply-href="{$item->id}">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">VÁY ĐẦM QUẢNG CHÂU</h2>
+                                <h2 data-apply-id="{$item->id}" data-edit-type="title" class="h2menu">{$item->title}</h2>
                             </a>
+                            <input type="hidden" data-id="{$item->id}" data-edit-type="custom" value="router" />
+                            <input type="hidden" data-id="{$item->id}" data-edit-type="title" value="{$item->title}" />
+                            <textarea class="prevent_show" data-id="{$item->id}" data-edit-type="detail" data-only-text="1" data-apply-text="{$item->id}">{$item->page}</textarea>
                         </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1777">
-                            <a href="/backend/shop/vay-dam-thiet-ke">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">VÁY ĐẦM THIẾT KẾ</h2>
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1778">
-                            <a href="/backend/bo-si-quan-ao-quang-chau-vay-dam-thiet-ke">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">BỎ SỈ QUẦN ÁO</h2>
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
-                            <a href="/backend/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">ÔM LÔ QUẦN ÁO</h2>
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8273">
-                            <a href="/backend/hang-sale-hang-xon-gia-re">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">HÀNG SALE &#8211; HÀNG XÔN</h2>
-                            </a>
-                        </li>
+                        {/foreach}
                     </ul>
+                    {/if}
                 </li>
                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8350">
-                    <a href="https://goo.gl/GjqCCf">
+                    <a href="https://www.youtube.com/watch?v=TYS1-Hq2eBA">
                         <i class="fa fa-video-camera"></i>
                         VIDEO LIVESTREAM
                     </a>
@@ -182,12 +154,6 @@
                     <a href="/backend/huong-dan-mua-hang">
                         <i class="fa fa-arrow-circle-right"></i>
                         CÁCH MUA HÀNG
-                    </a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2710">
-                    <a href="#">
-                        <i class="fa fa-registered"></i>
-                        ĐĂNG NHẬP / ĐĂNG KÝ
                     </a>
                 </li>
             </ul>

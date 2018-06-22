@@ -30,9 +30,6 @@
                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5444">
                             <a href="{base_url()}tuyen-cong-tac-vien-ban-hang-online">TUYỂN CTV</a>
                         </li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2709">
-                            <a href="{base_url()}tai-khoan">ĐĂNG NHẬP</a>
-                        </li>
                     </ul>
                 </div>
             </div>

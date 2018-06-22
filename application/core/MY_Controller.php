@@ -13,10 +13,12 @@ class MY_Controller extends CI_Controller {
 
 	protected $model_name = '';
 	private $configModel;
+	private $routerModel;
 
     function __construct($home=false) {
     	parent::__construct();
     	$this->configModel = 'sys_configurations';
+    	$this->routerModel = 'sys_styles';
 //
 //    	if($home) {
 //            global $URI, $CFG;
@@ -49,6 +51,15 @@ class MY_Controller extends CI_Controller {
                 }
                 $this->session->set_userdata('sys_cnf', $configs);
             }
+
+        $routers = $this->db->select('id, page, style, title, sort')
+            ->from($this->routerModel)
+            ->where('deleted', 0)->where_not_in('page', array('home', 'shop'))
+            ->order_by('sort', 'asc')
+            ->get()->result();
+        if ($routers) {
+            $this->session->set_userdata('sys_router', $routers);
+        }
 //        }
 ////         print_r(json_encode($configs)); exit;
 //        }

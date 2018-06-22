@@ -12,12 +12,13 @@
         </div>
     </div>
     <div class="col-xs-5">
-        <a href="https://trumgiasi.com/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re/" class="btn">Ôm Lô</a>
+        <a href="{base_url()}om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re/" class="btn">Ôm Lô</a>
     </div>
 </div>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 {literal}
+    <!--
     <script type="text/javascript">
         $(document).ready(function(e) {
             $('#coccoc-alo-phoneIcon').click(function(e) {
@@ -31,7 +32,9 @@
             });
         });
     </script>
+    -->
     <!--Start of Tawk.to Script (0.3.3)-->
+    <!--
     <script type="text/javascript">
         var Tawk_API=Tawk_API||{};
         var Tawk_LoadStart=new Date();
@@ -44,5 +47,6 @@
             s0.parentNode.insertBefore(s1,s0);
         })();
     </script>
+    -->
 {/literal}
 <!--End of Tawk.to Script (0.3.3)-->

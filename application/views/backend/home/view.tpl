@@ -772,6 +772,7 @@
                     <input placeholder="title" class="edit-text" id="edit-content-title" value="">
                     <input id="edit-content-page" value="" type="hidden">
                     <input id="edit-content-config" value="" type="hidden">
+                    <input id="edit-content-custom" value="" type="hidden">
                 </div>
                 <div class="prevent_show">
                     <strong>Hình ảnh:</strong><br>
@@ -961,6 +962,7 @@
                     page: $('#edit-content-page').val(),
                     config: $('#edit-content-config').val(),
                     photo: $('#edit-content-photo').val(),
+                    custom: $('#edit-content-custom').val(),
                     des: editorDes.getValue(),
                     detail: editorDetail.getValue()
                 };
@@ -1045,6 +1047,21 @@
                                         item.innerHTML = info.detail;
                                     }
                                 }
+                            }
+                        }
+                        datas = that.querySelectorAll('[data-apply-href="'+dataID+'"]');
+                        if(datas.length > 0){
+                            for(let k=0; k<datas.length; k++){
+                                let item = datas[k];
+                                item.setAttribute('href', result.page);
+                            }
+                        }
+                        datas = that.querySelectorAll('[data-apply-text="'+dataID+'"]');
+                        if(datas.length > 0){
+                            for(let k=0; k<datas.length; k++){
+                                let item = datas[k];
+                                console.log(item.getAttribute('data-edit-type'));
+                                item.innerText = result[item.getAttribute('data-edit-type')];
                             }
                         }
                     }
@@ -1142,6 +1159,10 @@
             let info = {
                 type:'clone', id: dataID
             };
+            let customType = that.querySelector('[data-edit-type="custom"]');
+            if(customType !== null){
+                info.custom = customType.value;
+            }
             document.body.style.cursor = 'wait';
             saveData(info, function(result){
                 document.body.style.cursor = 'default';
@@ -1211,6 +1232,22 @@
                     for(let k=0; k<datas.length; k++){
                         let item = datas[k];
                         item.setAttribute('data-apply-id', result.id);
+                    }
+                }
+                datas = cloneItem.querySelectorAll('[data-apply-href="'+dataID+'"]');
+                if(datas.length > 0){
+                    for(let k=0; k<datas.length; k++){
+                        let item = datas[k];
+                        item.setAttribute('href', result.page);
+                        item.setAttribute('data-apply-href', result.id);
+                    }
+                }
+                datas = cloneItem.querySelectorAll('[data-apply-text="'+dataID+'"]');
+                if(datas.length > 0){
+                    for(let k=0; k<datas.length; k++){
+                        let item = datas[k];
+                        item.innerText = result[item.getAttribute('data-edit-type')];
+                        item.setAttribute('data-apply-text', result.id);
                     }
                 }
             });

@@ -81,6 +81,8 @@ class Backend extends MY_Controller {
                         $image->link_attr = new stdClass();
                         $image->options = null;
                         $image->attachment_id = null;
+                        $image->data_section = $page->section;
+                        $image->data_id = $item->id;
                         array_push($images, $image);
                     }
                     $metadata[$page->section] = json_encode($images/*, JSON_UNESCAPED_UNICODE*/);
@@ -155,6 +157,8 @@ class Backend extends MY_Controller {
                         $image->link_attr = new stdClass();
                         $image->options = null;
                         $image->attachment_id = null;
+                        $image->data_section = $page->section;
+                        $image->data_id = $item->id;
                         array_push($images, $image);
                     }
                     $metadata[$page->section] = json_encode($images/*, JSON_UNESCAPED_UNICODE*/);

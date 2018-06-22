@@ -5,15 +5,15 @@
 
         <div class="top-mobilee" style="background:#000;color:#fff;padding:10px 10px 1px 10px;">
             <p>
-                <i class="fa fa-map-marker" aria-hidden="true"></i>   445/12 Quang Trung P10 Gò Vấp - HCM
+                <i class="fa fa-map-marker" aria-hidden="true"></i>   75/55 Gò Dầu Tân Quý Tân Phú
             </p>
-            <p><i class="fa fa-compass" aria-hidden="true"></i> <span>Tìm đường đến shop: <a href="https://goo.gl/p7BAS6">XEM BẢN ĐỒ</a></p></div>
+            <p><i class="fa fa-compass" aria-hidden="true"></i> <span>Tìm đường đến shop: <a href="https://goo.gl/maps/krkcEEAXVm62">XEM BẢN ĐỒ</a></p></div>
         <!-- logo -->
         <div class="logo logo-image">
 
             <p>
                 <a href="{base_url()}">
-                    <img src="https://trumgiasi.com/wp-content/uploads/2016/11/trumgiasi-logo-2.png" alt="Trùm Giá Sỉ - Nguồn Hàng Tin Cậy" />
+                    <img data-id="{$smarty.session.sys_cnf->cnf_logo->id}" data-edit-type="photo" src="{$smarty.session.sys_cnf->cnf_logo->v1}" alt="{$smarty.session.sys_cnf->cnf_logo->n}" />
                 </a>
             </p>
 
@@ -49,34 +49,40 @@
                 GIỎ  HÀNG		</a>
             <ul id="menu-trum-gia-si-menu-1" class="nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1868"><a href="/shop/"><i class="fa fa-shopping-bag"></i>CỬA HÀNG</a>
                     <ul  class="sub-menu">
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1775">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
                             <a href="/shop/vay-dam-quang-chau">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">VÁY ĐẦM QUẢNG CHÂU</h2>
+                                <h2 class="h2menu">ÔM LÔ ÁO</h2>
                             </a>
                         </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1777">
-                            <a href="/shop/vay-dam-thiet-ke">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">VÁY ĐẦM THIẾT KẾ</h2>
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1778">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
                             <a href="/bo-si-quan-ao-quang-chau-vay-dam-thiet-ke">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">BỎ SỈ QUẦN ÁO</h2>
+                                <h2 class="h2menu">ÔM LÔ QUẦN</h2>
                             </a>
                         </li>
                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
                             <a href="/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">ÔM LÔ QUẦN ÁO</h2>
+                                <h2 class="h2menu">ÔM LÔ CHÂN VÁY</h2>
                             </a>
                         </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8273">
-                            <a href="/hang-sale-hang-xon-gia-re">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
+                            <a href="/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">HÀNG SALE &#8211; HÀNG XÔN</h2>
+                                <h2 class="h2menu">ÔM LÔ ĐẦM</h2>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
+                            <a href="/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <h2 class="h2menu">ÔM LÔ SET</h2>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
+                            <a href="/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <h2 class="h2menu">ÔM LÔ ĐỒ BỘ</h2>
                             </a>
                         </li>
                     </ul>
@@ -122,11 +128,6 @@
                             TUYỂN CTV
                         </a>
                     </li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2709">
-                        <a href="#">
-                            ĐĂNG NHẬP
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -135,40 +136,46 @@
         <div class="sidebar-menu">
             <ul id="menu-trum-gia-si-menu-2" class="nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1868"><a href="/shop/"><i class="fa fa-shopping-bag"></i>CỬA HÀNG</a>
                     <ul  class="sub-menu">
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1775">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
                             <a href="/shop/vay-dam-quang-chau">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">VÁY ĐẦM QUẢNG CHÂU</h2>
+                                <h2 class="h2menu">ÔM LÔ ÁO</h2>
                             </a>
                         </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1777">
-                            <a href="/shop/vay-dam-thiet-ke">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">VÁY ĐẦM THIẾT KẾ</h2>
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1778">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
                             <a href="/bo-si-quan-ao-quang-chau-vay-dam-thiet-ke">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">BỎ SỈ QUẦN ÁO</h2>
+                                <h2 class="h2menu">ÔM LÔ QUẦN</h2>
                             </a>
                         </li>
                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
                             <a href="/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">ÔM LÔ QUẦN ÁO</h2>
+                                <h2 class="h2menu">ÔM LÔ CHÂN VÁY</h2>
                             </a>
                         </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8273">
-                            <a href="/hang-sale-hang-xon-gia-re">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
+                            <a href="/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">HÀNG SALE &#8211; HÀNG XÔN</h2>
+                                <h2 class="h2menu">ÔM LÔ ĐẦM</h2>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
+                            <a href="/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <h2 class="h2menu">ÔM LÔ SET</h2>
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
+                            <a href="/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <h2 class="h2menu">ÔM LÔ ĐỒ BỘ</h2>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8350">
-                    <a href="https://goo.gl/GjqCCf">
+                    <a href="https://www.youtube.com/watch?v=TYS1-Hq2eBA" target="_blank">
                         <i class="fa fa-video-camera"></i>
                         VIDEO LIVESTREAM
                     </a>
@@ -177,12 +184,6 @@
                     <a href="/huong-dan-mua-hang">
                         <i class="fa fa-arrow-circle-right"></i>
                         CÁCH MUA HÀNG
-                    </a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2710">
-                    <a href="#">
-                        <i class="fa fa-registered"></i>
-                        ĐĂNG NHẬP / ĐĂNG KÝ
                     </a>
                 </li>
             </ul>
@@ -225,4 +226,6 @@
         </style>
     {/literal}
     <!-- /ZALO -->
+
+    <iframe style="width: 100%; height: 300px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1959.6044967277398!2d106.6268347!3d10.7952992!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bffb38a8f0d%3A0x2465092f7cc6f167!2zNzUsIDU1IEfDsiBE4bqndSwgVMOibiBRdcO9LCBUw6JuIFBow7osIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1sen!2s!4v1529641548267"frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>

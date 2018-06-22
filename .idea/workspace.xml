@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="" />
+    <list default="true" id="2314c926-8ffa-401d-aec1-5c88754c7fa1" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/tgs.sql" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/tgs.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/backend/Backend.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/backend/Backend.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/backend/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/backend/Home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/core/MY_Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/MY_Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/backend/home/view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/backend/home/view.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/backend/layouts/breadcrumb.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/backend/layouts/breadcrumb.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/backend/layouts/footer.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/backend/layouts/footer.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/backend/layouts/head.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/backend/layouts/head.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/breadcrumb.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/breadcrumb.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/footer.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/footer.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/head.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/head.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/mobi.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/mobi.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bksv/400.shtml" beforeDir="false" afterPath="$PROJECT_DIR$/bksv/400.shtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bksv/401.shtml" beforeDir="false" afterPath="$PROJECT_DIR$/bksv/401.shtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bksv/403.shtml" beforeDir="false" afterPath="$PROJECT_DIR$/bksv/403.shtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bksv/404.shtml" beforeDir="false" afterPath="$PROJECT_DIR$/bksv/404.shtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bksv/500.shtml" beforeDir="false" afterPath="$PROJECT_DIR$/bksv/500.shtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bksv/cgi-bin/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/bksv/cgi-bin/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bksv/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bksv/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bksv/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/bksv/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/frontend/js/jquery.cycle2.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/frontend/js/jquery.cycle2.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,33 +39,48 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="66" column="36" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
+            <state relative-caret-position="518">
+              <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Home.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/backend/Home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+            <state relative-caret-position="518">
+              <caret line="337" column="61" lean-forward="true" selection-start-line="337" selection-start-column="61" selection-end-line="337" selection-end-column="61" />
               <folding>
                 <element signature="e#7#191#0#PHP" expanded="true" />
                 <element signature="n#__construct#0;n#Home#0;n#!!top" />
                 <element signature="e#816#839#0#PHP" />
+                <element signature="n#view#0;n#Home#0;n#!!top" />
+                <element signature="e#4127#4150#0#PHP" />
+                <element signature="n#shop#0;n#Home#0;n#!!top" />
+                <element signature="e#7345#7371#0#PHP" />
                 <element signature="n#product#0;n#Home#0;n#!!top" />
+                <element signature="e#8358#8383#0#PHP" />
+                <element signature="e#11723#11749#0#PHP" />
                 <element signature="n#contact#0;n#Home#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test.php">
+      <file leaf-file-name="head.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/head.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="176">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MY_Controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/core/MY_Controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="54" column="12" lean-forward="true" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -48,9 +88,11 @@
       <file leaf-file-name="view.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6135">
-              <caret line="1016" column="58" selection-start-line="1016" selection-start-column="58" selection-end-line="1016" selection-end-column="58" />
+            <state relative-caret-position="406">
+              <caret line="1062" column="79" selection-start-line="1062" selection-start-column="79" selection-end-line="1062" selection-end-column="79" />
               <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="e#476#2273#0#Smarty" />
                 <element signature="e#2286#7642#0#Smarty" />
                 <element signature="e#10500#26153#0#Smarty" />
                 <element signature="e#29037#31144#0#Smarty" />
@@ -63,6 +105,24 @@
                 <element signature="e#51683#54130#0#Smarty" />
                 <element signature="e#54143#55900#0#Smarty" />
                 <element signature="e#55913#58185#0#Smarty" />
+                <element signature="e#58198#59805#0#Smarty" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#!!top" />
+                <element signature="n#style#0;n#!!top" />
+                <element signature="e#64857#64923#0#HTML" />
+                <element signature="e#65342#65642#0#HTML" />
+                <element signature="e#65653#65708#0#HTML" />
+                <element signature="e#71899#71970#0#HTML" />
+                <element signature="e#76407#78975#0#HTML" />
+                <element signature="e#80135#80192#0#HTML" />
+                <element signature="e#80237#80329#0#HTML" />
+                <element signature="e#81978#82034#0#HTML" />
+                <element signature="e#82068#82959#0#HTML" />
+                <element signature="e#83041#83200#0#HTML" />
+                <element signature="e#83335#83472#0#HTML" />
               </folding>
             </state>
           </provider>
@@ -71,17 +131,11 @@
       <file leaf-file-name="sidebar.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3270">
-              <caret line="218" column="4" selection-start-line="218" selection-start-column="4" selection-end-line="230" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tgs.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/tgs.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
+            <state relative-caret-position="566">
+              <caret line="140" column="100" lean-forward="true" selection-start-line="140" selection-start-column="100" selection-end-line="140" selection-end-column="100" />
+              <folding>
+                <element signature="n#div#2;n#div#0;n#div#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,10 +144,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sliderModel</find>
-      <find>frontend/</find>
-      <find>filePath</find>
-      <find>switchEditor</find>
       <find>/shop</find>
       <find>/shop/</find>
       <find>options.images</find>
@@ -120,6 +170,10 @@
       <find>imagesLoaded</find>
       <find>myID</find>
       <find>span</find>
+      <find>item</find>
+      <find>.ico</find>
+      <find>page</find>
+      <find>&quot;page</find>
     </findStrings>
     <replaceStrings>
       <replace>font/</replace>
@@ -139,8 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/static/frontend/css/tgs.style.css" />
-        <option value="$PROJECT_DIR$/static/frontend/css/composer.font-awesome.min.css" />
         <option value="$PROJECT_DIR$/static/frontend/js/oxygen-custom.js" />
         <option value="$PROJECT_DIR$/application/views/frontend/layouts/snp.tpl" />
         <option value="$PROJECT_DIR$/application/views/frontend/layouts/footer.tpl" />
@@ -150,10 +202,8 @@
         <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/application/views/frontend/layouts/tgs.tpl" />
         <option value="$PROJECT_DIR$/application/views/frontend/home/shop.tpl" />
-        <option value="$PROJECT_DIR$/application/views/frontend/layouts/breadcrumb.tpl" />
         <option value="$PROJECT_DIR$/application/helpers/leon_helper.php" />
         <option value="$PROJECT_DIR$/sitemap.xml" />
-        <option value="$PROJECT_DIR$/application/views/frontend/layouts/head.tpl" />
         <option value="$PROJECT_DIR$/application/config/tgs.txt" />
         <option value="$PROJECT_DIR$/application/views/frontend/home/product.tpl" />
         <option value="$PROJECT_DIR$/application/helpers/hashpassword_helper.php" />
@@ -180,14 +230,20 @@
         <option value="$PROJECT_DIR$/static/frontend/js/dark.script.js" />
         <option value="$PROJECT_DIR$/application/views/backend/layouts/extra.tpl" />
         <option value="$PROJECT_DIR$/static/frontend/js/jquery.cycle2.js" />
-        <option value="$PROJECT_DIR$/application/core/MY_Controller.php" />
         <option value="$PROJECT_DIR$/application/config/database.php" />
-        <option value="$PROJECT_DIR$/application/views/backend/home/view.tpl" />
-        <option value="$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl" />
-        <option value="$PROJECT_DIR$/application/controllers/backend/Home.php" />
-        <option value="$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl" />
         <option value="$PROJECT_DIR$/application/controllers/frontend/Home.php" />
         <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/application/controllers/backend/Backend.php" />
+        <option value="$PROJECT_DIR$/application/views/frontend/layouts/breadcrumb.tpl" />
+        <option value="$PROJECT_DIR$/application/views/backend/layouts/head.tpl" />
+        <option value="$PROJECT_DIR$/application/views/backend/layouts/breadcrumb.tpl" />
+        <option value="$PROJECT_DIR$/application/views/backend/layouts/footer.tpl" />
+        <option value="$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl" />
+        <option value="$PROJECT_DIR$/application/views/frontend/layouts/head.tpl" />
+        <option value="$PROJECT_DIR$/application/core/MY_Controller.php" />
+        <option value="$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl" />
+        <option value="$PROJECT_DIR$/application/views/backend/home/view.tpl" />
+        <option value="$PROJECT_DIR$/application/controllers/backend/Home.php" />
       </list>
     </option>
   </component>
@@ -216,7 +272,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,10 +279,71 @@
               <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
               <item name="tgs" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tgs" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,16 +418,18 @@
       <workItem from="1528898243004" duration="3242000" />
       <workItem from="1528986145501" duration="3742000" />
       <workItem from="1528994573426" duration="971000" />
+      <workItem from="1529640433229" duration="12688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174618000" />
+    <option name="totallyTimeSpent" value="187306000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1600" height="875" extended-state="6" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.213125" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21582733" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
@@ -339,35 +457,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sitemap.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/head.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="99" column="311" selection-start-line="99" selection-start-column="272" selection-end-line="99" selection-end-column="313" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/cache/smarty/compiled/1b22f12a80212abed2be33cc716e45307fc0b950_0.file.head.tpl.php" />
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/home/product.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/hashpassword_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="41" column="42" lean-forward="true" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/admin/Users.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -449,13 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/head.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/chatbox.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="915">
@@ -480,11 +562,6 @@
     <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/snp.tpl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/footer.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1056" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/mobi.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -508,7 +585,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/tgs.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
+        <state relative-caret-position="48">
           <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
         </state>
       </provider>
@@ -521,31 +598,10 @@
     <entry file="file://$PROJECT_DIR$/application/views/backend/home/shop.tpl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="36" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/frontend/js/awesome-gallery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="31830" column="61" selection-start-line="31830" selection-start-column="61" selection-end-line="31830" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/frontend/js/awesome-gallery-backend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="31809" column="68" selection-start-line="31809" selection-start-column="68" selection-end-line="31809" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/home/view.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="46" column="81" lean-forward="true" selection-start-line="46" selection-start-column="81" selection-end-line="46" selection-end-column="94" />
         </state>
       </provider>
     </entry>
@@ -608,13 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/core/MY_Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
@@ -622,18 +671,140 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/frontend/js/awesome-gallery-backend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="31835" column="38" selection-start-line="31835" selection-start-column="38" selection-end-line="31835" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/backend/Backend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="90" column="9" lean-forward="true" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/breadcrumb.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/head.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/breadcrumb.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/footer.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="838">
+          <caret line="117" column="6" selection-start-line="117" selection-start-column="6" selection-end-line="117" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/footer.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="22" column="86" selection-start-line="22" selection-start-column="86" selection-end-line="22" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="131" selection-start-line="9" selection-start-column="131" selection-end-line="9" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/frontend/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/home/view.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="82" column="40" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="e#476#1858#0#Smarty" />
+            <element signature="e#1871#6371#0#Smarty" />
+            <element signature="e#6384#8620#0#Smarty" />
+            <element signature="e#8633#23636#0#Smarty" />
+            <element signature="e#23649#25759#0#Smarty" />
+            <element signature="e#25772#27287#0#Smarty" />
+            <element signature="e#27300#30202#0#Smarty" />
+            <element signature="e#30215#33935#0#Smarty" />
+            <element signature="e#33948#34308#0#Smarty" />
+            <element signature="e#34321#36257#0#Smarty" />
+            <element signature="e#36270#38523#0#Smarty" />
+            <element signature="e#38536#43644#0#Smarty" />
+            <element signature="e#43657#48511#0#Smarty" />
+            <element signature="e#48524#49763#0#Smarty" />
+            <element signature="e#49776#51466#0#Smarty" />
+            <element signature="e#51479#52352#0#Smarty" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/core/MY_Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="54" column="12" lean-forward="true" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/head.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/backend/layouts/sidebar.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3270">
-          <caret line="218" column="4" selection-start-line="218" selection-start-column="4" selection-end-line="230" selection-end-column="14" />
+        <state relative-caret-position="566">
+          <caret line="140" column="100" lean-forward="true" selection-start-line="140" selection-start-column="100" selection-end-line="140" selection-end-column="100" />
+          <folding>
+            <element signature="n#div#2;n#div#0;n#div#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/backend/home/view.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6135">
-          <caret line="1016" column="58" selection-start-line="1016" selection-start-column="58" selection-end-line="1016" selection-end-column="58" />
+        <state relative-caret-position="406">
+          <caret line="1062" column="79" selection-start-line="1062" selection-start-column="79" selection-end-line="1062" selection-end-column="79" />
           <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="e#476#2273#0#Smarty" />
             <element signature="e#2286#7642#0#Smarty" />
             <element signature="e#10500#26153#0#Smarty" />
             <element signature="e#29037#31144#0#Smarty" />
@@ -646,42 +817,45 @@
             <element signature="e#51683#54130#0#Smarty" />
             <element signature="e#54143#55900#0#Smarty" />
             <element signature="e#55913#58185#0#Smarty" />
+            <element signature="e#58198#59805#0#Smarty" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#!!top" />
+            <element signature="n#style#0;n#!!top" />
+            <element signature="e#64857#64923#0#HTML" />
+            <element signature="e#65342#65642#0#HTML" />
+            <element signature="e#65653#65708#0#HTML" />
+            <element signature="e#71899#71970#0#HTML" />
+            <element signature="e#76407#78975#0#HTML" />
+            <element signature="e#80135#80192#0#HTML" />
+            <element signature="e#80237#80329#0#HTML" />
+            <element signature="e#81978#82034#0#HTML" />
+            <element signature="e#82068#82959#0#HTML" />
+            <element signature="e#83041#83200#0#HTML" />
+            <element signature="e#83335#83472#0#HTML" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/frontend/layouts/sidebar.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="211" column="22" lean-forward="true" selection-start-line="211" selection-start-column="22" selection-end-line="211" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/frontend/Home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="126" column="53" selection-start-line="126" selection-start-column="53" selection-end-line="126" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/backend/Home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+        <state relative-caret-position="518">
+          <caret line="337" column="61" lean-forward="true" selection-start-line="337" selection-start-column="61" selection-end-line="337" selection-end-column="61" />
           <folding>
             <element signature="e#7#191#0#PHP" expanded="true" />
             <element signature="n#__construct#0;n#Home#0;n#!!top" />
             <element signature="e#816#839#0#PHP" />
+            <element signature="n#view#0;n#Home#0;n#!!top" />
+            <element signature="e#4127#4150#0#PHP" />
+            <element signature="n#shop#0;n#Home#0;n#!!top" />
+            <element signature="e#7345#7371#0#PHP" />
             <element signature="n#product#0;n#Home#0;n#!!top" />
+            <element signature="e#8358#8383#0#PHP" />
+            <element signature="e#11723#11749#0#PHP" />
             <element signature="n#contact#0;n#Home#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>

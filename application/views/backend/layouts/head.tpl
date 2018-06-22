@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes">
 
-<title>Trùm Giá Sỉ - Chuyên Sỉ Váy Đầm - Nguồn Hàng Quảng Châu Cao Cấp</title>
+<title>Trùm Sỉ - Chuyên Sỉ Váy Đầm - Nguồn Hàng Quảng Châu Cao Cấp</title>
 
 <style>
 

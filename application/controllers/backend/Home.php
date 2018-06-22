@@ -179,6 +179,9 @@ class Home extends MY_Controller {
                         $image->link_attr = new stdClass();
                         $image->options = null;
                         $image->attachment_id = $item->id;
+                        $image->data_section = $page->section;
+                        $image->data_id = $item->id;
+                        $image->data_sort = $item->sort;
                         array_push($images, $image);
                     }
                     $metadata[$page->section] = json_encode($images/*, JSON_UNESCAPED_UNICODE*/);
@@ -254,64 +257,181 @@ class Home extends MY_Controller {
         $result = false;
         $pullClass = $this->input->post();
         $req = (object)$pullClass;
-        if($req->type === 'move'){
-            $batch = array(
-                array(
-                    'id' => $req->source,
-                    'sort' => $req->ss
-                ),
-                array(
-                    'id' => $req->target,
-                    'sort' => $req->st
-                )
-            );
-            $result = $this->db->update_batch($this->metadataModel, $batch, 'id');
-        } elseif($req->type === 'update'){
-            if(!empty($req->config)){
-                $pullClass['apply_name'] = $req->title;
-                $pullClass['apply_value'] = $req->photo;
-                unset($pullClass['id']);
-                unset($pullClass['config']);
-                unset($pullClass['title']);
-                unset($pullClass['type']);
-                unset($pullClass['page']);
-                unset($pullClass['photo']);
-                unset($pullClass['des']);
-                unset($pullClass['detail']);
-                $pullClass['modified'] = date('Y-m-d H:i:s', time());
-                $result = $this->db->where('id', $req->id)->update($this->configModel, $pullClass);
-            } elseif(empty($req->page)){
-                unset($pullClass['page']);
-                unset($pullClass['id']);
-                unset($pullClass['type']);
-                unset($pullClass['config']);
-                $pullClass['modified'] = date('Y-m-d H:i:s', time());
-                $result = $this->db->where('id', $req->id)->update($this->metadataModel, $pullClass);
-            } else{
-                unset($pullClass['config']);
-                unset($pullClass['page']);
-                unset($pullClass['id']);
-                unset($pullClass['type']);
-                unset($pullClass['photo']);
-                unset($pullClass['detail']);
-                $pullClass['modified'] = date('Y-m-d H:i:s', time());
-                $result = $this->db->where('id', $req->id)->update($this->pageModel, $pullClass);
+
+        if($req->custom === 'router'){
+            if($req->type === 'move'){
+                $batch = array(
+                    array(
+                        'id' => $req->source,
+                        'sort' => $req->ss
+                    ),
+                    array(
+                        'id' => $req->target,
+                        'sort' => $req->st
+                    )
+                );
+                $result = $this->db->update_batch($this->metadataModel, $batch, 'id');
+            } elseif($req->type === 'update'){
+                $thisRoute = $this->db->select('page, style, title, sort')->from($this->styleModel)->where('id', $req->id)->get()->row();
+                if(!empty($thisRoute->page)){
+                    $pullClass = array(
+                        'modified' => date('Y-m-d H:i:s', time()),
+                        'page' => $req->detail,
+                        'title' => $req->title
+                    );
+                    $result = $this->db->where('id', $req->id)->update($this->styleModel, $pullClass);
+                    if($result){
+                        $pullClass = array(
+                            'modified' => date('Y-m-d H:i:s', time()),
+                            'page' => $req->detail
+                        );
+                        $result = $this->db->where('page', $thisRoute->page)->update($this->pageModel, $pullClass);
+                        $response->page = 'backend/'.($thisRoute->style === 'shop' ? 'shop/' : '').$thisRoute->page;
+                        $response->detail = $req->detail;
+                        $response->title = $req->title;
+                    }
+                }
+            } elseif($req->type === 'clone'){
+                $thisRoute = $this->db->select('page, style, title, sort')->from($this->styleModel)->where('id', $req->id)->get()->row();
+                $newPageRoute = $thisRoute->page.'-'.time();
+                $newSort = time();
+                $pullClass = array(
+                    'created' => date('Y-m-d H:i:s', time()),
+                    'modified' => date('Y-m-d H:i:s', time()),
+                    'page' => $newPageRoute,
+                    'title' => $thisRoute->title,
+                    'style' => $thisRoute->style,
+                    'sort' => $newSort
+                );
+                $result = $this->db->insert($this->styleModel, $pullClass);
+                if($result){
+                    $response->id = $this->db->insert_id();
+                    $response->sort = $newSort;
+                    $response->page = 'backend/'.($thisRoute->style === 'shop' ? 'shop/' : '').$newPageRoute;
+                    $response->detail = $newPageRoute;
+
+                    $pages = $this->db->select('kind, section, title, des, sort')
+                        ->from($this->pageModel)
+                        ->where('page', $thisRoute->page)
+                        ->where('deleted', 0)
+                        ->get()->result();
+                    if(!empty($pages)){
+                        foreach($pages as $page){
+                            $thisDatas = $this->db->select('id, section, title, des, detail, photo, sort')
+                                ->from($this->metadataModel)
+                                ->where('section', $page->section)
+                                ->where('deleted', 0)
+                                ->get()->result()
+                            ;
+                            if(!empty($thisDatas)){
+                                $metaSectionID = time().$page->section;//time();
+                                $pullClass = array(
+                                    'created' => date('Y-m-d H:i:s', time()),
+                                    'modified' => date('Y-m-d H:i:s', time()),
+                                    'page' => $newPageRoute,
+                                    'kind' => $page->kind,
+                                    'section' => $metaSectionID,
+                                    'title' => $page->title,
+                                    'des' => $page->des,
+                                    'sort' => $page->sort
+                                );
+                                $this->db->insert($this->pageModel, $pullClass);
+                                foreach($thisDatas as $thisData){
+                                    $pullClass = array(
+                                        'created' => date('Y-m-d H:i:s', time()),
+                                        'modified' => date('Y-m-d H:i:s', time()),
+                                        'section' => $metaSectionID,
+                                        'title' => $thisData->title,
+                                        'des' => $thisData->des,
+                                        'detail' => $thisData->detail,
+                                        'photo' => $thisData->photo,
+                                        'sort' => $thisData->sort
+                                    );
+                                    $this->db->insert($this->metadataModel, $pullClass);
+                                }
+                            }
+                        }
+                    }
+                }
+
+//                $item = $this->db->select()->from($this->metadataModel)->where('id', $req->id)->get()->row();
+//                unset($item->id);
+//                $item->sort = date('YmdHis');
+//                $pull = (array)$item;
+//                $result = $this->db->insert($this->metadataModel, $pull);
+//                $response->id = $this->db->insert_id();
+//                $response->section = $item->section;
+//                $response->sort = $item->sort;
+            } elseif($req->type === 'remove'){
+                $pull = array(
+                    'modified' => date('Y-m-d H:i:s', time()),
+                    'deleted' => 1
+                );
+                $result = $this->db->where('id', $req->id)->update($this->metadataModel, $pull);
             }
-        } elseif($req->type === 'clone'){
-            $item = $this->db->select()->from($this->metadataModel)->where('id', $req->id)->get()->row();
-            unset($item->id);
-            $item->sort = date('YmdHis');
-            $pull = (array)$item;
-            $result = $this->db->insert($this->metadataModel, $pull);
-            $response->id = $this->db->insert_id();
-            $response->section = $item->section;
-            $response->sort = $item->sort;
-        } elseif($req->type === 'remove'){
-            $pull = array(
-                'modified' => date('Y-m-d H:i:s', time()),
-                'deleted' => 1
-            );
-            $result = $this->db->where('id', $req->id)->update($this->metadataModel, $pull);
+        } else{
+            if($req->type === 'move'){
+                $batch = array(
+                    array(
+                        'id' => $req->source,
+                        'sort' => $req->ss
+                    ),
+                    array(
+                        'id' => $req->target,
+                        'sort' => $req->st
+                    )
+                );
+                $result = $this->db->update_batch($this->metadataModel, $batch, 'id');
+            } elseif($req->type === 'update'){
+                if(!empty($req->config)){
+                    $pullClass['apply_name'] = $req->title;
+                    $pullClass['apply_value'] = $req->photo;
+                    unset($pullClass['id']);
+                    unset($pullClass['custom']);
+                    unset($pullClass['config']);
+                    unset($pullClass['title']);
+                    unset($pullClass['type']);
+                    unset($pullClass['page']);
+                    unset($pullClass['photo']);
+                    unset($pullClass['des']);
+                    unset($pullClass['detail']);
+                    $pullClass['modified'] = date('Y-m-d H:i:s', time());
+                    $result = $this->db->where('id', $req->id)->update($this->configModel, $pullClass);
+                } elseif(empty($req->page)){
+                    unset($pullClass['custom']);
+                    unset($pullClass['page']);
+                    unset($pullClass['id']);
+                    unset($pullClass['type']);
+                    unset($pullClass['config']);
+                    $pullClass['modified'] = date('Y-m-d H:i:s', time());
+                    $result = $this->db->where('id', $req->id)->update($this->metadataModel, $pullClass);
+                } else{
+                    unset($pullClass['custom']);
+                    unset($pullClass['config']);
+                    unset($pullClass['page']);
+                    unset($pullClass['id']);
+                    unset($pullClass['type']);
+                    unset($pullClass['photo']);
+                    unset($pullClass['detail']);
+                    $pullClass['modified'] = date('Y-m-d H:i:s', time());
+                    $result = $this->db->where('id', $req->id)->update($this->pageModel, $pullClass);
+                }
+            } elseif($req->type === 'clone'){
+                $item = $this->db->select()->from($this->metadataModel)->where('id', $req->id)->get()->row();
+                unset($item->id);
+                $item->sort = date('YmdHis');
+                $pull = (array)$item;
+                $result = $this->db->insert($this->metadataModel, $pull);
+                $response->id = $this->db->insert_id();
+                $response->section = $item->section;
+                $response->sort = $item->sort;
+            } elseif($req->type === 'remove'){
+                $pull = array(
+                    'modified' => date('Y-m-d H:i:s', time()),
+                    'deleted' => 1
+                );
+                $result = $this->db->where('id', $req->id)->update($this->metadataModel, $pull);
+            }
         }
         $response->status = $result ? 1 : 0;
         $this->response($response);
