@@ -49,42 +49,14 @@
                 GIỎ  HÀNG		</a>
             <ul id="menu-trum-gia-si-menu-1" class="nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1868"><a href="/shop/"><i class="fa fa-shopping-bag"></i>CỬA HÀNG</a>
                     <ul  class="sub-menu">
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
-                            <a href="/shop/vay-dam-quang-chau">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">ÔM LÔ ÁO</h2>
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
-                            <a href="/bo-si-quan-ao-quang-chau-vay-dam-thiet-ke">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">ÔM LÔ QUẦN</h2>
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
-                            <a href="/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">ÔM LÔ CHÂN VÁY</h2>
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
-                            <a href="/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">ÔM LÔ ĐẦM</h2>
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
-                            <a href="/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">ÔM LÔ SET</h2>
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
-                            <a href="/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">ÔM LÔ ĐỒ BỘ</h2>
-                            </a>
-                        </li>
+                        {foreach from=$smarty.session.sys_router key=index item=item}
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
+                                <a href="/{if $item->style eq 'shop'}shop/{/if}{$item->page}">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <h2 class="h2menu">{$item->title}</h2>
+                                </a>
+                            </li>
+                        {/foreach}
                     </ul>
                 </li>
                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8350">
@@ -97,12 +69,6 @@
                     <a href="/huong-dan-mua-hang">
                         <i class="fa fa-arrow-circle-right"></i>
                         CÁCH MUA HÀNG
-                    </a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2710">
-                    <a href="#">
-                        <i class="fa fa-registered"></i>
-                        ĐĂNG NHẬP / ĐĂNG KÝ
                     </a>
                 </li>
             </ul>
@@ -136,42 +102,20 @@
         <div class="sidebar-menu">
             <ul id="menu-trum-gia-si-menu-2" class="nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1868"><a href="/shop/"><i class="fa fa-shopping-bag"></i>CỬA HÀNG</a>
                     <ul  class="sub-menu">
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
+                        {foreach from=$smarty.session.sys_router key=index item=item}
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
+                                <a href="/{if $item->style eq 'shop'}shop/{/if}{$item->page}">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <h2 class="h2menu">{$item->title}</h2>
+                                </a>
+                            </li>
+                        {/foreach}
+                        <!--<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
                             <a href="/shop/vay-dam-quang-chau">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                                 <h2 class="h2menu">ÔM LÔ ÁO</h2>
                             </a>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
-                            <a href="/bo-si-quan-ao-quang-chau-vay-dam-thiet-ke">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">ÔM LÔ QUẦN</h2>
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
-                            <a href="/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">ÔM LÔ CHÂN VÁY</h2>
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
-                            <a href="/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">ÔM LÔ ĐẦM</h2>
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
-                            <a href="/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">ÔM LÔ SET</h2>
-                            </a>
-                        </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1776">
-                            <a href="/om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <h2 class="h2menu">ÔM LÔ ĐỒ BỘ</h2>
-                            </a>
-                        </li>
+                        </li>-->
                     </ul>
                 </li>
                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8350">

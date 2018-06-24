@@ -4,9 +4,9 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="footer-block widget_text text-15">
-                        <h3>TRÙM SỈ &#8211; NGUỒN HÀNG TIN CẬY</h3>
+                        <h3>{$smarty.session.sys_cnf->cnf_intro->n}</h3>
                         <div class="textwidget">
-                            <span style="font-size: 16px;">Trumsikb.com đang trở thành địa điểm bán sỉ quần áo quảng châu tphcm, bỏ sỉ váy đầm thiết kế quen thuộc với các đối tác bán sỉ quần áo trên toàn quốc. Trumsikb.com luôn nỗ lực và cố gắng hết mình để trở thành một hệ thống xưởng sản xuất, nhà cung cấp sỉ quần áo uy tín chất lượng hàng đầu Việt Nam!</span>
+                            <span style="font-size: 16px;">{$smarty.session.sys_cnf->cnf_intro->v1}</span>
                             <br/>
                             <p style="
     color: red;
@@ -66,13 +66,17 @@
                 <div class="col-sm-4"><div class="footer-block widget_text text-17">
                         <h3>TỪ KHÓA</h3>
                         <div class="textwidget">
-                            <p><a href="#" target="_blank"> nguồn hàng quảng châu</a></p>
+                            {foreach from=$metatag key=index item=item}
+                                <p><a href="#" title="{$item->title}">{$item->title}</a></p>
+                            {/foreach}
                         </div>
                     </div></div><div class="col-sm-4"><div class="footer-block widget_post_views_counter_list_widget post_views_counter_list_widget-3"><h3>BÀI HOT</h3>
                         <ul>
-                            <li>
-                                <a class="post-title" href="{base_url()}">Tin tức...</a> <span class="count">(154.657)</span>
-                            </li>
+                            {foreach from=$metaarticle key=index item=item}
+                                <li>
+                                    <a class="post-title" href="{base_url()}tin-tuc/{friendly_url($item->title)}-{$item->id}">{$item->title}</a> <!--<span class="count">(154.657)</span>-->
+                                </li>
+                            {/foreach}
                         </ul></div></div>
             </div>
         </footer>

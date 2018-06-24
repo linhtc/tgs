@@ -48,6 +48,24 @@ class Home extends MY_Controller {
             ->get()
             ->result()
         ;
+
+        $metaTags = $this->db->select('id, title, des, detail, photo, sort')
+            ->from($this->metadataModel)
+            ->where('deleted', 0)
+            ->where('section', 100)
+            ->order_by('sort', 'asc')
+            ->get()
+            ->result()
+        ;
+
+        $metaArticle = $this->db->select('id, title, des, detail, photo, sort')
+            ->from($this->metadataModel)
+            ->where('deleted', 0)
+            ->where('section', 101)
+            ->order_by('sort', 'asc')
+            ->get()
+            ->result()
+        ;
 //        print_r($contact); exit;
         $metadata = array();
         $pages = $this->db->select('id, kind, section, title, des')
@@ -114,7 +132,9 @@ class Home extends MY_Controller {
             'style' => $style,
             'pages' => $pages,
             'metadata' => $metadata,
-            'metacontact' => $contact
+            'metacontact' => $contact,
+            'metatag' => $metaTags,
+            'metaarticle' => $metaArticle
         );
 
         $this->parser->parse($this->viewPath."view", $data);
@@ -131,6 +151,24 @@ class Home extends MY_Controller {
             ->from($this->metadataModel)
             ->where('deleted', 0)
             ->where('section', 99)
+            ->order_by('sort', 'asc')
+            ->get()
+            ->result()
+        ;
+
+        $metaTags = $this->db->select('id, title, des, detail, photo, sort')
+            ->from($this->metadataModel)
+            ->where('deleted', 0)
+            ->where('section', 100)
+            ->order_by('sort', 'asc')
+            ->get()
+            ->result()
+        ;
+
+        $metaArticle = $this->db->select('id, title, des, detail, photo, sort')
+            ->from($this->metadataModel)
+            ->where('deleted', 0)
+            ->where('section', 101)
             ->order_by('sort', 'asc')
             ->get()
             ->result()
@@ -198,7 +236,9 @@ class Home extends MY_Controller {
             'style' => $style,
             'pages' => $pages,
             'metadata' => $metadata,
-            'metacontact' => $contact
+            'metacontact' => $contact,
+            'metatag' => $metaTags,
+            'metaarticle' => $metaArticle
         );
 
         $this->parser->parse($this->viewPath."view", $data);

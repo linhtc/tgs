@@ -50,6 +50,24 @@ class Home extends MY_Controller {
             ->get()
             ->result()
         ;
+
+        $metaTags = $this->db->select('id, title, des, detail, photo, sort')
+            ->from($this->metadataModel)
+            ->where('deleted', 0)
+            ->where('section', 100)
+            ->order_by('sort', 'asc')
+            ->get()
+            ->result()
+        ;
+
+        $metaArticle = $this->db->select('id, title, des, detail, photo, sort')
+            ->from($this->metadataModel)
+            ->where('deleted', 0)
+            ->where('section', 101)
+            ->order_by('sort', 'asc')
+            ->get()
+            ->result()
+        ;
 //        print_r($contact); exit;
         $metadata = array();
         $pages = $this->db->select('id, kind, section, title, des')
@@ -116,7 +134,9 @@ class Home extends MY_Controller {
             'style' => $style,
             'pages' => $pages,
             'metadata' => $metadata,
-            'metacontact' => $contact
+            'metacontact' => $contact,
+            'metatag' => $metaTags,
+            'metaarticle' => $metaArticle
         );
 
         $this->parser->parse($this->viewPath."view", $data);
@@ -133,6 +153,24 @@ class Home extends MY_Controller {
             ->from($this->metadataModel)
             ->where('deleted', 0)
             ->where('section', 99)
+            ->order_by('sort', 'asc')
+            ->get()
+            ->result()
+        ;
+
+        $metaTags = $this->db->select('id, title, des, detail, photo, sort')
+            ->from($this->metadataModel)
+            ->where('deleted', 0)
+            ->where('section', 100)
+            ->order_by('sort', 'asc')
+            ->get()
+            ->result()
+        ;
+
+        $metaArticle = $this->db->select('id, title, des, detail, photo, sort')
+            ->from($this->metadataModel)
+            ->where('deleted', 0)
+            ->where('section', 101)
             ->order_by('sort', 'asc')
             ->get()
             ->result()
@@ -203,7 +241,9 @@ class Home extends MY_Controller {
             'style' => $style,
             'pages' => $pages,
             'metadata' => $metadata,
-            'metacontact' => $contact
+            'metacontact' => $contact,
+            'metatag' => $metaTags,
+            'metaarticle' => $metaArticle
         );
 
         $this->parser->parse($this->viewPath."view", $data);
@@ -258,7 +298,7 @@ class Home extends MY_Controller {
         $pullClass = $this->input->post();
         $req = (object)$pullClass;
 
-        if($req->custom === 'router'){
+        if(isset($req->custom) && $req->custom === 'router'){
             if($req->type === 'move'){
                 $batch = array(
                     array(
@@ -270,7 +310,7 @@ class Home extends MY_Controller {
                         'sort' => $req->st
                     )
                 );
-                $result = $this->db->update_batch($this->metadataModel, $batch, 'id');
+                $result = $this->db->update_batch($this->styleModel, $batch, 'id');
             } elseif($req->type === 'update'){
                 $thisRoute = $this->db->select('page, style, title, sort')->from($this->styleModel)->where('id', $req->id)->get()->row();
                 if(!empty($thisRoute->page)){
@@ -286,7 +326,7 @@ class Home extends MY_Controller {
                             'page' => $req->detail
                         );
                         $result = $this->db->where('page', $thisRoute->page)->update($this->pageModel, $pullClass);
-                        $response->page = 'backend/'.($thisRoute->style === 'shop' ? 'shop/' : '').$thisRoute->page;
+                        $response->page = '/backend/'.($thisRoute->style === 'shop' ? 'shop/' : '').$req->detail;
                         $response->detail = $req->detail;
                         $response->title = $req->title;
                     }
@@ -353,21 +393,12 @@ class Home extends MY_Controller {
                         }
                     }
                 }
-
-//                $item = $this->db->select()->from($this->metadataModel)->where('id', $req->id)->get()->row();
-//                unset($item->id);
-//                $item->sort = date('YmdHis');
-//                $pull = (array)$item;
-//                $result = $this->db->insert($this->metadataModel, $pull);
-//                $response->id = $this->db->insert_id();
-//                $response->section = $item->section;
-//                $response->sort = $item->sort;
             } elseif($req->type === 'remove'){
                 $pull = array(
                     'modified' => date('Y-m-d H:i:s', time()),
                     'deleted' => 1
                 );
-                $result = $this->db->where('id', $req->id)->update($this->metadataModel, $pull);
+                $result = $this->db->where('id', $req->id)->update($this->styleModel, $pull);
             }
         } else{
             if($req->type === 'move'){
@@ -385,7 +416,8 @@ class Home extends MY_Controller {
             } elseif($req->type === 'update'){
                 if(!empty($req->config)){
                     $pullClass['apply_name'] = $req->title;
-                    $pullClass['apply_value'] = $req->photo;
+                    $pullClass['apply_value'] = !empty($req->photo) ? $req->photo : $req->detail;
+
                     unset($pullClass['id']);
                     unset($pullClass['custom']);
                     unset($pullClass['config']);
@@ -416,6 +448,9 @@ class Home extends MY_Controller {
                     $pullClass['modified'] = date('Y-m-d H:i:s', time());
                     $result = $this->db->where('id', $req->id)->update($this->pageModel, $pullClass);
                 }
+
+                $response->title = $req->title;
+                $response->detail = $req->detail;
             } elseif($req->type === 'clone'){
                 $item = $this->db->select()->from($this->metadataModel)->where('id', $req->id)->get()->row();
                 unset($item->id);
@@ -425,6 +460,7 @@ class Home extends MY_Controller {
                 $response->id = $this->db->insert_id();
                 $response->section = $item->section;
                 $response->sort = $item->sort;
+                $response->title = $item->title;
             } elseif($req->type === 'remove'){
                 $pull = array(
                     'modified' => date('Y-m-d H:i:s', time()),

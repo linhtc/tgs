@@ -946,6 +946,10 @@
             type:'move', source: source.getAttribute('data-id'), target: target.getAttribute('data-id'),
             ss: source.getAttribute('data-sort'), st: target.getAttribute('data-sort')
         };
+        let customType = source.querySelector('[data-edit-type="custom"]');
+        if(customType !== null){
+            info.custom = customType.value;
+        }
         saveData(info, function(result){
             extraEventListener(source);
             extraEventListener(target);
@@ -1009,6 +1013,8 @@
                                     item.value = info.des;
                                 } else if (editColumn === 'detail') {
                                     item.value = info.detail;
+                                } else{
+                                    console.log(item);
                                 }
                             }
                         }
@@ -1257,10 +1263,14 @@
         hideContextMenu();
         let dataID = that.getAttribute('data-id');
         if(dataID !== undefined){
-            that.remove();
             let info = {
                 type:'remove', id: dataID
             };
+            let customType = that.querySelector('[data-edit-type="custom"]');
+            if(customType !== null){
+                info.custom = customType.value;
+            }
+            that.remove();
             saveData(info, function(result){
                 console.log('callback result');
                 that = null;
@@ -1283,21 +1293,24 @@
     }
 
     let that = null;
-    let editElements = document.getElementsByClassName('editable-act');
-    if(editElements.length > 0){
-        for(let index=0; index<editElements.length; index++){
-            let editElement = editElements[index];
-            extraEventListener(editElement);
+    setTimeout(function(){
+        console.log('Editable-act init...');
+        let editElements = document.getElementsByClassName('editable-act');
+        if(editElements.length > 0){
+            for(let index=0; index<editElements.length; index++){
+                let editElement = editElements[index];
+                extraEventListener(editElement);
+            }
         }
-    }
 
-    editElements = document.getElementsByClassName('editable-act-head');
-    if(editElements.length > 0){
-        for(let index=0; index<editElements.length; index++){
-            let editElement = editElements[index];
-            extraEventListener(editElement);
+        editElements = document.getElementsByClassName('editable-act-head');
+        if(editElements.length > 0){
+            for(let index=0; index<editElements.length; index++){
+                let editElement = editElements[index];
+                extraEventListener(editElement);
+            }
         }
-    }
+    }, 1000);
     window.onload = function(){
         $( document ).ready(function() {
             console.log( "ready!!!" );

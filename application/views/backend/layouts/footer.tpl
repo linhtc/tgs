@@ -3,10 +3,10 @@
         <footer class="footer_widgets">
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="footer-block widget_text text-15">
-                        <h3>TRÙM SỈ &#8211; NGUỒN HÀNG TIN CẬY</h3>
+                    <div class="footer-block widget_text text-15 editable-act" data-id="{$smarty.session.sys_cnf->cnf_intro->id}">
+                        <h3 data-apply-text="{$smarty.session.sys_cnf->cnf_intro->id}" data-edit-type="title">{$smarty.session.sys_cnf->cnf_intro->n}</h3>
                         <div class="textwidget">
-                            <span style="font-size: 16px;">Trumsikb.com đang trở thành địa điểm bán sỉ quần áo quảng châu tphcm, bỏ sỉ váy đầm thiết kế quen thuộc với các đối tác bán sỉ quần áo trên toàn quốc. Trumsikb.com luôn nỗ lực và cố gắng hết mình để trở thành một hệ thống xưởng sản xuất, nhà cung cấp sỉ quần áo uy tín chất lượng hàng đầu Việt Nam!</span>
+                            <span style="font-size: 16px;" data-apply-text="{$smarty.session.sys_cnf->cnf_intro->id}" data-edit-type="detail">{$smarty.session.sys_cnf->cnf_intro->v1}</span>
                             <br/>
                             <p style="
     color: red;
@@ -14,16 +14,14 @@
     font-size: 15px !important;
 "
                             "><i class="fa fa-map-marker" aria-hidden="true"></i>   75/55 Gò Dầu Tân Quý Tân Phú</p>
-                            <p style="
-    color: red;
-    font-weight: bold !important;
-    font-size: 15px !important;
-"
-                            "><i class="fa fa-compass" aria-hidden="true"></i>
+                            <p style="color: red; font-weight: bold !important; font-size: 15px !important;"><i class="fa fa-compass" aria-hidden="true"></i>
                             <span>Tìm đường đến shop:</span> <a target="_blank" href="https://goo.gl/maps/krkcEEAXVm62"style="
     color: blue; font-weight: bold !important; font-size: 15px !important;
 ">XEM BẢN ĐỒ</a>
                             </p>
+                            <input type="hidden" data-id="{$smarty.session.sys_cnf->cnf_intro->id}" data-edit-type="title" value="{$smarty.session.sys_cnf->cnf_intro->n}" />
+                            <input type="hidden" data-id="{$smarty.session.sys_cnf->cnf_intro->id}" data-edit-type="config" value="1" />
+                            <textarea class="prevent_show" data-id="{$smarty.session.sys_cnf->cnf_intro->id}" data-edit-type="detail" data-only-text="1">{$smarty.session.sys_cnf->cnf_intro->v1}</textarea>
                             <br/>
                             <!-- /ZALO -->
                             <!--
@@ -63,18 +61,33 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4"><div class="footer-block widget_text text-17">
+                <div class="col-sm-4">
+                    <div class="footer-block widget_text text-17">
                         <h3>TỪ KHÓA</h3>
                         <div class="textwidget">
-                            <p><a href="#" target="_blank"> nguồn hàng quảng châu</a></p>
+                            {foreach from=$metatag key=index item=item}
+                                <p class="editable-act" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-99-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+                                    <a class="prevent_click" href="#" data-apply-text="{$item->id}" data-edit-type="title">{$item->title}</a>
+                                    <input type="hidden" data-id="{$item->id}" data-edit-type="title" value="{$item->title}" />
+                                </p>
+                            {/foreach}
                         </div>
-                    </div></div><div class="col-sm-4"><div class="footer-block widget_post_views_counter_list_widget post_views_counter_list_widget-3"><h3>BÀI HOT</h3>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="footer-block widget_post_views_counter_list_widget post_views_counter_list_widget-3">
+                        <h3>BÀI HOT</h3>
                         <ul>
-                            <li>
-                                <a class="post-title" href="{base_url()}">Tin tức...</a> <span class="count">(154.657)</span>
-                            </li>
-                        </ul></div></div>
-            </div>
+                            {foreach from=$metaarticle key=index item=item}
+                                <li class="editable-act" data-id="{$item->id}" data-sort="{$item->sort}" draggable="true" ondragstart="drag(event)" id="item-99-{$item->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+                                    <a data-apply-text="{$item->id}" data-edit-type="title" class="post-title" href="{base_url()}tin-tuc/{friendly_url($item->title)}-{$item->id}">{$item->title}</a> <!--<span class="count">(154.657)</span>-->
+                                    <input type="hidden" data-id="{$item->id}" data-edit-type="title" value="{$item->title}" />
+                                </li>
+                            {/foreach}
+                        </ul>
+                    </div>
+                </div>
+                    </div>
         </footer>
         <footer class="footer-container">
 
