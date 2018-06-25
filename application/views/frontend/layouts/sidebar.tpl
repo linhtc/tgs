@@ -18,18 +18,18 @@
             </p>
 
 
-            <div class="mobile-gio-hang">
-                <!--<a href="/gio-hang/">
+            <!--<div class="mobile-gio-hang">
+                <a href="/gio-hang/">
                     <span class="menu-mobile-text" style="display: block;background: red;width: 42px;height: 42px;color:white;">
                     <i class="_mi _before dashicons dashicons-cart" aria-hidden="true" style="line-height: 2;"></i>
                     </span>
-                </a>-->
+                </a>
                 <a href="tel://0919705086">
 			<span class="menu-mobile-text" style="display: block;background: #06b53c;width: 42px;height: 42px;color:white;">
 			<i class="_mi _before dashicons dashicons-phone" aria-hidden="true" style="line-height: 2;"></i>
 			</span>
                 </a>
-            </div>
+            </div>-->
             <div class="mobile-menu-link">
                 <a href="#">
                     <span class ="menu-mobile-text" style="display: block;background: black; color: white; text-align: center;line-height: 40px;width: 42px;height: 42px;">MENU</span>
@@ -60,7 +60,7 @@
                     </ul>
                 </li>
                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8350">
-                    <a href="https://goo.gl/GjqCCf">
+                    <a href="https://www.youtube.com/watch?v=TYS1-Hq2eBA">
                         <i class="fa fa-video-camera"></i>
                         VIDEO LIVESTREAM
                     </a>
@@ -85,7 +85,7 @@
                         </a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5543">
-                        <a href="om-lo-hang-quang-chau-quan-ao-thiet-ke-gia-re">
+                        <a href="/om-lo-quan-ao">
                             ÔM LÔ
                         </a>
                     </li>

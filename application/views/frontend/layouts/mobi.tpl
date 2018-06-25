@@ -1,10 +1,10 @@
 <div class="mobi-bar visible-xs">
     <div class="col-xs-5">
-        <a href="https://trumgiasi.com/bo-si-quan-ao-quang-chau-vay-dam-thiet-ke/" class="mb-open-popup-link btn">Mua Sỉ</a>
+        <a href="#" class="mb-open-popup-link btn">Mua Sỉ</a>
     </div>
     <div class="col-xs-2">
         <div class="" id="alo-ft">
-            <a href="tel://0919705086" class="mb-open-popup-link">
+            <a href="tel:0908 549 094" class="mb-open-popup-link">
                 <div class="alo-ph-circle"></div>
                 <div class="alo-ph-circle-fill"></div>
                 <div class="alo-ph-img-circle"></div>
