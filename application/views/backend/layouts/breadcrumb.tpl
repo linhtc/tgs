@@ -2,8 +2,8 @@
 <div class="top-first">
     <div class="row">
         <div class="col-lg-5">
-            <div class="left-widget">
-                <div class="breadcrumbs">
+            <div class="left-widget editable-act" data-id="{$style->id}">
+                <div class="breadcrumbs prevent_click">
                     {if $style->title neq ''}
                         <span><a href="{base_url()}">TRANG CHỦ</a></span>
                         <span>{$style->title}</span>
@@ -11,6 +11,8 @@
                         <a href="{base_url()}">Trang chủ</a>
                     {/if}
                 </div>
+                <input type="hidden" data-id="{$style->id}" data-edit-type="custom" value="head" />
+                <textarea class="prevent_show" data-id="{$style->id}" data-edit-type="head">{$style->head}</textarea>
             </div>
         </div>
         <div class="col-lg-7">
@@ -48,3 +50,6 @@
     </div>
 </div>
 <!-- / end breadcrumb -->
+<style>
+    .prevent_show{ display: none; }
+</style>

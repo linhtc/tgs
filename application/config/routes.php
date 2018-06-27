@@ -63,6 +63,7 @@ $route['shop'] = "frontend/home/shop";
 $route['shop/(:any)'] = "frontend/home/shop/$1";
 $route['shop/(:any)/(:any)'] = "frontend/home/shop/$1/$2";
 $route['san-pham/(:any)'] = "frontend/home/product/$1";
+$route['tin-tuc/(:any)'] = "frontend/home/news/$1";
 
 $route['backend'] = "backend/home/view";
 $route['backend/save'] = "backend/home/save";
@@ -70,6 +71,7 @@ $route['backend/shop'] = "backend/home/shop";
 $route['backend/shop/(:any)'] = "backend/home/shop/$1";
 $route['backend/shop/(:any)/(:any)'] = "backend/home/shop/$1/$2";
 $route['backend/san-pham/(:any)'] = "backend/home/product/$1";
+$route['backend/tin-tuc/(:any)'] = "backend/home/news/$1";
 $route['backend/(:any)'] = "backend/home/shop/$1";
 
 // backend

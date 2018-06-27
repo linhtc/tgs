@@ -12,10 +12,10 @@
     {foreach from=$pages key=i item=page}
         <section class="container-section" id="section-{$page->section}" {if $style->style eq 'shop' and $i gte 2}style="background:#ffffff;padding:{if $i eq 2}40px{else}0{/if} 10px 0 10px;"{/if}>
             <span class="move-section-button" title="Move" data-move-kind="section" data-id="{$page->id}" data-sort="{$page->sort}" draggable="true" ondragstart="drag(event)" id="move-item-{$page->section}-{$page->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
-                <i class="fa fa-arrows-alt prevent_click" aria-hidden="true"></i>
+                <i class="fa fa-arrows prevent_click" aria-hidden="true"></i>
             </span>
             <span class="remove-section-button" title="Remove" onclick="removePage('{$page->id}', this);">
-                <i class="fa fa-times prevent_click" aria-hidden="true"></i>
+                <i class="fa fa-trash-o prevent_click" aria-hidden="true"></i>
             </span>
             {if $page->title neq '' and $page->kind neq 'photo' and $page->kind neq 'list_2' and $page->kind neq 'list_3'}
                 <div class="vc_row row editable-act-head" data-id="{$page->id}">
@@ -796,6 +796,10 @@
                     <strong>Chi tiết:</strong><br>
                     <textarea class="edit-text" id="edit-content-detail" style="width: 100%; height: 250px;"></textarea>
                 </div>
+                <div class="prevent_show" id="edit-content-container-head">
+                    <strong>Head tag:</strong><br>
+                    <textarea class="edit-text" id="edit-content-head" style="width: 100%; height: 250px;"></textarea>
+                </div>
             </div>
 
             <!-- Modal footer -->
@@ -1017,6 +1021,7 @@
                     config: $('#edit-content-config').val(),
                     photo: $('#edit-content-photo').val(),
                     custom: $('#edit-content-custom').val(),
+                    head: $('#edit-content-head').val(),
                     des: editorDes.getValue(),
                     detail: editorDetail.getValue()
                 };
@@ -1205,6 +1210,11 @@
                     $('#edit-content-container-detail').removeClass("prevent_show");
                 } else{
                     $('#edit-content-container-detail').addClass("prevent_show");
+                }
+                if(preventShow.hasOwnProperty('head')){
+                    $('#edit-content-container-head').removeClass("prevent_show");
+                } else{
+                    $('#edit-content-container-head').addClass("prevent_show");
                 }
                 $('#edit-container').modal('show');
             }

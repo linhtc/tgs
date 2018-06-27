@@ -94,7 +94,7 @@
 
                     <div class="footer-nav">
                         <ul id="menu-footer-menu" class="menu">
-                            <li id="menu-item-2424" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-897 current_page_item menu-item-2424"><a href="{base_url()}/">TRÙM SỈ &#8211; NGUỒN HÀNG TIN CẬY</a></li>
+                            <li id="menu-item-2424" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-897 current_page_item menu-item-2424"><a href="{base_url()}/">TRÙM SỈ KB - KHO CUNG CẤP NGUỒN HÀNG ÔM LÔ</a></li>
                             <li id="menu-item-5345" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5345"><a href="{base_url()}/shop/">CỬA HÀNG</a></li>
                             <li id="menu-item-2421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2421"><a href="{base_url()}/noi-bo-si-vay-dam-thiet-ke-quang-chau-tai-tphcm/">GIỚI THIỆU</a></li>
                             <li id="menu-item-2427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2427"><a href="{base_url()}/kinh-nghiem-ban-hang/">KINH NGHIỆM BÁN HÀNG</a></li>

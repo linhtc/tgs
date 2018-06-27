@@ -30,12 +30,15 @@ class Home extends MY_Controller {
         $this->styleModel = 'sys_styles';
         $this->metadataModel = 'sys_metadata';
         $this->configModel = 'sys_configurations';
+        if ($this->checkSignIn() !== TRUE) {
+            redirect(base_url().'admin'); exit;
+        }
     }
     
     /**
      * View
      */
-    public function view($s1='') {
+    public function view($s1='home') {
 //        if(!empty($s1)){
 //            echo $s1; exit;
 //        }
@@ -73,7 +76,7 @@ class Home extends MY_Controller {
         $pages = $this->db->select('id, kind, section, title, des')
             ->from($this->pageModel)
             ->where('deleted', 0)
-            ->where('page', 'home')
+            ->where('page', $s1)
             ->order_by('sort', 'asc')
             ->get()
             ->result()
@@ -119,10 +122,10 @@ class Home extends MY_Controller {
                 }
             }
         }
-        $style = $this->db->select('style')
+        $style = $this->db->select('title, id, style, head, page')
             ->from($this->styleModel)
             ->where('deleted', 0)
-            ->where('page', 'home')
+            ->where('page', $s1)
             ->get()
             ->row()
         ;
@@ -226,7 +229,7 @@ class Home extends MY_Controller {
                 }
             }
         }
-        $style = $this->db->select('style, title')
+        $style = $this->db->select('title, id, style, head, page')
             ->from($this->styleModel)
             ->where('deleted', 0)
             ->where('page', $s1)
@@ -271,7 +274,7 @@ class Home extends MY_Controller {
             ->get()
             ->row()
         ;
-        $style = $this->db->select('style, title')
+        $style = $this->db->select('title, id, style, head, page')
             ->from($this->styleModel)
             ->where('deleted', 0)
             ->where('page', 'shop')
@@ -286,6 +289,44 @@ class Home extends MY_Controller {
         );
 
         $this->parser->parse($this->viewPath."product", $data);
+    }
+
+    /**
+     * Product
+     */
+    public function news($string=null) {
+        if(empty($string)){
+            redirect(base_url()); exit;
+        }
+        $ids = explode('-', $string);
+        $id = $ids[count($ids)-1];
+
+        $this->layout->set_layout_dir('views/backend/layouts/');
+        $this->layout->set_layout('tgs');
+
+        $product = $this->db->select('id, title, des, detail, photo')
+            ->from($this->metadataModel)
+            ->where('deleted', 0)
+            ->where('id', $id)
+            ->order_by('sort', 'asc')
+            ->get()
+            ->row()
+        ;
+        $style = $this->db->select('title, id, style, head, page')
+            ->from($this->styleModel)
+            ->where('deleted', 0)
+            ->where('page', 'shop')
+            ->get()
+            ->row()
+        ;
+        $product->url = $string;
+
+        $data = array(
+            'style' => $style,
+            'product' => $product
+        );
+
+        $this->parser->parse($this->viewPath."news", $data);
     }
 
     /**
@@ -471,6 +512,14 @@ class Home extends MY_Controller {
                 );
                 $result = $this->db->where('id', $req->id)->update($this->pageModel, $pull);
             }
+        }  elseif(isset($req->custom) && $req->custom === 'head'){
+            if($req->type === 'update'){
+                $pull = array(
+                    'modified' => date('Y-m-d H:i:s', time()),
+                    'head' => $req->head
+                );
+                $result = $this->db->where('id', $req->id)->update($this->styleModel, $pull);
+            }
         } else{
             if($req->type === 'move'){
                 $batch = array(
@@ -491,6 +540,7 @@ class Home extends MY_Controller {
 
                     unset($pullClass['id']);
                     unset($pullClass['custom']);
+                    unset($pullClass['head']);
                     unset($pullClass['config']);
                     unset($pullClass['title']);
                     unset($pullClass['type']);
@@ -502,6 +552,7 @@ class Home extends MY_Controller {
                     $result = $this->db->where('id', $req->id)->update($this->configModel, $pullClass);
                 } elseif(empty($req->page)){
                     unset($pullClass['custom']);
+                    unset($pullClass['head']);
                     unset($pullClass['page']);
                     unset($pullClass['id']);
                     unset($pullClass['type']);
@@ -510,6 +561,7 @@ class Home extends MY_Controller {
                     $result = $this->db->where('id', $req->id)->update($this->metadataModel, $pullClass);
                 } else{
                     unset($pullClass['custom']);
+                    unset($pullClass['head']);
                     unset($pullClass['config']);
                     unset($pullClass['page']);
                     unset($pullClass['id']);

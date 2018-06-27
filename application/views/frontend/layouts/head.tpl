@@ -5,8 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes">
-
-<title>Trùm Ôm Lô Nguồn Hàng Quảng Châu Giá Gốc</title>
+{if $style->head eq ''}
+    <title>Trùm Sỉ - Chuyên Sỉ Váy Đầm - Nguồn Hàng Quảng Châu Cao Cấp</title>
+{else}
+    {$style->head}
+{/if}
 
 <style>
 

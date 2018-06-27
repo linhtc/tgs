@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mectronic CMS</title>
+    <title>Trùm sỉ KB</title>
     <base href="/backend/auth/">
     <link rel="shortcut icon" href="/static/frontend/img/icons/favicon.ico" type="image/png" sizes="152x152">
     <!-- load fonts-->

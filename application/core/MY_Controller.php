@@ -54,7 +54,7 @@ class MY_Controller extends CI_Controller {
 
         $routers = $this->db->select('id, page, style, title, sort')
             ->from($this->routerModel)
-            ->where('deleted', 0)->where_not_in('page', array('home', 'shop'))
+            ->where('deleted', 0)->where_not_in('page', array('home', 'shop'))->where('title is not null', '', false)
             ->order_by('sort', 'asc')
             ->get()->result();
         if ($routers) {
@@ -78,11 +78,16 @@ class MY_Controller extends CI_Controller {
     }
     public function checkSignIn() {
         $CI = & get_instance();
-        if ($CI->session->userdata('user_id') && $CI->session->userdata('user_username')) {
+        if ($CI->session->userdata('administrator')) {
             return TRUE;
         } else {
             return FALSE;
         }
+//        if ($CI->session->userdata('user_id') && $CI->session->userdata('user_username')) {
+//            return TRUE;
+//        } else {
+//            return FALSE;
+//        }
     }
     function check_permission($class, $function){
         return 1;

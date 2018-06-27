@@ -38,14 +38,30 @@ class Users extends MY_Controller {
 
         if ($this->checkSignIn() == TRUE) {
             $administrator = $this->session->userdata('administrator');
-            $permission = $this->session->userdata('user_group_permission');
-            $language = $this->session->userdata('user_lang');
-            if($administrator || !empty($permission['homes']['view'])){
-                redirect(base_url() .$language. "admin/homes");
-            } else{
-                redirect(base_url() .$language. "admin/profiles");
+//            $permission = $this->session->userdata('user_group_permission');
+//            $language = $this->session->userdata('user_lang');
+//            if($administrator || !empty($permission['homes']['view'])){
+//                redirect(base_url() .$language. "admin/homes");
+//            } else{
+//                redirect(base_url() .$language. "admin/profiles");
+//            }
+            if($administrator){
+                redirect(base_url().'backend'); exit;
             }
         }
+
+        $username = $this->input->post('username', TRUE);
+        $password = $this->input->post('password', TRUE);
+        if (!empty($username && !empty($password))) {
+            $user = $this->db->select('id')->from('sys_users')->where('username', $username)->where('password', md5($password))->get()->row();
+            if(!empty($user->id)){
+                $this->session->set_userdata('administrator', 1);
+                redirect(base_url().'backend'); exit;
+            }
+        }
+
+        $this->parser->parse("admin/users/login", $data);
+        return true; exit;
 
         $this->load->helper('form');
 //        $this->load->library('form_validation');
