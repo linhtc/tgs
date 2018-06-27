@@ -177,7 +177,7 @@ class Home extends MY_Controller {
         ;
 
         $metadata = array();
-        $pages = $this->db->select('id, kind, section, title, des')
+        $pages = $this->db->select('id, kind, section, title, des, sort')
             ->from($this->pageModel)
             ->where('deleted', 0)
             ->where('page', $s1)
@@ -243,7 +243,8 @@ class Home extends MY_Controller {
             'metadata' => $metadata,
             'metacontact' => $contact,
             'metatag' => $metaTags,
-            'metaarticle' => $metaArticle
+            'metaarticle' => $metaArticle,
+            'sectionurl' => $s1
         );
 
         $this->parser->parse($this->viewPath."view", $data);
@@ -399,6 +400,76 @@ class Home extends MY_Controller {
                     'deleted' => 1
                 );
                 $result = $this->db->where('id', $req->id)->update($this->styleModel, $pull);
+            }
+        } elseif(isset($req->custom) && $req->custom === 'section'){
+            if(empty($req->page)){
+                $req->page = 'home';
+            }
+            $that = $this->db->select()->from($this->styleModel)->where('page', $req->section)->get()->row();
+            $page = $this->db->select()->from($this->styleModel)->where('page', $req->page)->get()->row();
+            if(empty($that->id)){
+                if(!empty($page->id)){
+                    $pullClass = array(
+                        'created' => date('Y-m-d H:i:s', time()),
+                        'modified' => date('Y-m-d H:i:s', time()),
+                        'page' => $req->section,
+                        'style' => $page->style,
+                        'title' => $req->section,
+                        'sort' => time()
+                    );
+                    $this->db->insert($this->styleModel, $pullClass);
+                }
+            }
+            $pages = $this->db->select('kind, section, title, des, sort')
+                ->from($this->pageModel)
+                ->where('page', $page->page)
+                ->where('section', $req->id)
+                ->where('deleted', 0)
+                ->get()->result();
+            if(!empty($pages)){
+                foreach($pages as $page){
+                    $thisDatas = $this->db->select('id, section, title, des, detail, photo, sort')
+                        ->from($this->metadataModel)
+                        ->where('section', $page->section)
+                        ->where('deleted', 0)
+                        ->get()->result()
+                    ;
+                    if(!empty($thisDatas)){
+                        $metaSectionID = time().$page->section;//time();
+                        $pullClass = array(
+                            'created' => date('Y-m-d H:i:s', time()),
+                            'modified' => date('Y-m-d H:i:s', time()),
+                            'page' => $req->section,
+                            'kind' => $page->kind,
+                            'section' => $metaSectionID,
+                            'title' => $page->title,
+                            'des' => $page->des,
+                            'sort' => $page->sort
+                        );
+                        $this->db->insert($this->pageModel, $pullClass);
+                        foreach($thisDatas as $thisData){
+                            $pullClass = array(
+                                'created' => date('Y-m-d H:i:s', time()),
+                                'modified' => date('Y-m-d H:i:s', time()),
+                                'section' => $metaSectionID,
+                                'title' => $thisData->title,
+                                'des' => $thisData->des,
+                                'detail' => $thisData->detail,
+                                'photo' => $thisData->photo,
+                                'sort' => $thisData->sort
+                            );
+                            $result = $this->db->insert($this->metadataModel, $pullClass);
+                        }
+                    }
+                }
+            }
+        } elseif(isset($req->custom) && $req->custom === 'page'){
+            if($req->type === 'remove'){
+                $pull = array(
+                    'modified' => date('Y-m-d H:i:s', time()),
+                    'deleted' => 1
+                );
+                $result = $this->db->where('id', $req->id)->update($this->pageModel, $pull);
             }
         } else{
             if($req->type === 'move'){

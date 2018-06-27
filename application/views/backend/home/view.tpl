@@ -10,7 +10,13 @@
 
 {if !empty($pages)}
     {foreach from=$pages key=i item=page}
-        <section id="section-{$page->section}" {if $style->style eq 'shop' and $i gte 2}style="background:#ffffff;padding:{if $i eq 2}40px{else}0{/if} 10px 0 10px;"{/if}>
+        <section class="container-section" id="section-{$page->section}" {if $style->style eq 'shop' and $i gte 2}style="background:#ffffff;padding:{if $i eq 2}40px{else}0{/if} 10px 0 10px;"{/if}>
+            <span class="move-section-button" title="Move" data-move-kind="section" data-id="{$page->id}" data-sort="{$page->sort}" draggable="true" ondragstart="drag(event)" id="move-item-{$page->section}-{$page->id}" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+                <i class="fa fa-arrows-alt prevent_click" aria-hidden="true"></i>
+            </span>
+            <span class="remove-section-button" title="Remove" onclick="removePage('{$page->id}', this);">
+                <i class="fa fa-times prevent_click" aria-hidden="true"></i>
+            </span>
             {if $page->title neq '' and $page->kind neq 'photo' and $page->kind neq 'list_2' and $page->kind neq 'list_3'}
                 <div class="vc_row row editable-act-head" data-id="{$page->id}">
                     <div class="wpb_column vc_column_container vc_col-sm-12">
@@ -753,6 +759,10 @@
             {/if}
         </section>
     {/foreach}
+{else}
+    <div data-drop-zone="1" draggable="true" ondragover="allowDrop(event)" ondragstart="drag(event)" ondrop="drop(event, this)" style="width: 100%;height: 200px;border: thin solid gray;text-align: center;line-height: 200px;">
+        Drop section here...
+    </div>
 {/if}
 
 <div class="modal" id="edit-container">
@@ -828,6 +838,23 @@
 </menu>
 
 <style>
+    .move-section-button{
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: move;
+        z-index: 999;
+    }
+    .remove-section-button{
+        position: absolute;
+        right: 16px;
+        top: 0;
+        cursor: move;
+        z-index: 999;
+    }
+    .container-section{
+        position: relative;
+    }
     .cycloneslider-template-dark div[data-cycle-dynamic-height="off"] .cycloneslider-slide-image {
         opacity: 0.9 !important;
     }
@@ -892,6 +919,7 @@
 </style>
 
 <script>
+    let sectionUrl = '{$sectionurl}';
     myMapGlobal = { };
     let switchEditor = { des: true, detail: true };
     function allowDrop(ev) {
@@ -901,6 +929,10 @@
     function drag(ev) {
         if(ev.target.id){
             ev.dataTransfer.setData("text", ev.target.id);
+            console.log(ev.target.getAttribute('data-move-kind'));
+            ev.dataTransfer.setData("sid", ev.target.getAttribute('data-id'));
+            ev.dataTransfer.setData("type", ev.target.getAttribute('data-move-kind'));
+            ev.dataTransfer.setData("page", sectionUrl);
         } else{
             let index = $(ev.target).index();
             let slideshow = document.getElementsByClassName('cycle-slideshow');
@@ -915,6 +947,25 @@
     function drop(ev, el) {
         ev.preventDefault();
         let data = ev.dataTransfer.getData("text");
+        let source = document.getElementById(data);
+        let sectionID = ev.dataTransfer.getData("sid");
+        let sectionType = ev.dataTransfer.getData("type");
+        let sectionPage = ev.dataTransfer.getData("page");
+        let sectionDropZone = el.getAttribute('data-drop-zone');
+        console.log(sectionID);
+        console.log(sectionType);
+        console.log(sectionPage);
+        console.log(sectionDropZone);
+        if(sectionType === 'section' && sectionDropZone === '1'){
+            let info = {
+                type:'clone', id: sectionID, custom: sectionType, section: sectionUrl, page: sectionPage
+            };
+            saveData(info, function(result){
+                console.log('end of section...');
+            });
+            return true;
+        }
+
         let target = el;
         /* neu la slide show thi keo tha xuong pager */
         if(el.getAttribute('slideshow') !== undefined && el.getAttribute('slideshow') !== null){
@@ -933,7 +984,6 @@
         if(target.type !== undefined && target.type === 'react-drop'){
             return false;
         }
-        let source = document.getElementById(data);
         /*console.log(target);
         console.log(source);*/
         let targetHtml = target.innerHTML;
@@ -985,89 +1035,91 @@
             dataType: 'json',
             success: function (result) {
                 console.log(result);
-                if(info.page !== ''){
-                    let dataID = that.getAttribute('data-id');
-                    let datas = that.querySelectorAll('[data-apply-id="' + dataID + '"]');
-                    if (datas.length > 0) {
-                        for (let k = 0; k < datas.length; k++) {
-                            let item = datas[k];
-                            if (item.tagName === 'H4') {
-                                item.innerHTML = info.title+'<span>'+info.des+'</span>';
+                if(that !== null){
+                    if(info.page !== ''){
+                        let dataID = that.getAttribute('data-id');
+                        let datas = that.querySelectorAll('[data-apply-id="' + dataID + '"]');
+                        if (datas.length > 0) {
+                            for (let k = 0; k < datas.length; k++) {
+                                let item = datas[k];
+                                if (item.tagName === 'H4') {
+                                    item.innerHTML = info.title+'<span>'+info.des+'</span>';
+                                }
                             }
                         }
                     }
-                }
-                if(info.type === 'update') {
-                    let dataID = that.getAttribute('data-id');
-                    if (dataID !== undefined) {
-                        let datas = that.querySelectorAll('[data-id="' + dataID + '"]');
-                        if (datas.length > 0) {
-                            for (let k = 0; k < datas.length; k++) {
-                                let item = datas[k];
-                                let editColumn = item.getAttribute('data-edit-type');
-                                if (editColumn === 'photo') {
-                                    item.setAttribute('src', info.photo);
-                                } else if (editColumn === 'title') {
-                                    item.value = info.title;
-                                } else if (editColumn === 'des') {
-                                    item.value = info.des;
-                                } else if (editColumn === 'detail') {
-                                    item.value = info.detail;
-                                } else{
-                                    console.log(item);
-                                }
-                            }
-                        }
-                        datas = that.querySelectorAll('[data-apply-id="' + dataID + '"]');
-                        if (datas.length > 0) {
-                            for (let k = 0; k < datas.length; k++) {
-                                let item = datas[k];
-                                console.log(item.tagName);
-                                let editColumn = item.getAttribute('data-edit-type');
-                                if (editColumn === 'photo') {
-                                    if (item.tagName === 'IMG') {
+                    if(info.type === 'update') {
+                        let dataID = that.getAttribute('data-id');
+                        if (dataID !== undefined) {
+                            let datas = that.querySelectorAll('[data-id="' + dataID + '"]');
+                            if (datas.length > 0) {
+                                for (let k = 0; k < datas.length; k++) {
+                                    let item = datas[k];
+                                    let editColumn = item.getAttribute('data-edit-type');
+                                    if (editColumn === 'photo') {
                                         item.setAttribute('src', info.photo);
-                                    }
-                                } else if (editColumn === 'title') {
-                                    if (item.tagName === 'INPUT') {
+                                    } else if (editColumn === 'title') {
                                         item.value = info.title;
-                                    } else {
-                                        item.textContent = info.title;
-                                    }
-                                } else if (editColumn === 'des') {
-                                    if (item.tagName === 'TEXTAREA') {
+                                    } else if (editColumn === 'des') {
                                         item.value = info.des;
-                                    } else if(item.tagName === 'A'){
-                                        item.innerText = info.des;
-                                    } else {
-                                        item.innerHTML = info.des;
-                                    }
-                                } else if (editColumn === 'detail') {
-                                    if (item.tagName === 'TEXTAREA') {
+                                    } else if (editColumn === 'detail') {
                                         item.value = info.detail;
-                                    } else if(item.tagName === 'A'){
-                                        item.setAttribute('href', info.detail);
-                                    }  else if(item.tagName === 'IFRAME'){
-                                        item.setAttribute('src', info.detail);
-                                    } else {
-                                        item.innerHTML = info.detail;
+                                    } else{
+                                        console.log(item);
                                     }
                                 }
                             }
-                        }
-                        datas = that.querySelectorAll('[data-apply-href="'+dataID+'"]');
-                        if(datas.length > 0){
-                            for(let k=0; k<datas.length; k++){
-                                let item = datas[k];
-                                item.setAttribute('href', result.page);
+                            datas = that.querySelectorAll('[data-apply-id="' + dataID + '"]');
+                            if (datas.length > 0) {
+                                for (let k = 0; k < datas.length; k++) {
+                                    let item = datas[k];
+                                    console.log(item.tagName);
+                                    let editColumn = item.getAttribute('data-edit-type');
+                                    if (editColumn === 'photo') {
+                                        if (item.tagName === 'IMG') {
+                                            item.setAttribute('src', info.photo);
+                                        }
+                                    } else if (editColumn === 'title') {
+                                        if (item.tagName === 'INPUT') {
+                                            item.value = info.title;
+                                        } else {
+                                            item.textContent = info.title;
+                                        }
+                                    } else if (editColumn === 'des') {
+                                        if (item.tagName === 'TEXTAREA') {
+                                            item.value = info.des;
+                                        } else if(item.tagName === 'A'){
+                                            item.innerText = info.des;
+                                        } else {
+                                            item.innerHTML = info.des;
+                                        }
+                                    } else if (editColumn === 'detail') {
+                                        if (item.tagName === 'TEXTAREA') {
+                                            item.value = info.detail;
+                                        } else if(item.tagName === 'A'){
+                                            item.setAttribute('href', info.detail);
+                                        }  else if(item.tagName === 'IFRAME'){
+                                            item.setAttribute('src', info.detail);
+                                        } else {
+                                            item.innerHTML = info.detail;
+                                        }
+                                    }
+                                }
                             }
-                        }
-                        datas = that.querySelectorAll('[data-apply-text="'+dataID+'"]');
-                        if(datas.length > 0){
-                            for(let k=0; k<datas.length; k++){
-                                let item = datas[k];
-                                console.log(item.getAttribute('data-edit-type'));
-                                item.innerText = result[item.getAttribute('data-edit-type')];
+                            datas = that.querySelectorAll('[data-apply-href="'+dataID+'"]');
+                            if(datas.length > 0){
+                                for(let k=0; k<datas.length; k++){
+                                    let item = datas[k];
+                                    item.setAttribute('href', result.page);
+                                }
+                            }
+                            datas = that.querySelectorAll('[data-apply-text="'+dataID+'"]');
+                            if(datas.length > 0){
+                                for(let k=0; k<datas.length; k++){
+                                    let item = datas[k];
+                                    console.log(item.getAttribute('data-edit-type'));
+                                    item.innerText = result[item.getAttribute('data-edit-type')];
+                                }
                             }
                         }
                     }
@@ -1258,6 +1310,15 @@
                 }
             });
         }
+    }
+    function removePage(id, el){
+        let info = {
+            type:'remove', id: id, custom: 'page'
+        };
+        saveData(info, function(result){
+            console.log('remove this section...');
+            el.parentElement.remove();
+        });
     }
     function removeData(){
         hideContextMenu();
