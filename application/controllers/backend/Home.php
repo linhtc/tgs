@@ -414,7 +414,7 @@ class Home extends MY_Controller {
                         'modified' => date('Y-m-d H:i:s', time()),
                         'page' => $req->section,
                         'style' => $page->style,
-                        'title' => $req->section,
+//                        'title' => $req->section,
                         'sort' => time()
                     );
                     $this->db->insert($this->styleModel, $pullClass);
